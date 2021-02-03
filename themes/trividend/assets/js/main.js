@@ -204,7 +204,20 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
   /* Start of Noyon */
 
+  if( $('.hdr-search').length ){
+    $('.hdr-search button').click(function(e){
+      event.preventDefault();
+      $('.hdr-search').toggleClass('hdr-search-input-show');
+    });
+  }
 
+  $(document).click(function(event) { 
+    var $target = $(event.target);
+    if(!$target.closest('.hdr-search').length && 
+      $('.hdr-search').is(":visible")) {
+      $('.hdr-search').removeClass('hdr-search-input-show');
+  }        
+});
 
 
 

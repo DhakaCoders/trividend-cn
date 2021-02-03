@@ -52,18 +52,32 @@ nav.main-nav > ul > li > a{
 	position: relative;
 	padding-bottom: 69px;
 }
-nav.main-nav > ul > li > a:after{
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	-webkit-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
+nav.main-nav > ul > li > a:after {
+    content: "";
+    width: 29px;
+    height: 4px;
+    background: url(../images/menu-icon.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	opacity: 0;
+
+}
+nav.main-nav > ul > li > a:hover:after,
+nav.main-nav > ul > li.current-menu-item > a:after{
+	opacity: 1;
 }
 
 nav.main-nav > ul > li.current-menu-item > a,
 nav.main-nav > ul > li > a:hover{
-	color: #8B0102;
+	color: #E0861A;
 }
 
 nav.main-nav > ul > li.menu-item-has-children > a{
@@ -76,5 +90,34 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 
 
 .hdr-search{
-
+	position: relative;
+}
+.hdr-search input {
+    position: absolute;
+    top: 100%;
+    padding: 10px 15px;
+    width: 0;
+    opacity: 0;
+    background: #fff;
+    right: 0px;
+    margin-top: 15px;
+    border: 1px solid #4B4B4B;
+    transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.hdr-search-input-show input {
+    width: 435px;
+    opacity: 1;
+}
+.hdr-search-input-show input:focus{
+	border-color: #E0861A;
+}
+.hdr-search button{
+	background: transparent;
+	cursor: pointer;
+}
+.hdr-search button:hover i svg,
+.hdr-search-input-show button i svg{
+	fill: #8B0102;
 }
