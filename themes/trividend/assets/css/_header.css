@@ -1,24 +1,69 @@
-nav.main-nav ul{
+.header{
+	border-top: 6px solid #8b0101;
+}
+.header-inr{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.header-left{
 
 }
-nav.main-nav ul li{
-	
+.logo{
+
 }
-nav.main-nav ul li a{
-	
+.logo a{
+	display: inline-block;
 }
+.header-right{
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.header-menu{
+	padding-right: 45px;
+}
+
+
+
+
+
+
+
 nav.main-nav > ul{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 -28px;
+	padding-top: 69px;
 
 }
 nav.main-nav > ul > li{
-
+	padding: 0 28px;
+	line-height: 1;
 }
 nav.main-nav > ul > li > a{
-
+	display: inline-block;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1;
+	color: #4B4B4B;
+	position: relative;
+	padding-bottom: 69px;
+}
+nav.main-nav > ul > li > a:after{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
 }
 
-nav.main-nav > ul > li.current-menu-item > a{
-
+nav.main-nav > ul > li.current-menu-item > a,
+nav.main-nav > ul > li > a:hover{
+	color: #8B0102;
 }
 
 nav.main-nav > ul > li.menu-item-has-children > a{
@@ -27,4 +72,9 @@ nav.main-nav > ul > li.menu-item-has-children > a{
 
 nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 	
+}
+
+
+.hdr-search{
+
 }
