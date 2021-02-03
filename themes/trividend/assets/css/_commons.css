@@ -5,7 +5,12 @@ Commons
 	outline: 0!important;
 	text-decoration: none;
 }
-
+a{
+	color: #E0861A;
+}
+a:hover{
+	color: #8B0102;
+}
 a, button, input{
 	outline: 0;
 	border: 0;
@@ -16,15 +21,26 @@ a, a:hover, a:focus, button:hover, button:focus{
 }
 
 body {
-    background: #f8f8f8;
-    color: #000000;
-    font-size: 18px;
+    background: #ffffff;
+    color: #6A6A6A;
+    font-size: 16px;
     line-height: 24px;
-     font-family: 'Candara';
+    font-weight: 400;
+    font-family: 'Fira Sans', sans-serif;
 }
 p{
-	line-height: 1.2;
+	line-height: 1.4;
 	margin-bottom: 15px;
+}
+em{
+	font-style: italic;
+	font-weight: 400;
+}
+strong{
+	font-weight: 700;
+}
+u{
+	text-decoration: underline;
 }
 ::selection {
   color: #fff;
@@ -40,11 +56,11 @@ data-value = normal*/
 /**
 Containers fluid
 */
-/*.container-fluid{
+.container-fluid{
 	padding-left: 30px;
 	padding-right: 30px;
-	margin-left: 2%;
-	margin-right: 2%;
+	margin-left: 77px;
+	margin-right: 77px;
   	width: auto;
 }
 .container-fluid .row{
@@ -58,7 +74,7 @@ Containers fluid
 .container-fluid .row .col-xs-1, .container-fluid .row .col-xs-10, .container-fluid .row .col-xs-11, .container-fluid .row .col-xs-12, .container-fluid .row .col-xs-2, .container-fluid .row .col-xs-3, .container-fluid .row .col-xs-4, .container-fluid .row .col-xs-5, .container-fluid .row .col-xs-6, .container-fluid .row .col-xs-7, .container-fluid .row .col-xs-8, .container-fluid .row .col-xs-9{
 	padding-left: 30px;
 	padding-right: 30px;
-}*/
+}
 
 
 /**
@@ -96,7 +112,7 @@ Containers
 
 }
 .container{
-	max-width: 1200px;
+	max-width: 1480px;
 	width: 100%;
 }
 .container-md{
@@ -314,4 +330,13 @@ form .dropdown-menu li a{
 }
 .dropdown-menu.show{
 	width: 100%;
+}
+
+.fl-tvd-title-h2{
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 1;
+	color: #8B0102;
+	display: block;
+	margin-bottom: 20px;
 }
