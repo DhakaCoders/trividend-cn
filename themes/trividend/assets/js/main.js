@@ -199,6 +199,31 @@ google.maps.event.addDomListener(window, 'load', initialize);
   }, false);
 })();
 
+
+
+
+  /* Start of Noyon */
+
+
+
+
+
+
+
+  /* Start of Shariful */
+
+
+
+
+
+
+
+
+  /* Start of Milon */
+
+
+
+
     new WOW().init();
 
 })(jQuery);
