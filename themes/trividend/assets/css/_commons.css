@@ -342,3 +342,40 @@ form .dropdown-menu li a{
 	display: block;
 	margin-bottom: 20px;
 }
+
+.fl-orange-btn{
+	width: 250px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #E0861A;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	padding: 10px 5px;
+	color: #fff;
+}
+.fl-orange-btn:hover{
+	background: #43bd74;
+	color: #fff;
+}
+
+
+.fl-green-btn{
+	width: 250px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #43bd74;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	padding: 10px 5px;
+	color: #fff;
+}
+.fl-green-btn:hover{
+	background: #E0861A;
+	color: #fff;
+}

@@ -55,23 +55,6 @@
 .hm-bsi-desc p{
 	margin-bottom: 25px;
 }
-.fl-btn{
-	width: 250px;
-	height: 50px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: #E0861A;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 19px;
-	padding: 10px 5px;
-	color: #fff;
-}
-.fl-btn:hover{
-	background: #43bd74;
-	color: #fff;
-}
 
 .hm-bnr-slider.slick-slider ul.slick-dots{
 	width: 106px!important;
