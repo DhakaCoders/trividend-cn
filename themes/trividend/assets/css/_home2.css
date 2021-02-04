@@ -1,0 +1,125 @@
+
+.tvd-nieuws-sec{
+	padding: 90px 0 100px;
+}
+.tvd-nieuws-enty-hdr{
+	text-align: center;
+}
+.tvd-nieuws-enty-hdr-title{
+	display: block;
+	font-size: 30px;
+	line-height: 1;
+	margin-bottom: 18px;
+	font-weight: 700;
+	color: #8B0102;
+}
+.tvd-nieuws-enty-hdr p{
+	margin-bottom: 35px;
+	padding-bottom: 22px;
+	position: relative;
+}
+.tvd-nieuws-enty-hdr p:after{
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	height: 14px;
+	width: 100px;
+	background: url('../images/border-btm.jpg');
+	background-repeat: no-repeat!important;
+	background-size: cover!important;
+	background-position: center center!important;
+}
+
+
+
+.tvd-nieuws-slider{
+	margin-left: -12px;
+	margin-right: -12px;
+}
+.tvd-nieuws-grds{
+	float: left;
+	width: 33.3333%;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 25px;
+}
+
+.tvd-nieuws-img-ctlr{
+	position: relative;
+}
+.tvd-nieuws-img{
+	min-height: 310px;
+}
+
+.tvd-triangle{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	border-bottom: 140px solid #E0861A;
+    border-left: 110px solid transparent;
+}
+.tvd-date{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.tvd-nieuws-grd-item-des{
+	padding-top: 18px;
+}
+.tvd-nieuws-grd-item-des-title{
+	display: block;
+	font-size: 24px;
+	line-height: 1;
+	margin-bottom: 12px;
+	font-weight: 500;
+	color: #4B4B4B;
+}
+.tvd-nieuws-grd-item-des-title > a{
+	color: #4B4B4B;
+}
+.tvd-nieuws-grd-item-des p{
+	margin-bottom: 18px;
+}
+.tvd-nieuws-grd-item-des > a{
+	display: inline-block;
+	vertical-align: baseline;
+	color: #42BD73;
+	font-weight: 700;
+	padding-left: 30px;
+	position: relative;
+}
+.tvd-nieuws-grd-item-des > a:before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	height: 2px;
+	width: 20px;
+	background: #42BD73;
+}
+
+.tvd-nieuws-slider-ctlr{
+	position: relative;
+}
+.tvd-nieuws-slider-ctlr .fl-prev{
+	left: -65px;
+}
+.tvd-nieuws-slider-ctlr .fl-next{
+	right: -65px;
+}
+.tvd-nieuws-sec.tvd-nieuws-grds{
+	display: none!important;
+}
+.tvd-nieuws-sec.tvd-nieuws-grds:first-child{
+	display: block!important;
+}
+.tvd-nieuws-sec.slick-initialized.tvd-nieuws-grds{
+	display: block!important;
+}
