@@ -1,0 +1,310 @@
+/*
+----------------------
+ contact-form-sec-wrp
+----------------------
+*/
+.contact-form-sec-wrp{
+	background:#F9F9F9;
+	padding: 100px 0;
+}
+.contact-form-lft{
+	width: 65%;
+	float: left;
+}
+.contact-form-rgt{
+	width: 35%;
+	float: right;
+	padding-left: 25px;
+}
+/*
+---------------------
+ Contact Form
+---------------------
+*/
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container:after,
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container:before{
+	content: "";
+	clear: both;
+	display: table;
+}
+.contact-form-wrp  div.wpforms-container-full .wpforms-form .wpforms-field{
+	clear: initial;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field{
+	width: 50%;
+	float: left;
+	padding: 0 12px;
+	margin-bottom: 15px;
+	position: relative;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container{
+	margin: 0 -12px;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field label{
+	display: inline-block;
+	vertical-align: baseline;
+	width: 100%;
+	margin: 0;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+	color: #6A6A6A;
+	margin-bottom: 7px;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input{
+	width: 100%;
+	max-width: 100%;
+	height: 50px;
+	background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border:2px solid#fff;
+	box-sizing: border-box;
+	padding: 17px 20px 18px;
+	color: #D0D0D0;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	border-radius: 0;
+}
+
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-textarea{
+	width: 100%;
+	margin-bottom: 15px;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-textarea textarea{
+	width: 100%;
+	height: 150px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+	border: 2px solid #FFF;
+	box-sizing: border-box;
+	color: #D0D0D0;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+	padding: 14px 20px;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	resize: none;
+	border-radius: 0;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-textarea textarea:focus,
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input:focus{
+	border-color:#c0bebe;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button {
+    max-width: 180px;
+    width: 100%;
+    height: 50px;
+    border: 2px solid!important;
+    background: #E0861A;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 3%);
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    font-weight: 700;
+    transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    cursor: pointer;
+    padding: 16px 0 15px;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button:hover{
+	background: transparent;
+	color: #E0861A;
+	border-color: #E0861A !important;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #D92A2B;
+    position: absolute;
+    right: 30px;
+    top: 47px;
+    text-align: right;
+    width: auto;
+    text-transform: inherit;
+    margin-bottom: 0;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error span{
+	font-weight: 700;
+	font-size: 12px;
+	padding-left: 2px;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error input {
+    border: 1px solid #DB4655 !important;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container p {
+    font-size: 12px;
+    line-height: 14px;
+    color: #6A6A6A;
+    margin-bottom: 24px;
+    text-align: left;
+    font-style: italic;
+}
+
+.contact-form-info{
+	background: #FAEDDD;
+	padding: 55px 60px 30px;
+}
+.contact-form-info h2{
+	color:#4B4B4B;
+	margin-bottom: 15px; 
+}
+.contact-form-info  ul li{
+	display: block;
+	padding-bottom: 25px;
+	padding-left: 30px;
+	position: relative;
+}
+.contact-form-info  ul li:nth-child(2){
+	padding-bottom: 4px;
+}
+.contact-form-info  ul li:nth-child(4){
+	padding-left: 40px;
+	margin-left: -8px;
+}
+.contact-form-info  ul li i{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.contact-form-info  ul li:first-child i{
+	top: 2px;
+}
+.contact-form-info  ul li span,
+.contact-form-info  ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 24px;
+	color:#4B4B4B; 
+	font-weight: 400;
+}
+.contact-form-info  ul li a:hover{
+	color: #E0861A;
+}
+/*
+------------------------
+ tvd-team-member-wec-wrp
+------------------------
+*/
+.tvd-team-member-wec-wrp{
+	padding-top: 75px;
+}
+.tvd-team-member-wec-wrp .tvd-nieuws-enty-hdr p{
+	margin-bottom: 60px;
+}
+.tvd-team-grid-wrp{
+	padding-bottom: 65px;
+	border-bottom: 4px solid#F9F9F9;
+}
+.tvd-team-grid-slide-item{
+	padding: 0 12px;
+}
+.tvd-team-grid-slide-item-img{
+	min-height: 395px;
+	position: relative;
+}
+.tvd-team-grid-hover{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(0deg, rgba(224, 134, 26, 0.9), rgba(224, 134, 26, 0.9)), url(business-JGLN3V2.jpg);
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	opacity: 0;
+	cursor: pointer;
+}
+.tvd-team-grid-slide-item:hover .tvd-team-grid-hover{
+	opacity: 1;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+} 
+.tvd-team-grid-hover p{
+	color: #fff;
+	text-align: center;
+	margin-bottom: 0;
+}
+.tvd-team-grid-tp{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 0 10px;
+	border-bottom: 2px solid#F9F9F9;
+}
+.tvd-team-grid-mk{
+	float: left;
+	width: 50%;
+}
+.tvd-team-grid-social{
+	float: right;
+	width: 50%;
+}
+.tvd-team-grid-social ul{
+	margin: 0 -5px;
+	float: right;
+}
+.tvd-team-grid-social ul li{
+	float: left;
+	padding: 0 5px;
+}
+.tvd-team-grid-social ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+.tvd-team-grid-social ul li a i:hover svg{
+	fill: #E0861A;
+}
+.tvd-team-grid-mk h3.fl-h3{
+	color: #4B4B4B;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+.tvd-team-grid-mk span{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 16px;
+	line-height: 18px;
+	color: #E0861A;
+	font-weight: 400;
+}
+.tvd-team-grid-info{
+	padding-top: 20px;
+}
+.tvd-team-grid-info ul li{
+	display: block;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+	padding-bottom: 14px;
+}
+.tvd-team-grid-info ul li a i{
+	display: inline-block;
+	vertical-align: baseline;
+	padding-right: 10px;
+}
+.tvd-team-grid-info ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	color:#E0861A;
+}
