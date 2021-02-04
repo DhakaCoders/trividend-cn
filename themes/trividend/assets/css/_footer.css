@@ -1,8 +1,11 @@
 
 
 
-
-.ftr-logo{
+.ftr-top{
+	padding-bottom: 40px;
+	border-bottom: 2px solid #F9F9F9;
+}
+.ftr-logo-ctlr{
 	float: left;
 	width: 34.1379%;
 }
@@ -22,7 +25,25 @@
 	width: 21.0344%;
 }
 
+.ftr-logo{
+	padding-bottom: 40px;
+}
 .ftr-logo a{
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+.ftr-btm-logo ul{
+	margin-right: -13px;
+	margin-left: -13px;
+}
+.ftr-btm-logo ul li{
+	display: inline-block;
+	vertical-align: baseline;
+	padding-left: 13px;
+	padding-right: 13px;
+}
+.ftr-btm-logo ul li a{
 	display: inline-block;
 	vertical-align: baseline;
 }
@@ -60,6 +81,90 @@
 	display: inline-block;
 	vertical-align: baseline;
 	font-size: 14px;
+	line-height: 1;
 	color: #6A6A6A;
 	font-weight: 500;
+}
+.ftr-menu.ftr-col-2 ul li{
+	padding-bottom: 25px;
+}
+.ftr-menu.ftr-col-2 ul li a{
+	line-height: 1.7;
+}
+.ftr-menu ul li a:hover,
+.ftr-cnt-menu-cv a:hover,
+.ftr-cnt-menu-adrs a:hover,
+.ftr-cnt-menu-phn a:hover,
+.ftr-cnt-menu-mail a:hover,
+.ftr-btm-menu ul li a:hover,
+.ftr-btm-designby a:hover{
+	color: #E0861A;
+}
+
+.ftr-cnt-menu-cv,
+.ftr-cnt-menu-adrs,
+.ftr-cnt-menu-mail{
+	padding-bottom: 30px;
+}
+.ftr-cnt-menu-cv a,
+.ftr-cnt-menu-adrs a,
+.ftr-cnt-menu-phn a,
+.ftr-cnt-menu-mail a,
+.ftr-cnt-menu-vat span{
+	color: #6A6A6A;
+}
+
+.ftr-btm{
+	padding-top: 45px;
+	padding-bottom: 50px;
+	display: flex;
+	align-items: center;
+}
+.ftr-btm-menu{
+	margin-left: auto;
+	margin-right: auto;
+}
+.ftr-copywrite p{
+	margin-bottom: 0;
+	font-size: 14px;
+	line-height: 1;
+}
+.ftr-btm-menu ul li {
+    display: inline-block;
+    vertical-align: baseline;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+.ftr-btm-menu ul li:after {
+    content: "";
+    position: absolute;
+    top: 32%;
+    right: 0;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    width: 1px;
+    height: 12px;
+    background: #DEDEDE;
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+}
+.ftr-btm-menu ul li:last-child:after{
+	content: none;
+}
+.ftr-btm-menu ul li a {
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 14px;
+    line-height: 1;
+    color: #6A6A6A;
+}
+.ftr-btm-designby a {
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 14px;
+    line-height: 1;
+    color: #6A6A6A;
 }
