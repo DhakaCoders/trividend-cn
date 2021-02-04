@@ -27,6 +27,8 @@
 
 .default-page-con h2{
 	margin-bottom: 10px;
+	font-weight: 500;
+	color: #4B4B4B;
 }
 
 .default-page-con ul,
@@ -85,7 +87,7 @@ ol li::before {
 	top: 4px;
 }
 .default-page-con p {
-    margin-bottom: 28px;
+    margin-bottom: 25px;
 }
 
 .dfp-promo-module{
@@ -176,6 +178,13 @@ ol li::before {
 	position: absolute;
 	top: 28px;
 	left: 25px;
+}
+
+.default-page-con hr{
+	border-top: 2px solid #F9F9F9;
+	margin-bottom: 54px;
+	margin-top: 0;
+	margin-top: 20px;
 }
 
 
