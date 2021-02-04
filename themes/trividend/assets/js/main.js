@@ -260,6 +260,21 @@ google.maps.event.addDomListener(window, 'load', initialize);
     });
 }
 
+    if($('.ourServicesSliders').length ){
+      $('.ourServicesSliders').slick({
+        dots: false,
+        infinite: true,
+        autoplay: true,
+        arrows: true,
+        autoplaySpeed: 2000,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: $('.tvd-nieuws-slider-ctlr .fl-nxt-prev .fl-prev'),
+        nextArrow: $('.tvd-nieuws-slider-ctlr .fl-nxt-prev .fl-next'),
+      });
+    }
+
 
 
 
