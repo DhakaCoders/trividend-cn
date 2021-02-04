@@ -281,6 +281,13 @@ google.maps.event.addDomListener(window, 'load', initialize);
         });
     }
 
+     $('.dfp-accordion h5').on('click', function(){
+       $(this).toggleClass('active');
+        $(this).parent().siblings().find('h5').removeClass('active'); 
+        $(this).parent().find('p').slideToggle(300);
+        $(this).parent().siblings().find('p').slideUp(300);
+        
+      });
 
 
 

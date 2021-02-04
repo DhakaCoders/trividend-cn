@@ -123,3 +123,168 @@
 .tvd-nieuws-sec.slick-initialized.tvd-nieuws-grds{
 	display: block!important;
 }
+
+
+.tvd-financing-sec-inr{
+	margin-left: -12px;
+	margin-right: -12px;
+}
+.tvd-fin{
+	float: left;
+	width: 50%;
+	padding-left: 12px;
+	padding-right: 12px;
+	display: flex;
+	align-items: center;
+	background: #F9F9F9;
+}
+.tvd-nieuws{
+	float: left;
+	width: 50%;
+	padding-left: 12px;
+	display: flex;
+	align-items: center;
+	background: #F9F9F9;
+}
+.tvd-fin-inr{
+	
+	padding-left: 92px;
+	padding-right: 92px;
+}
+.tvd-nieuws-inr{
+	
+	padding-left: 82px;
+	padding-right: 82px;
+	padding-top: 45px;
+	padding-bottom: 42px;
+}
+.tvd-fin-inr i,
+.tvd-nieuws-inr i{
+	display: inline-block;
+	vertical-align: baseline;
+	margin-bottom: 20px;
+}
+.tvd-fin-title,
+.tvd-nieuws-title{
+	display: block;
+	font-size: 30px;
+	line-height: 1;
+	margin-bottom: 7px;
+	font-weight: 700;
+	color: #4B4B4B;
+}
+.tvd-fin-inr p{
+	margin-bottom: 20px;
+}
+.tvd-fin-inr a{
+	width: 236px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	line-height: 1;
+	color: #fff;
+	font-weight: 700;
+	background: #42BD73;
+	border: 2px solid #42BD73;
+}
+
+.tvd-inputfields-row.diveder2{
+	margin-left: -13px;
+	margin-right: -13px;
+}
+.diveder2 .tvd-inputfield{
+	float: left;
+	width: 50%;
+	padding-left: 13px;
+	padding-right: 13px;
+}
+.tvd-inputfield{
+	width: 100%;
+	margin-bottom: 12px;
+}
+.tvd-inputfield input{
+	width: 100%;
+}
+
+.tvd-inputfield input[type=text],
+.tvd-inputfield input[type=email]{
+	height: 40px;
+	padding-left: 20px;
+	color: #6A6A6A;
+	background: #fff;
+	border: 1px solid #fff;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.tvd-inputfield input[type=text]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #6A6A6A;
+  opacity: 1;
+}
+.tvd-inputfield input[type=text]::-moz-placeholder { /* Firefox 19+ */
+  color: #6A6A6A;
+  opacity: 1;
+}
+.tvd-inputfield input[type=text]:-ms-input-placeholder { /* IE 10+ */
+  color: #6A6A6A;
+  opacity: 1;
+}
+.tvd-inputfield input[type=text]:-moz-placeholder { /* Firefox 18- */
+  color: #6A6A6A;
+  opacity: 1;
+}
+
+.tvd-inputfield input[type=email]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #6A6A6A;
+  opacity: 1;
+}
+.tvd-inputfield input[type=email]::-moz-placeholder { /* Firefox 19+ */
+  color: #6A6A6A;
+  opacity: 1;
+}
+.tvd-inputfield input[type=email]:-ms-input-placeholder { /* IE 10+ */
+  color: #6A6A6A;
+  opacity: 1;
+}
+.tvd-inputfield input[type=email]:-moz-placeholder { /* Firefox 18- */
+  color: #6A6A6A;
+  opacity: 1;
+}
+
+.tvd-inputfield input[type=text]:focus,
+.tvd-inputfield input[type=email]:focus{
+	border-color: #4B4B4B;
+}
+
+.cnt-btn input[type=submit]{
+	font-size: 16px;
+	width: 240px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #E0861A;
+	border: 2px solid #E0861A;
+	color: #fff;
+	font-weight: 700;
+	cursor: pointer;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+.cnt-btn input[type=submit]:hover{
+	background: #42BD73;
+	border-color: #42BD73;
+}
+
+.tvd-inputfield em p{
+	font-size: 11px;
+	margin-bottom: 10px;
+	line-height: 1;
+}
+.tvd-inputfield em p a{
+	color: #6A6A6A;
+	text-decoration: underline;
+}
