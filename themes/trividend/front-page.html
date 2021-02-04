@@ -39,7 +39,9 @@
 
 
     <!-- start of Noyon -->
-
+    <symbol id="hdr-serach-icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16.0277 2.74617C12.3665 -0.915064 6.40754 -0.915064 2.74631 2.74617C-0.914133 6.40819 -0.914133 12.3663 2.74631 16.0284C6.00673 19.288 11.0847 19.6372 14.7435 17.0919C14.8205 17.4562 14.9967 17.8038 15.2801 18.0872L20.612 23.4191C21.389 24.1945 22.6446 24.1945 23.4176 23.4191C24.1938 22.6429 24.1938 21.3873 23.4176 20.6134L18.0857 15.2799C17.8039 14.999 17.4555 14.822 17.0912 14.745C19.6381 11.0853 19.2889 6.00818 16.0277 2.74617ZM14.3443 14.345C11.6109 17.0784 7.16232 17.0784 4.42969 14.345C1.69786 11.6115 1.69786 7.16377 4.42969 4.43035C7.16232 1.69772 11.6109 1.69772 14.3443 4.43035C17.0777 7.16377 17.0777 11.6115 14.3443 14.345Z"/>
+    </symbol>
 
 
 
@@ -53,56 +55,128 @@
 
 
 
-    
+
   </svg>
 
 </head>
 <body>
-<header class="header">
-  <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="header-inr clearfix">
-            <div class="hdr-lft">
-              <div class="logo">
-                <a href="#"><img src="assets/images/logo.png"></a>
-              </div>
+  <header class="header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="header-inr">
+          <div class="header-left">
+            <div class="logo">
+              <a href="#"><img src="assets/images/logo.png"></a>
             </div>
-            <div class="hdr-rgt">
+          </div>
+          <div class="header-right">
+            <div class="header-menu">
               <nav class="main-nav">
                 <ul class="clearfix reset-list">
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
+                  <li class="current-menu-item"><a href="#">Home</a></li>
+                  <li class="menu-item-has-children">
+                    <a href="#">Ik zoek financiering</a>
+                    <ul class="sub-menu" style="">
+                      <li><a href="#">Sub Menu</a></li>
+                      <li><a href="#">Sub Menu</a></li>
+                      <li><a href="#">Sub Menu</a></li>
+                      <li><a href="#">Sub Menu</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Investeren met impact</a></li>
+                  <li><a href="#">Hoe we investeren</a></li>
+                  <li><a href="#">Over Trivident</a></li>
+                  <li><a href="#">Nieuws</a></li>
+                  <li><a href="#">Contact</a></li>
                 </ul>
               </nav>
+            </div>
+            <div class="hdr-search">
+              <form action="">
+                <input type="text" placeholder="Search">
+              </form>
+              <button>
+                <i>
+                  <svg class="hdr-serach-icon" width="24" height="24" viewBox="0 0 24 24" fill="#E0861A">
+                    <use xlink:href="#hdr-serach-icon"></use>
+                  </svg>
+                </i>
+              </button>
             </div>
           </div>
         </div>
       </div>
+    </div>
   </div>
 </header>
 
-<section class="main-content">
-  <div class="container">
-      <div class="row">
-        <div class="col-md-6">
+<section class="hm-banner-sec">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="hm-banner-cntlr">
+          <div class="hm-bnr-slider homeBnrSlider">
 
-        </div>
-        <div class="col-md-6">
+            <div class="hm-bnr-slider-item-cntlr">
+              <div class="hm-bnr-slider-item inline-bg" style="background: url('assets/images/hm-bnr-slider-item.jpg');">
+                <div class="hm-bsi-arrow"></div>
 
+                <div class="hm-bsi-desc-cntlr">
+                  <div class="hm-bsi-desc">
+                    <h3 class="hm-bsi-desc-sub-title">Jij wil de wereld </h3>
+                    <h1 class="hm-bsi-desc-title">veranderen?</h1>
+                    <p>Sed eu aliquam nunc. Donec id tellus mattis, malesuada risus nec, mattis est. Duis tincidunt non risus eget pharetra. Sed tincidunt at nibh vel lacinia.</p>
+                    <div class="hm-bsi-desc-btn">
+                      <a class="fl-orange-btn" href="#">Vraag financiering aan</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hm-bnr-slider-item-cntlr">
+              <div class="hm-bnr-slider-item inline-bg" style="background: url('assets/images/hm-bnr-slider-item.jpg');">
+                <div class="hm-bsi-arrow"></div>
+
+                <div class="hm-bsi-desc-cntlr">
+                  <div class="hm-bsi-desc">
+                    <h3 class="hm-bsi-desc-sub-title">Jij wil de wereld </h3>
+                    <h1 class="hm-bsi-desc-title">veranderen? 2</h1>
+                    <p>Sed eu aliquam nunc. Donec id tellus mattis, malesuada risus nec, mattis est. Duis tincidunt non risus eget pharetra. Sed tincidunt at nibh vel lacinia.</p>
+                    <div class="hm-bsi-desc-btn">
+                      <a class="fl-orange-btn" href="#">Vraag financiering aan</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hm-bnr-slider-item-cntlr">
+              <div class="hm-bnr-slider-item inline-bg" style="background: url('assets/images/hm-bnr-slider-item.jpg');">
+                <div class="hm-bsi-arrow"></div>
+
+                <div class="hm-bsi-desc-cntlr">
+                  <div class="hm-bsi-desc">
+                    <h3 class="hm-bsi-desc-sub-title">Jij wil de wereld </h3>
+                    <h1 class="hm-bsi-desc-title">veranderen? 3</h1>
+                    <p>Sed eu aliquam nunc. Donec id tellus mattis, malesuada risus nec, mattis est. Duis tincidunt non risus eget pharetra. Sed tincidunt at nibh vel lacinia.</p>
+                    <div class="hm-bsi-desc-btn">
+                      <a class="fl-orange-btn" href="#">Vraag financiering aan</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
-  </div>    
+    </div>
+  </div>
 </section>
 
-<ol>
-  <li class="facebook"><a href="#"></a></li>
-</ol>
+
 
 <footer class="footer-wrp">
   <div class="container">
