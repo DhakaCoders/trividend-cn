@@ -1,0 +1,114 @@
+/*
+--------------------------------
+overons-lft-img-rt-dsc-sec-wrp
+--------------------------------
+*/
+.overons-lft-img-rt-dsc-sec-wrp{
+	padding-bottom: 125px;
+}
+.lft-img-rt-dsc-mdul-wrp{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.lft-img-rt-dsc-mdul-img{
+	width: 48%;
+	float: left;
+	height: 550px;
+}
+.lft-img-rt-dsc-mdul-dsc{
+	width: 52%;
+	float: right;
+	padding-left: 115px;
+}
+.rgt-mdul-dsc-title{
+	display: block;
+	color: #8B0102;
+	margin-bottom: 45px;
+	font-size: 60px;
+	line-height: 1;
+}
+.rgt-mdul-dsc-title-1{
+	display: block;
+	font-size: 30px;
+	line-height: 1;
+	color: #8B0102;
+}
+.lft-img-rt-dsc-mdul-dsc a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	line-height: 1;
+	font-weight: 700;
+	width: 240px;
+	height: 50px;
+	background: #E0861A;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 15px;
+	border:2px solid#E0861A;
+}
+.lft-img-rt-dsc-mdul-dsc a:hover{
+	background: transparent;
+	color: #E0861A;
+}
+
+/*
+---------------------------------
+ overons-lft-dsc-rt-img-sec-wrp
+---------------------------------
+*/
+.overons-lft-dsc-rt-img-sec-wrp{
+	background:#F9F9F9;
+	padding-top: 75px;
+	padding-bottom: 130px;
+}
+.lft-img-rt-dsc-mdul-wrp{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.lft-dsc-rt-img-mdul-img{
+	width: 49%;
+	float: right;
+	height: 430px;
+}
+.lft-dsc-rt-img-mdul-dsc{
+	width:51%;
+	float: left;
+	padding-right: 25px; 
+}
+.lft-mdul-dsc-title-1{
+	display: block;
+	font-size: 24px;
+	line-height: 1;
+	color: #4B4B4B;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+
+/*
+-----------------------
+overons-tvd-fin-sec-wrp
+-----------------------
+*/
+.overons-tvd-fin-wrp{
+	background: #DFF4E8;
+	padding: 60px 30px 75px;
+	margin-top: -60px;
+}
+.overons-tvd-fin-wrp .tvd-fin-inr{
+	padding: 0;
+	text-align: center;
+}
+.overons-tvd-fin-wrp .tvd-fin-inr a{
+	margin: 0 auto;
+}
+.overons-tvd-fin-wrp .tvd-fin-inr p{
+	color: #4B4B4B;
+}
+.overons-tvd-fin-wrp .tvd-fin-inr a:hover{
+	background: transparent;
+	color: #42BD73;
+}
