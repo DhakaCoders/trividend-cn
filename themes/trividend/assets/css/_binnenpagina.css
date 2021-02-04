@@ -42,7 +42,7 @@ ul{
 	margin: 0;
 	padding: 0;
 	padding-left: 0;
-	padding-bottom: 10px;
+	padding-bottom: 0px;
 }
 .default-page-con ul li,
 ul li {
@@ -169,6 +169,7 @@ ol li::before {
 .dft-blockquote{
 	position: relative;
 	background: #E0861A;
+	margin-bottom: 35px;
 }
 .dft-blockquote blockquote{
 	font-weight: 400;
@@ -424,6 +425,155 @@ Gallery design
 	color: #fff;
 }
 
+/*table*/
+.dfp-tbl-wrap{
+	padding-top: 52px;
+}
+
+.table-dsc{
+	padding: 0;
+	border-top: none;
+	background: #fff;
+	color: #6A6A6A;
+}
+.table-dsc table tbody tr td:last-child{
+	padding-left: 0;
+}
+.table-dsc table tbody tr td:last-child span,
+.table-dsc table thead tr th:last-child span{
+	padding-left: 13px;
+}
+.table-dsc table{
+	width: 100%;
+	padding: 20px;
+	border: none;
+}
+
+.table-dsc table tr th:last-child,
+.table-dsc table tr td:last-child{
+    padding-left: 0;
+}
+.table-dsc table tr th:last-child span{
+	border-right: none;
+}
+
+.table-dsc table tbody tr:first-child td span{
+	display: block;
+}
+.table-dsc table tbody tr:first-child td:last-child span{
+	border-right: none;
+}
+.table-dsc table tbody tr td:first-child span{
+	font-weight: 500;
+	border-bottom: none;
+	text-align: left;
+}
+.table-dsc table thead tr th:first-child,
+.table-dsc table tbody tr td:first-child{
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 125px;
+	text-align: center;
+}
+.table-dsc table tr th {
+	border: none;
+	color: #4B4B4B;
+	font-weight: 500;
+	padding: 15px 0;
+	line-height: 24px;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: capitalize;
+}
+.table-dsc table tr th span{
+	display: block;
+}
+.table-dsc table thead th span{
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1;
+	text-transform: capitalize;
+	text-align: left;
+}
+.table-dsc table thead tr th,
+.table-dsc table tbody tr td{
+	padding-left: 20px;
+	padding-right: 0;
+}
+
+
+.table-dsc table thead tr th:first-child,
+.table-dsc table thead tr td:first-child{
+	padding-left: 15px;
+	padding-right: 15px;
+	font-weight: 500;
+}
+
+
+.table-dsc table tbody{
+	border-top: 0;
+	margin: 0 3px;
+}
+.table-dsc table tbody tr td span{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.table-dsc table span{
+	display: block;
+}
+.table-dsc table tbody tr:last-child span{
+	border-bottom: none;
+}
+
+.table-dsc table tbody tr{
+	border-left: 0;
+	border-right: 0;
+	border-top: 1px solid #edeef0;
+}
+.table-dsc table thead tr{
+	border-top: 1px solid #edeef0;
+}
+
+
+.dfp-btn{
+	margin-top: 50px;
+}
+.dfp-btn-inr ul{
+	margin-left: -8px;
+	margin-right: -8px;
+	padding-bottom: 0;
+}
+.dfp-btn-inr ul li{
+	display: inline-block;
+	vertical-align: baseline;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+.dfp-btn-inr ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 16px;
+	line-height: 1;
+	font-weight: 700;
+	color: #42BD73;
+	border: 2px solid #42BD73;
+	background: transparent;
+	width: 240px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.dfp-btn-inr ul li.orange a{
+	background: #E0861A;
+	color: #fff;
+	border-color: #E0861A;
+}
+.dfp-btn-inr ul li.green a{
+	background: #42BD73;
+	color: #fff;
+	border-color: #42BD73;
+}
 
 /*.dft-text-module h3{
 	font-weight: 300;
