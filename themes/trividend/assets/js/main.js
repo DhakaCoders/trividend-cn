@@ -263,15 +263,29 @@ google.maps.event.addDomListener(window, 'load', initialize);
     if($('.ourServicesSliders').length ){
       $('.ourServicesSliders').slick({
         dots: false,
-        infinite: true,
-        autoplay: true,
+        infinite: false,
+        autoplay: false,
         arrows: true,
         autoplaySpeed: 2000,
         speed: 300,
         slidesToShow: 3,
         slidesToScroll: 1,
-        prevArrow: $('.tvd-nieuws-slider-ctlr .fl-nxt-prev .fl-prev'),
-        nextArrow: $('.tvd-nieuws-slider-ctlr .fl-nxt-prev .fl-next'),
+        prevArrow: $('.Our-services-sliders-cntlr .fl-nxt-prev .fl-prev'),
+        nextArrow: $('.Our-services-sliders-cntlr .fl-nxt-prev .fl-next'),
+      });
+    }
+
+
+    if($('.customerSlider').length ){
+      $('.customerSlider').slick({
+        dots: true,
+        infinite: false,
+        autoplay: true,
+        arrows: false,
+        autoplaySpeed: 2000,
+        speed: 300,
+        slidesToShow: 6,
+        slidesToScroll: 1,
       });
     }
 
