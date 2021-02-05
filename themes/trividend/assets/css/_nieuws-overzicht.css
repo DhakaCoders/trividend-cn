@@ -55,8 +55,15 @@
 }
 
 
+.tvd-nieuws-grd-item-img-ctlr{
+	position: relative;
+	overflow: hidden;
+}
 .tvd-nieuws-grd-item-img{
 	min-height: 310px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
 }
 
 .tvd-nieuws-grd-item-des{
@@ -76,6 +83,15 @@
 }
 .tvd-nieuws-grd-item-des p{
 	margin-bottom: 18px;
+}
+
+.tvd-nieuws-grd-item:hover .tvd-nieuws-grd-item-img{
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+}
+.tvd-ngid-title a:hover{
+	color: #E0861A;
 }
 
 
