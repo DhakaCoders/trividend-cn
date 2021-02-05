@@ -1,0 +1,130 @@
+
+
+.tvd-nieuws-grd-entry-hdr{
+	margin-bottom: 40px;
+}
+.tvd-nieuws-entry-hdr-title{
+	display: block;
+	font-size: 60px;
+	line-height: 1;
+	margin-bottom: 50px;
+	font-weight: 700;
+	color: #8B0102;
+}
+
+.tvd-nieuws-grd-entry-hdr ul{
+	margin-right: -22px;
+	margin-left: -22px;
+}
+.tvd-nieuws-grd-entry-hdr ul li{
+	display: inline-block;
+	vertical-align: baseline;
+	padding-left: 22px;
+	padding-right: 22px;
+}
+.tvd-nieuws-grd-entry-hdr ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+	color: #6A6A6A;
+	font-weight: 500;
+}
+.tvd-nieuws-grd-entry-hdr ul li.active a{
+	color: #E0861A;
+}
+
+
+.tvd-nieuws-grds-item{
+	padding-bottom: 25px;
+}
+.tvd-nieuws-grds-item ul{
+	margin-left: -12px;
+	margin-right: -12px;
+}
+.tvd-nieuws-grds-item ul li{
+	float: left;
+	width: 33.3333%;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 50px;
+}
+.tvd-nieuws-grds-item ul li:nth-child(3n+1){
+	clear: left;
+}
+
+
+.tvd-nieuws-grd-item-img{
+	min-height: 310px;
+}
+
+.tvd-nieuws-grd-item-des{
+	padding-top: 20px;
+}
+
+.tvd-ngid-title{
+	display: block;
+	font-size: 24px;
+	line-height: 1;
+	margin-bottom: 12px;
+	font-weight: 500;
+	color: #4B4B4B;
+}
+.tvd-ngid-title a{
+	color: #4B4B4B;
+}
+.tvd-nieuws-grd-item-des p{
+	margin-bottom: 18px;
+}
+
+
+.fl-pagination-ctlr{
+	background: #F9F9F9;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-align: center;
+	position: relative;
+}
+.fl-pagination-ctlr ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.fl-pagination-ctlr ul li{
+	display: inline-block;
+	vertical-align: baseline;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+.fl-pagination-ctlr ul li span.current{
+	display: inline-block;
+	vertical-align: baseline;
+	border: 2px solid #E0861A;
+	width: 26px;
+	height: 26px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 500;
+	color: #fff;
+	background: #E0861A;
+}
+.fl-pagination-ctlr ul li a,
+.fl-pagination-ctlr ul li span{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 16px;
+	color: #4B4B4B;
+	font-weight: 500;
+	line-height: 1;
+}
+.fl-pagination-ctlr ul li a:hover{
+	color: #E0861A;
+}
+
+.fl-pagination-ctlr ul li a{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}

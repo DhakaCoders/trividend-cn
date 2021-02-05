@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nieuws Overzicht</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!--   <?php $favicon = get_theme_mod('favicon'); if(!empty($favicon)) { ?> 
+  <link rel="shortcut icon" href="<?php echo $favicon; ?>" />
+  <?php } ?> -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/font-awesome.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="assets/fancybox3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick.css">
+  <link rel="stylesheet" type="text/css" href="assets/swiper/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/fonts/custom-fonts.css">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->  
+
+  <svg style="display: none;">
+    <!-- <svg class="id-name" width="16" height="16" viewBox="0 0 16 16" fill="#FF5C26">
+      <use xlink:href="#id-name"></use> </svg> -->
+
+
+    <!-- start of Noyon -->
+
+
+
+
+    <!-- start of Shariful -->
+    <symbol id="fl-pre-svg" width="25" height="17" viewBox="0 0 25 17" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0.333689 9.37559L7.62447 16.6664C8.0693 17.1112 8.79073 17.1112 9.23556 16.6664C9.68048 16.2215 9.68048 15.5002 9.23556 15.0553L3.88949 9.70924H23.3608C23.9899 9.70924 24.5 9.19916 24.5 8.57005C24.5 7.94104 23.9899 7.43087 23.3608 7.43087H3.88949L9.23537 2.08481C9.68029 1.63989 9.68029 0.918646 9.23537 0.473726C9.013 0.251448 8.72137 0.140081 8.42983 0.140081C8.13829 0.140081 7.84675 0.251448 7.62429 0.473726L0.333689 7.76451C-0.111231 8.20943 -0.111231 8.93067 0.333689 9.37559Z"/>
+    </symbol>
+    <symbol id="fl-nxt-svg" width="25" height="17" viewBox="0 0 25 17" xmlns="http://www.w3.org/2000/svg">
+      <path d="M24.1663 9.37559L16.8755 16.6664C16.4307 17.1112 15.7093 17.1112 15.2644 16.6664C14.8195 16.2215 14.8195 15.5002 15.2644 15.0553L20.6105 9.70924H1.13919C0.510082 9.70924 0 9.19916 0 8.57005C0 7.94104 0.510082 7.43087 1.13919 7.43087H20.6105L15.2646 2.08481C14.8197 1.63989 14.8197 0.918646 15.2646 0.473726C15.487 0.251448 15.7786 0.140081 16.0702 0.140081C16.3617 0.140081 16.6532 0.251448 16.8757 0.473726L24.1663 7.76451C24.6112 8.20943 24.6112 8.93067 24.1663 9.37559Z"/>
+    </symbol>
+
+
+
+    <!-- start of Milon -->
+
+
+
+
+    
+  </svg>
+
+</head>
+<body>
+<header class="header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="header-inr">
+          <div class="header-left">
+            <div class="logo">
+              <a href="#"><img src="assets/images/logo.png"></a>
+            </div>
+          </div>
+          <div class="header-right">
+            <div class="header-menu">
+              <nav class="main-nav">
+                <ul class="clearfix reset-list">
+                  <li class="current-menu-item"><a href="#">Home</a></li>
+                  <li class="menu-item-has-children">
+                    <a href="#">Ik zoek financiering</a>
+                    <ul class="sub-menu" style="">
+                      <li><a href="#">Sub Menu</a></li>
+                      <li><a href="#">Sub Menu</a></li>
+                      <li><a href="#">Sub Menu</a></li>
+                      <li><a href="#">Sub Menu</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Investeren met impact</a></li>
+                  <li><a href="#">Hoe we investeren</a></li>
+                  <li><a href="#">Over Trivident</a></li>
+                  <li><a href="#">Nieuws</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="hdr-search">
+              <form action="">
+                <input type="text" placeholder="Search">
+              </form>
+              <button>
+                <i>
+                  <svg class="hdr-serach-icon" width="24" height="24" viewBox="0 0 24 24" fill="#E0861A">
+                    <use xlink:href="#hdr-serach-icon"></use>
+                  </svg>
+                </i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="tvd-nieuws-grd-sec">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="tvd-nieuws-grd-sec-inr">
+          <div class="tvd-nieuws-grd-entry-hdr">
+            <h1 class="tvd-nieuws-entry-hdr-title">Nieuws</h1>
+            <ul class="reset-list">
+              <li class="active"><a href="#">Filter</a></li>
+              <li><a href="#">Filter</a></li>
+              <li><a href="#">Filter</a></li>
+              <li><a href="#">Filter</a></li>
+              <li><a href="#">Filter</a></li>
+            </ul>
+          </div>
+          <div class="tvd-nieuws-grds-item">
+            <ul class="reset-list clearfix">
+              <li>
+               <div class="tvd-nieuws-grd-item">
+                 <div class="tvd-nieuws-grd-item-img-ctlr">
+                   <div class="tvd-nieuws-grd-item-img inline-bg" style="background: url('assets/images/tvd-nieuws-grd-img-01.jpg');"></div>
+                 </div>
+                 <div class="tvd-nieuws-grd-item-des">
+                   <h3 class="tvd-ngid-title"><a href="#">Dignissim nisi leo pellentesque purus tempor eros eu.</a></h3>
+                   <p>Diam aenean in cursus sollicitudin. Accumsan pharetra lectus ut purus nec quam massa non. </p>
+                   <a href="#">Lees meer</a>
+                 </div>
+               </div>
+              </li>
+              <li>
+               <div class="tvd-nieuws-grd-item">
+                 <div class="tvd-nieuws-grd-item-img-ctlr">
+                   <div class="tvd-nieuws-grd-item-img inline-bg" style="background: url('assets/images/tvd-nieuws-grd-img-02.jpg');"></div>
+                 </div>
+                 <div class="tvd-nieuws-grd-item-des">
+                   <h3 class="tvd-ngid-title"><a href="#">Interdum habitant morbi sem fermentum vel felis viverra imperdiet diam.</a></h3>
+                   <p>Diam aenean in cursus sollicitudin. Accumsan pharetra lectus ut purus nec quam massa non.</p>
+                   <a href="#">Lees meer</a>
+                 </div>
+               </div>
+              </li>
+              <li>
+               <div class="tvd-nieuws-grd-item">
+                 <div class="tvd-nieuws-grd-item-img-ctlr">
+                   <div class="tvd-nieuws-grd-item-img inline-bg" style="background: url('assets/images/tvd-nieuws-grd-img-04.jpg');"></div>
+                 </div>
+                 <div class="tvd-nieuws-grd-item-des">
+                   <h3 class="tvd-ngid-title"><a href="#">Eget scelerisque non eu cum commodo elit, donec eleifend at. </a></h3>
+                   <p>Diam aenean in cursus sollicitudin. Accumsan pharetra lectus ut purus nec quam massa non.</p>
+                   <a href="#">Lees meer</a>
+                 </div>
+               </div>
+              </li>
+              <li>
+               <div class="tvd-nieuws-grd-item">
+                 <div class="tvd-nieuws-grd-item-img-ctlr">
+                   <div class="tvd-nieuws-grd-item-img inline-bg" style="background: url('assets/images/tvd-nieuws-grd-img-05.jpg');"></div>
+                 </div>
+                 <div class="tvd-nieuws-grd-item-des">
+                   <h3 class="tvd-ngid-title"><a href="#">Dignissim nisi leo pellentesque purus tempor eros eu. </a></h3>
+                   <p>Diam aenean in cursus sollicitudin. Accumsan pharetra lectus ut purus nec quam massa non. </p>
+                   <a href="#">Lees meer</a>
+                 </div>
+               </div>
+              </li>
+              <li>
+               <div class="tvd-nieuws-grd-item">
+                 <div class="tvd-nieuws-grd-item-img-ctlr">
+                   <div class="tvd-nieuws-grd-item-img inline-bg" style="background: url('assets/images/tvd-nieuws-grd-img-03.jpg');"></div>
+                 </div>
+                 <div class="tvd-nieuws-grd-item-des">
+                   <h3 class="tvd-ngid-title"><a href="#">Interdum habitant morbi sem fermentum vel felis viverra imperdiet diam.</a></h3>
+                   <p>Diam aenean in cursus sollicitudin. Accumsan pharetra lectus ut purus nec quam massa non. </p>
+                   <a href="#">Lees meer</a>
+                 </div>
+               </div>
+              </li>
+              <li>
+               <div class="tvd-nieuws-grd-item">
+                 <div class="tvd-nieuws-grd-item-img-ctlr">
+                   <div class="tvd-nieuws-grd-item-img inline-bg" style="background: url('assets/images/tvd-nieuws-grd-img-06.jpg');"></div>
+                 </div>
+                 <div class="tvd-nieuws-grd-item-des">
+                   <h3 class="tvd-ngid-title"><a href="#">Eget scelerisque non eu cum commodo elit, donec eleifend at. </a></h3>
+                   <p>Diam aenean in cursus sollicitudin. Accumsan pharetra lectus ut purus nec quam massa non. </p>
+                   <a href="#">Lees meer</a>
+                 </div>
+               </div>
+              </li>
+              <li>
+               <div class="tvd-nieuws-grd-item">
+                 <div class="tvd-nieuws-grd-item-img-ctlr">
+                   <div class="tvd-nieuws-grd-item-img inline-bg" style="background: url('assets/images/tvd-nieuws-grd-img-01.jpg');"></div>
+                 </div>
+                 <div class="tvd-nieuws-grd-item-des">
+                   <h3 class="tvd-ngid-title"><a href="#">Dignissim nisi leo pellentesque purus tempor eros eu.</a></h3>
+                   <p>Diam aenean in cursus sollicitudin. Accumsan pharetra lectus ut purus nec quam massa non. </p>
+                   <a href="#">Lees meer</a>
+                 </div>
+               </div>
+              </li>
+              <li>
+               <div class="tvd-nieuws-grd-item">
+                 <div class="tvd-nieuws-grd-item-img-ctlr">
+                   <div class="tvd-nieuws-grd-item-img inline-bg" style="background: url('assets/images/tvd-nieuws-grd-img-02.jpg');"></div>
+                 </div>
+                 <div class="tvd-nieuws-grd-item-des">
+                   <h3 class="tvd-ngid-title"><a href="#">Interdum habitant morbi sem fermentum vel felis viverra imperdiet diam.</a></h3>
+                   <p>Diam aenean in cursus sollicitudin. Accumsan pharetra lectus ut purus nec quam massa non.</p>
+                   <a href="#">Lees meer</a>
+                 </div>
+               </div>
+              </li>
+              <li>
+               <div class="tvd-nieuws-grd-item">
+                 <div class="tvd-nieuws-grd-item-img-ctlr">
+                   <div class="tvd-nieuws-grd-item-img inline-bg" style="background: url('assets/images/tvd-nieuws-grd-img-04.jpg');"></div>
+                 </div>
+                 <div class="tvd-nieuws-grd-item-des">
+                   <h3 class="tvd-ngid-title"><a href="#">Eget scelerisque non eu cum commodo elit, donec eleifend at. </a></h3>
+                   <p>Diam aenean in cursus sollicitudin. Accumsan pharetra lectus ut purus nec quam massa non.</p>
+                   <a href="#">Lees meer</a>
+                 </div>
+               </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="fl-pagination-ctlr">
+          <ul class="reset-list page-numbers">
+            <li><a class=" " href="#">Vorige</a></li>
+            <li><span class="page-numbers current">1</span></li>
+            <li><a class="page-numbers" href="#">2</a></li>
+            <li><a class="page-numbers" href="#">3</a></li>
+            <li><a class="page-numbers" href="#">4</a></li>
+            <li><a class="page-numbers" href="#">5</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer-wrp">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="ftr-top clearfix">
+          <div class="ftr-logo-ctlr">
+            <div class="ftr-logo">
+              <a href="#">
+                <img src="assets/images/ftr-logo.png">
+              </a>
+            </div>
+            <div class="ftr-btm-logo">
+              <ul class="reset-list">
+                <li><a href="#"><img src="assets/images/ftr-btm-logo-1.png"></a></li>
+                <li><a href="#"><img src="assets/images/ftr-btm-logo-2.png"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="ftr-menu ftr-col-1">
+            <h4 class="ftr-menu-title">Navigatie</h4>
+            <div class="ftr-menu-des">
+              <ul class="reset-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Ik zoek financiering</a></li>
+                <li><a href="#">Investeren met impact</a></li>
+                <li><a href="#">Hoe we investeren</a></li>
+                <li><a href="#">Over Trivident</a></li>
+                <li><a href="#">Nieuws</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="ftr-menu ftr-col-2">
+            <h4 class="ftr-menu-title">Laatste Nieuws</h4>
+            <div class="ftr-menu-des">
+              <ul class="reset-list">
+                <li><a href="#">Dignissim nisi leo pellentesque purus <br> tempor eros eu. </a></li>
+                <li><a href="#">Interdum habitant morbi sem fermentum <br> vel felis viverra imperdiet diam.</a></li>
+                <li><a href="#">Eget scelerisque non eu cum commodo <br> elit, donec eleifend at. </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="ftr-menu ftr-col-3">
+            <h4 class="ftr-menu-title">Contact info</h4>
+            <div class="ftr-menu-des">
+              <div class="ftr-cnt-menu-cv">
+                <a href="#">Trividend cv</a>
+              </div>
+              <div class="ftr-cnt-menu-adrs">
+                <a href="#">Vooruitgangstraat 333/12 <br> 1030 Brussels</a>
+              </div>
+              <div class="ftr-cnt-menu-phn">
+                <a href="tel:022741451">02 274 14 51</a>
+              </div>
+              <div class="ftr-cnt-menu-mail">
+                <a href="mailto:info@trividend.be">info@trividend.be</a>
+              </div>
+              <div class="ftr-cnt-menu-vat">
+                <span>BTW: 0476 371 651</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="ftr-btm clearfix">
+          <div class="ftr-copywrite">
+            <p>&copy; 2020 Trividend. All Rights Reserved.</p>
+          </div>
+          <div class="ftr-btm-menu">
+            <ul class="reset-list">
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+          <div class="ftr-btm-designby">
+            <a href="#">Webdesign by conversal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap-select.min.js"></script>
+<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="assets/fancybox3/dist/jquery.fancybox.min.js"></script>
+<script src="assets/slick.slider/slick.js"></script>
+<script src="assets/swiper/swiper-bundle.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaRQsAJCZyyD6MbCg0jB_0sdLGEOxt97Y"></script>
+<script src="assets/js/jquery.matchHeight-min.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
