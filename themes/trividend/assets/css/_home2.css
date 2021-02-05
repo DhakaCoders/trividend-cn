@@ -61,8 +61,15 @@
 	bottom: 10px;
 	border-bottom: 140px solid #E0861A;
     border-left: 110px solid transparent;
+    width: 110px;
+    height: 140px;
 }
 
+.tvd-date-ctlr{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
 .tvd-date{
 	position: absolute;
 	bottom: 0;
@@ -111,9 +118,11 @@
 }
 .tvd-nieuws-slider-ctlr .fl-prev{
 	left: -65px;
+	top: 35%!important;
 }
 .tvd-nieuws-slider-ctlr .fl-next{
 	right: -65px;
+	top: 35%!important;
 }
 .tvd-nieuws-sec.tvd-nieuws-grds{
 	display: none!important;
