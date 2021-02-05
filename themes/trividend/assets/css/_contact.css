@@ -96,6 +96,7 @@
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input:focus{
 	border-color:#c0bebe;
 }
+.contact-form-wrp .wpforms-field-pagebreak .wpforms-clear button,
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button {
     max-width: 180px;
     width: 100%;
@@ -113,6 +114,7 @@
     cursor: pointer;
     padding: 15px 0 15px;
 }
+.contact-form-wrp .wpforms-field-pagebreak .wpforms-clear button:hover,
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button:hover{
 	background: transparent;
 	color: #E0861A;
