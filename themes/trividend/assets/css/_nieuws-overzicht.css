@@ -31,6 +31,9 @@
 .tvd-nieuws-grd-entry-hdr ul li.active a{
 	color: #E0861A;
 }
+.tvd-nieuws-grd-entry-hdr ul li a:hover{
+	color: #E0861A;
+}
 
 
 .tvd-nieuws-grds-item{
@@ -87,12 +90,14 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: relative;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 .fl-pagination-ctlr ul li{
-	display: inline-block;
-	vertical-align: baseline;
 	padding-left: 18px;
 	padding-right: 18px;
+	position: static;
 }
 .fl-pagination-ctlr ul li span.current{
 	display: inline-block;
@@ -120,11 +125,70 @@
 	color: #E0861A;
 }
 
-.fl-pagination-ctlr ul li a{
+.fl-pagination-ctlr ul li a.prev{
 	position: absolute;
-	left: 0;
+	left: 30px;
 	top: 50%;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
+}
+
+.fl-pagination-ctlr ul li a.prev, 
+.fl-pagination-ctlr ul li a.next {
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 16px;
+    line-height: 1;
+    color: #4B4B4B;
+    font-weight: 500;
+}
+.fl-pagination-ctlr ul li a.prev {
+    padding-left: 28px;
+}
+.fl-pagination-ctlr ul li a.prev i {
+    position: absolute;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    left: 0;
+    top: 50%;
+}
+
+.fl-pagination-ctlr ul li a.next{
+	position: absolute;
+	right: 30px;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+.fl-pagination-ctlr ul li a.next{
+	padding-right: 28px;
+}
+.fl-pagination-ctlr ul li a.next i{
+	position: absolute;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    right: 0;
+    top: 50%;
+}
+
+.fl-pagination-ctlr ul li a.prev:hover, 
+.fl-pagination-ctlr ul li a.prev:hover span, 
+.fl-pagination-ctlr ul li a.next:hover, 
+.fl-pagination-ctlr ul li a.next:hover span {
+    color: #E0861A;
+}
+.fl-pagination-ctlr ul li a.next:hover svg, 
+.fl-pagination-ctlr ul li a.prev:hover svg {
+    fill: #E0861A;
+}
+
+.fl-pagination-ctlr ul li a.prev:hover i {
+    margin-left: -3px;
+}
+.fl-pagination-ctlr ul li a.next:hover i {
+    margin-right: -3px;
 }
