@@ -41,8 +41,6 @@
 	margin-right: -12px;
 }
 .tvd-nieuws-grds{
-	float: left;
-	width: 33.3333%;
 	padding-left: 12px;
 	padding-right: 12px;
 	padding-bottom: 25px;
@@ -50,19 +48,24 @@
 
 .tvd-nieuws-img-ctlr{
 	position: relative;
+	overflow: hidden;
 }
 .tvd-nieuws-img{
 	min-height: 310px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
 }
 
 .tvd-triangle{
+	position: relative;
+}
+.tvd-tringle-border{
 	position: absolute;
 	right: 10px;
 	bottom: 10px;
 	border-bottom: 140px solid #E0861A;
     border-left: 110px solid transparent;
-    width: 110px;
-    height: 140px;
 }
 
 .tvd-date-ctlr{
@@ -72,8 +75,22 @@
 }
 .tvd-date{
 	position: absolute;
-	bottom: 0;
-	left: 0;
+	bottom: 20px;
+	right: 20px;
+}
+.tvd-date strong{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 24px;
+	color: #fff;
+	font-weight: 700;
+}
+.tvd-date span{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 16px;
+	color: #fff;
+	font-weight: 400;
 }
 .tvd-nieuws-grd-item-des{
 	padding-top: 18px;
@@ -89,7 +106,13 @@
 .tvd-nieuws-grd-item-des-title > a{
 	color: #4B4B4B;
 }
-.tvd-nieuws-grd-item-des p{
+.tvd-nieuws-grd-item-des-title > a:hover{
+	color: #E0861A;
+}
+.tvd-nieuws-grd-item-con{
+	padding-bottom: 1px;
+}
+.tvd-nieuws-grd-item-con p{
 	margin-bottom: 18px;
 }
 .tvd-nieuws-grd-item-des > a{
@@ -99,6 +122,12 @@
 	font-weight: 700;
 	padding-left: 30px;
 	position: relative;
+}
+.tvd-nieuws-grd-item-des > a:hover{
+	color: #E0861A;
+}
+.tvd-nieuws-grd-item-des > a:hover:before{
+	background: #E0861A;
 }
 .tvd-nieuws-grd-item-des > a:before{
 	content: "";
@@ -132,6 +161,12 @@
 }
 .tvd-nieuws-sec.slick-initialized.tvd-nieuws-grds{
 	display: block!important;
+}
+
+.tvd-nieuws-grd-item:hover .tvd-nieuws-img{
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
 }
 
 
@@ -199,6 +234,10 @@
 	background: #42BD73;
 	border: 2px solid #42BD73;
 }
+.tvd-fin-inr a:hover{
+	background: #E0861A;
+	border-color: #E0861A;
+}
 
 .tvd-inputfields-row.diveder2{
 	margin-left: -13px;
@@ -265,7 +304,7 @@
 
 .tvd-inputfield input[type=text]:focus,
 .tvd-inputfield input[type=email]:focus{
-	border-color: #4B4B4B;
+	border-color: #42BD73;
 }
 
 .cnt-btn input[type=submit]{
@@ -297,4 +336,7 @@
 .tvd-inputfield em p a{
 	color: #6A6A6A;
 	text-decoration: underline;
+}
+.tvd-inputfield em p a:hover{
+	color: #E0861A;
 }

@@ -185,6 +185,20 @@ ol li::before {
 	top: 28px;
 	left: 25px;
 }
+.dft-blockquote blockquote strong{
+	display: block;
+	margin-top: 20px;
+}
+.dft-blockquote-triangle{
+	position: relative;
+}
+.dft-blockquote-border{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	border-top: 125px solid #8B0102;
+    border-right: 100px solid transparent;
+}
 
 .default-page-con hr{
 	border-top: 2px solid #F9F9F9;
@@ -193,6 +207,83 @@ ol li::before {
 	margin-top: 20px;
 }
 
+
+.dfp-convarsal-module{
+	background: #F9F9F9;
+	padding: 70px 15px;
+	margin-bottom: 40px;
+}
+.dfp-covesal-logo{
+	margin-bottom: 28px;
+}
+.dfp-convarsal-module .dfp-text-module p strong{
+	color: #4B4B4B;
+	font-weight: 500;
+}
+
+.dfp-goal-1{
+	float: left;
+	width: 33.3333%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.dfp-goal-2{
+	float: left;
+	width: 33.3333%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.dfp-goal-3{
+	float: left;
+	width: 33.3333%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.dfp-goal{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.dfp-goal-img{
+	display: inline-block;
+	vertical-align: baseline;
+}
+.dfp-goal-des{
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+
+
+.dfp-conversal-text-module p{
+	font-size: 10px;
+	line-height: 18px;
+	margin-bottom: 12px;
+}
+.dfp-conversal-text-module p strong{
+	font-size: 16px;
+}
+.dfp-conversal-text-module p:last-child{
+	margin-bottom: 0;
+}
+
+.dfp-convarsal-triangle{
+	position: relative;
+}
+.dfp-convarsal-border{
+	position: absolute;
+	top: -30px;
+	right: 0;
+	border-top: 110px solid #8B0102;
+    border-left: 85px solid transparent;
+}
+.dfp-convarsal-triangle i{
+	position: absolute;
+	top: -16px;
+	right: 16px;
+	max-width: 26px;
+}
 
 /*
 Gallery design
@@ -336,6 +427,7 @@ Gallery design
 	margin-right: -12px;
 }
 .dfp-nieuws-module .tvd-nieuws-grds{
+	float: left;
 	width: 50%;
 }
 
@@ -423,6 +515,31 @@ Gallery design
 }
 .dfp-accordion h5.active i{
 	color: #fff;
+}
+
+.dfp-klanten-module{
+	background: #F9F9F9;
+	padding-top: 55px;
+	padding-bottom: 1px;
+	margin-bottom: 25px;
+}
+.dfp-klanten-module .tvd-customer-slider-ctlr{
+	margin-left: 0;
+	margin-right: 0;
+}
+.dfp-klanten-module .tvd-customer-title{
+	margin-bottom: 35px;
+}
+
+.dfp-des-lft{
+	float: left;
+	width: 50%;
+	padding-right: 15px;
+}
+.dfp-des-rgt{
+	float: right;
+	width: 50%;
+	padding-right: 15px;
 }
 
 /*table*/
