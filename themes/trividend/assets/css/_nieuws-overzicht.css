@@ -81,7 +81,10 @@
 .tvd-ngid-title a{
 	color: #4B4B4B;
 }
-.tvd-nieuws-grd-item-des p{
+.tvd-nieuws-grd-item-con{
+	padding-bottom: 1px;
+}
+.tvd-nieuws-grd-item-con p{
 	margin-bottom: 18px;
 }
 

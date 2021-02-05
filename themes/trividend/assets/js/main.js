@@ -318,6 +318,19 @@ google.maps.event.addDomListener(window, 'load', initialize);
         
       });
 
+     if($('.bnpgnSlider').length ){
+      $('.bnpgnSlider').slick({
+        dots: true,
+        infinite: false,
+        autoplay: true,
+        arrows: false,
+        autoplaySpeed: 2000,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+      });
+    }
+
 
 
 
