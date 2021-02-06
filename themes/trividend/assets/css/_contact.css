@@ -16,6 +16,15 @@
 	float: right;
 	padding-left: 25px;
 }
+.page-banner-sec-wrp .tvd-nieuws-entry-hdr-title{
+	margin-bottom: 0;
+}
+.page-banner-sec-wrp .tvd-nieuws-grd-entry-hdr {
+    margin-bottom: 80px;
+}
+.page-banner-sec-wrp .tvd-nieuws-grd-entry-hdr p{
+	display: none;
+}
 /*
 ---------------------
  Contact Form
@@ -59,7 +68,7 @@
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
     border:2px solid#fff;
 	box-sizing: border-box;
-	padding: 17px 20px 18px;
+	padding: 15px 20px 16px;
 	color: #D0D0D0;
 	font-weight: 400;
 	font-size: 16px;
@@ -153,7 +162,15 @@
     text-align: left;
     font-style: italic;
 }
-
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container p a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: underline;
+	color: #6A6A6A;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container p a:hover{
+	color: #E0861A;
+}
 .contact-form-info{
 	background: #FAEDDD;
 	padding: 55px 60px 30px;
@@ -161,6 +178,9 @@
 .contact-form-info h2{
 	color:#4B4B4B;
 	margin-bottom: 15px; 
+}
+.contact-form-info ul{
+	padding-left: 5px;
 }
 .contact-form-info  ul li{
 	display: block;
@@ -352,4 +372,219 @@
 	vertical-align: baseline;
 	text-decoration: none;
 	color:#E0861A;
+}
+.tvd-team-grid-info ul li a:hover{
+	color:#8B0102; 
+}
+.tvd-team-grid-info ul li a:hover i svg{
+	fill:#8B0102; 
+}
+
+/*
+-------------------
+ Responsive css
+-------------------
+*/
+
+@media(max-width: 1199px){
+	.contact-form-sec-wrp {
+	    padding: 80px 0;
+	}
+	.contact-form-info {
+	    padding: 55px 40px 30px;
+	}
+	.contact-form-info ul li a br{
+		display: none;
+	}
+	.contact-form-info h2{
+		font-size: 28px;
+	}
+	.tvd-team-member-wec-wrp {
+	    padding-top: 65px;
+	}
+	.tvd-team-member-wec-wrp .tvd-nieuws-enty-hdr p {
+	    margin-bottom: 45px;
+	}
+	.tvd-team-member-wec-wrp .tvd-nieuws-enty-hdr-title{
+		font-size: 28px;
+	}
+	.tvd-team-grid-slide-item-img {
+	    min-height: 365px;
+	}
+	.tvd-team-grid-mk h3.fl-h3{
+		font-size: 22px;
+	}
+	.tvd-team-grid-mk span{
+		font-size: 15px;
+	}
+	.page-banner-sec-wrp .tvd-nieuws-entry-hdr-title {
+	    font-size: 55px;
+	}
+	.page-banner-sec-wrp .tvd-nieuws-grd-entry-hdr {
+	    margin-bottom: 70px;
+	}
+
+
+}
+
+@media(max-width: 991px){
+	.contact-form-sec-wrp {
+	    padding: 60px 0;
+	}
+	.contact-form-info {
+	    padding: 55px 20px 30px 30px;
+	}
+	.contact-form-info h2{
+		font-size: 26px;
+	}
+	.tvd-team-member-wec-wrp {
+	    padding-top: 55px;
+	}
+	.tvd-team-member-wec-wrp .tvd-nieuws-enty-hdr p {
+	    margin-bottom: 35px;
+	}
+	.tvd-team-member-wec-wrp .tvd-nieuws-enty-hdr-title{
+		font-size: 26px;
+	}
+	.tvd-team-grid-slide-item-img {
+	    min-height: 335px;
+	}
+	.tvd-team-grid-mk h3.fl-h3{
+		font-size: 20px;
+	}
+	.tvd-team-grid-mk span{
+		font-size: 14px;
+	}
+	.tvd-team-grid-wrp{
+		padding-bottom: 60px;
+	}
+	.page-banner-sec-wrp .tvd-nieuws-entry-hdr-title {
+	    font-size: 50px;
+	}
+	.page-banner-sec-wrp .tvd-nieuws-grd-entry-hdr {
+	    margin-bottom: 50px;
+	}
+	
+}
+
+@media(max-width: 767px){
+	.page-banner-sec-wrp .tvd-nieuws-grd-entry-hdr p{
+		display: block;
+		font-size: 12px;
+		line-height: 18px;
+		color: #6A6A6A;
+		margin-bottom: 0;
+		margin-top: 10px;
+	}
+	.contact-form-sec-wrp {
+	    padding: 30px 0 40px;
+	}
+	.contact-form-rgt {
+	    width: 100%;
+	    float: right;
+	    padding-left: 0;
+	    padding-top: 40px;
+	}
+	.contact-form-info {
+	    padding: 30px 20px 5px 20px;
+	    margin-left: -20px;
+	    margin-right: -20px;
+	}
+	.contact-form-info h2{
+		font-size: 24px;
+	}
+	.contact-form-lft {
+	    width: 100%;
+	}
+	.contact-form-info ul li span,
+	.contact-form-info ul li a{
+		font-size: 14px;
+	}
+	.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field label {
+	    font-size: 12px;
+	    line-height: 14px;
+	}
+	.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input {
+	    height: 40px;
+	    padding: 10px 15px 11px;
+	    font-size: 12px;
+	    line-height: 14px;
+	}
+	.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field {
+	    margin-bottom: 15px;
+	}
+	.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-textarea textarea {
+	    font-size: 12px;
+	    line-height: 14px;
+	    padding: 10px 15px;
+	}
+	.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container p{
+		margin-bottom: 20px;
+	}
+	.contact-form-wrp .wpforms-field-pagebreak .wpforms-clear button, .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button {
+	    max-width: 140px;
+	    width: 100%;
+	    height: 40px;
+	    font-size: 12px;
+	    line-height: 14px;
+	    padding: 12px 0 12px;
+	}
+	.tvd-team-member-wec-wrp {
+	    padding-top: 45px;
+	}
+	.tvd-team-member-wec-wrp .tvd-nieuws-enty-hdr p {
+	    margin-bottom: 30px;
+	}
+	.tvd-team-member-wec-wrp .tvd-nieuws-enty-hdr-title{
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+	.tvd-team-grid-slide-item-img {
+	    min-height: 280px;
+	}
+	.tvd-team-grid-mk h3.fl-h3{
+		font-size: 18px;
+		margin-bottom: 3px;
+	}
+	.tvd-team-grid-mk span{
+		font-size: 12px;
+	}
+	.tvd-team-grid-info ul li{
+		font-size: 14px;
+	}
+	.tvd-team-grid-wrp{
+		padding-bottom: 55px;
+	}
+	.page-banner-sec-wrp .tvd-nieuws-entry-hdr-title {
+	    font-size: 40px;
+	}
+	.page-banner-sec-wrp .tvd-nieuws-grd-entry-hdr {
+	    margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 575px){
+	.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field {
+	    width: 100%;
+	}
+	.tvd-team-grid-slider.slick-dotted.slick-slider {
+	    margin-bottom: 0;
+	}
+	.tvd-team-grid-slider.slick-slider ul.slick-dots {
+	    text-align: left;
+	    padding-left: 9px !important;
+	    margin-top: 14px !important;
+	}
+	.page-banner-sec-wrp .tvd-nieuws-entry-hdr-title {
+	    font-size: 30px;
+	}
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
 }
