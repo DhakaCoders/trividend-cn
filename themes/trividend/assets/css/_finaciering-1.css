@@ -109,7 +109,7 @@ steps-form-sec-wrp
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.ProjectFull{
 	width: 100%;
 }
-.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.ProjectFull input{
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.ProjectFull textarea{
 	height: 166px;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-page{

@@ -83,6 +83,7 @@
 	width: 100%;
 	margin-bottom: 15px;
 }
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.ProjectFull textarea,
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-textarea textarea{
 	width: 100%;
 	height: 150px;
