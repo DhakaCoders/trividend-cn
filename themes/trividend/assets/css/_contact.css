@@ -575,8 +575,8 @@
 	    margin-bottom: 30px;
 	}
 	.tvd-team-grid-bdr {
-	    margin-left: 0;
-	    margin-right: 0;
+	    margin-left: -20px;
+	    margin-right: -20px;
 	}
 }
 
