@@ -1,0 +1,146 @@
+
+.tvd-diensten-sec{
+	padding-bottom: 130px;
+}
+
+.tvd-diensten-sec-inr{
+	display: flex;
+	align-items: center;
+}
+.tvd-diensten-lft{
+	width: 50%;
+}
+.tvd-diensten-rgt{
+	width: 50%;
+	padding-left: 65px;
+	padding-right: 65px;
+}
+.tvd-diensten-img{
+	min-height: 550px;
+}
+
+.tvd-diensten-title{
+	display: block;
+	font-size: 60px;
+	line-height: 1;
+	margin-bottom: 20px;
+	font-weight: 700;
+	color: #8B0102;
+}
+
+
+.tvd-process-sec{
+	background: #F9F9F9;
+	padding-top: 90px;
+	padding-bottom: 50px;
+}
+.tvd-process-entry-hdr{
+	text-align: center;
+}
+.tvd-process-entry-hdr-title{
+	display: block;
+	font-size: 30px;
+	line-height: 1;
+	margin-bottom: 18px;
+	font-weight: 700;
+	color: #8B0102;
+	text-transform: capitalize;
+}
+
+.tvd-process-entry-hdr p{
+	margin-bottom: 40px;
+	padding-bottom: 30px;
+	position: relative;
+}
+.tvd-process-entry-hdr p:after{
+	content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    height: 14px;
+    width: 100px;
+    background: url(../images/border-btm.jpg);
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    background-position: center center!important;
+}
+
+.tvd-process-grds ul{
+	margin-left: -28px;
+	margin-right: -28px;
+}
+.tvd-process-grds ul li{
+	float: left;
+	width: 20%;
+	padding-left: 28px;
+	padding-right: 28px;
+	padding-bottom: 20px;
+}
+.tvd-process-grd-item{
+	text-align: center;
+}
+
+.tvd-pgi-img{
+	width: 120px;
+	height: 120px;
+	background: #E0861A;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	position: relative;
+}
+.tvd-pgi-img-border{
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	border-top: 30px solid #8B0102;
+    border-right: 25px solid transparent;
+}
+.tvd-pgi-img i{
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+
+.tvd-pgi-des-title{
+	display: block;
+	font-size: 24px;
+	line-height: 1;
+	margin-bottom: 8px;
+	font-weight: 500;
+	color: #4B4B4B;
+}
+
+
+
+.dfp-corona-module{
+	background: #DFF4E8;
+	padding: 70px 90px;
+}
+.corona-module-title{
+	display: block;
+	font-size: 30px;
+	line-height: 1;
+	margin-bottom: 10px;
+	font-weight: 700;
+	color: #4B4B4B;
+}
+
+.dfp-corona-module-inr a{
+	width: 240px;
+	height: 50px;
+	font-size: 16px;
+	line-height: 1;
+	color: #fff;
+	background: #42BD73;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #42BD73;
+}
