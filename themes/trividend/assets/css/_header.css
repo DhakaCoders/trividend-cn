@@ -176,3 +176,17 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a:hover{
 .hdr-search-input-show button i svg{
 	fill: #8B0102;
 }
+
+
+
+@media(max-width: 1399px){
+    .header-menu {
+        padding-right: 30px;
+    }
+    nav.main-nav > ul > li{
+        padding: 0 15px;
+    }
+    nav.main-nav > ul > li > a{
+        font-size: 15px;
+    }
+}

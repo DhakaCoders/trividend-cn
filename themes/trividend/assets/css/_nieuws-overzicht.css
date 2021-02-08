@@ -209,3 +209,68 @@
 .fl-pagination-ctlr ul li a.next:hover i {
     margin-right: -3px;
 }
+
+
+/*min width*/
+
+@media(min-width: 1599px){
+	
+}
+@media(min-width: 1920px){
+	
+}
+/*min width*/
+@media(max-width: 1599px){
+
+}
+@media(max-width: 1599px){
+	
+}
+@media(max-width: 1499px){
+
+}
+@media(max-width: 1399px){
+	
+}
+
+@media(max-width: 1399px){
+	.tvd-ngid-title{
+		font-size: 22px;
+	}
+	.tvd-nieuws-entry-hdr-title{
+		font-size: 55px;
+	}
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+
+	
+
+}
+
+@media(max-width: 991px){
+	
+	
+}
+
+@media(max-width: 767px){
+	
+}
+
+@media(max-width: 575px){
+	
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
+}
