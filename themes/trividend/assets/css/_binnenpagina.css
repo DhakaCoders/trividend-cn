@@ -21,6 +21,9 @@
 	margin-bottom: 30px;
 	line-height: 1.1;
 }
+.default-page-con h2.red-color{
+	color: #8B0102;
+}
 .dft-text-module{
 	padding-bottom: 20px;
 }
@@ -129,6 +132,9 @@ ol li::before {
 	background-size: cover!important;
 	background-repeat: no-repeat!important;
 	background-position: center center!important;
+}
+.fl-dft-lftimg-rgtdes-lft-img-inr img{
+	display: none;
 }
 .fl-dft-lftimg-rgtdes-lft,
 .fl-dft-lftimg-rgtdes-rgt {
@@ -785,15 +791,31 @@ Gallery design
 
 
 @media(max-width: 1199px){
-	
+	.dfp-promo-module h1, 
+	.dfp-promo-module-title {
+	    font-size: 50px;
+	}
+	.dfp-convarsal-module{
+		padding: 50px 0;
+		margin-left: -43px;
+    	margin-right: -43px;
+	}
+	.dfp-conversal-module-inr {
+	    padding-left: 43px;
+	    padding-right: 43px;
+	}
+	.dfp-goal-des p {
+	    font-size: 13px;
+	}
 	
 	
 }
 
 
 @media(max-width: 991px){
-	.dfp-promo-module h1, .dfp-promo-module-title{
-		font-size: 34px;
+	.dfp-promo-module h1, 
+	.dfp-promo-module-title{
+		font-size: 45px;
 	}
 	
 	.dft-gallery-img-slider-cntlr{
@@ -802,8 +824,66 @@ Gallery design
 	.innerpage-con-wrap{
 		padding-bottom: 100px;
 	}
-	.dfp-usp-module{
-		margin-bottom: 60px;
+	.dfp-fin-module .tvd-fin-inr {
+	    padding-bottom: 60px;
+	    padding-left: 50px;
+	    padding-right: 50px;
+	}
+	.dfp-fin-module {
+	    margin-bottom: 80px;
+	}
+	.dfp-klanten-module{
+		padding-top: 45px;
+	}
+	.tvd-customer-slider {
+	    margin-bottom: 50px!important;
+	}
+	.dfp-covesal-logo {
+	    margin-bottom: 50px;
+	}
+	.dfp-goal {
+	    margin-left: 0;
+	    margin-right: 0;
+	    margin-bottom: 30px;
+	    display: block;
+	}
+	.dfp-goal-1,
+	.dfp-goal-2,
+	.dfp-goal-3{
+	    width: 100%;
+	    padding-left: 0;
+	    padding-right: 0;
+	    display: block;
+	}
+	.dfp-goal-img i{
+		display: none;
+	}
+	.dfp-goal-des p{
+		font-size: 12px;
+		display: inline-block;
+		vertical-align: baseline;
+	}
+	.dfp-goal-des{
+		padding-left: 15px;
+		position: relative;
+	}
+	.dfp-goal-des:before{
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		width: 6px;
+		height: 6px;
+		background: #A21943;
+	}
+	.dfp-goal-2.green .dfp-goal-des:before{
+		background: #3F7E45;
+	}
+	.dfp-goal-2.blue .dfp-goal-des:before{
+		background: #14496B;
 	}
 }
 @media(max-width: 850px){
@@ -811,12 +891,13 @@ Gallery design
 }
 
 @media(max-width: 767px){
-	.dfp-promo-module h1, .dfp-promo-module-title{
-		font-size: 32px;
+	.dfp-promo-module h1, 
+	.dfp-promo-module-title{
+		font-size: 40px;
+		margin-bottom: 20px;
 	}
-	.fl-dft-lftimg-rgtdes-lft, 
-	.fl-dft-lftimg-rgtdes-rgt {
-	    width: 100%;
+	.dfp-promo-module {
+	    padding-bottom: 25px;
 	}
 	.fl-dft-lftimg-rgtdes-lft,
 	.fl-dft-lftimg-rgtdes-lft-img-inr {
@@ -824,13 +905,10 @@ Gallery design
 	    height: 100%;
 	}
 	.fl-dft-lftimg-rgtdes-rgt{
-		padding-left: 0;
+		padding-left: 15px;
 	}
 	.default-page-con .dft-grd-col-list-item ul {
 	    width: 100%;
-	}
-	.fl-dft-lftimg-rgtdes-rgt{
-		padding-top: 40px;
 	}
 	.dft-img-title-grd-col{
 		width: 100%;
@@ -846,72 +924,58 @@ Gallery design
 		padding-top: 70px;
 		padding-bottom: 70px;
 	}
-	.dft-blockquote blockquote{
-		font-size: 30px;
-		padding: 110px 20px 35px 30px;
+	.dft-blockquote blockquote {
+	    font-size: 12px;
+	    padding: 85px 30px 48px 60px;
 	}
-	.dft-blockquote i{
-		top: 65px;
-		left: 30px;
+	.dft-blockquote-border{
+		border-top: 110px solid #8B0102;
+    	border-right: 90px solid transparent;
 	}
-	.dfp-usp-module{
-		margin-bottom: 30px;
-	}
-	.dfp-usp-module .nw-usp-sec-inr ul li {
-	    width: 100%;
-	    padding-left: 0;
-	    padding-right: 20px;
-	}
-	.dfp-usp-module {
-	    padding-bottom: 30px;
-	}
-	.dfp-realization-module .realizatin-grds {
-	    margin-left: 0;
-	    margin-right: 0;
-	    padding-left: 0;
-	}
-	.dfp-realization-module .realization-grds-items {
-	    width: 100%;
-	    padding-left: 0;
-	    padding-right: 0;
-	    padding-bottom: 0;
-	}
-	.dfp-realization-module{
-		position: relative;
-	}
-	.dfp-realization-module .fl-prev{
-		left: -18px!important;
-		top: 25%;
-	}
-	.dfp-realization-module .fl-next{
-		right: -18px!important;
-		top: 25%;
-	}
-	.dfp-realization-module .realizatin-grd-item-des{
-		border-bottom: none;
-	}
-	.dfp-realization-module .slick-slider ul.slick-dots{
-		display: none!important;
+	.dft-blockquote i {
+	    top: 25px;
+	    left: 22px;
 	}
 	.default-page-con hr{
 		margin-bottom: 25px;
 		margin-top: 0px;
 	}
-	.fl-dft-lftimg-rgtdes{
-		padding-bottom: 45px;
+	.default-page-con p {
+	    margin-bottom: 18px;
 	}
-	.dfp-realization-module .realizatin-grd-item-des p{
-		margin-bottom: 15px;
+	.default-page-con ul li, ul li{
+		padding-bottom: 0;
 	}
-	.dfp-usp-module{
-		margin-left: -20px;
-		margin-right: -20px;
+	.dfp-nieuws-module {
+	    margin-left: 0;
+	    margin-right: 0;
 	}
-	.xs-dfp-plate-one-img-bx{
-		min-height: 300px;
+	.dfp-nieuws-module .tvd-nieuws-grds {
+	    width: 100%;
+	    padding-left: 0;
+	    padding-right: 0;
+	    padding-bottom: 25px;
 	}
-	.dfp-realization-module .realizatin-grd-item-des {
-	    padding: 15px 20px 0px 0px;
+	.dfp-nieuws-module.slick-slider ul.slick-dots{
+		position: absolute;
+		right: 0;
+		bottom: 28px;
+	}
+	.dfp-fin-module .tvd-fin-inr {
+	    padding-left: 30px;
+	    padding-right: 30px;
+	}
+	.dfp-fin-module {
+	    margin-bottom: 70px;
+	}
+	.dfp-klanten-module {
+	    padding-top: 35px;
+	}
+	.dfp-klanten-module .tvd-customer-title {
+	    margin-bottom: 25px;
+	}
+	.dfp-goal-des:before{
+		margin-top: -8px;
 	}
 }
 
@@ -959,7 +1023,8 @@ Gallery design
 	.dft-heading-txt-module{
 		margin-bottom: 50px;
 	}
-	.dfp-promo-module h1, .dfp-promo-module-title{
+	.dfp-promo-module h1, 
+	.dfp-promo-module-title{
 		margin-bottom: 20px;
 		font-size: 30px;
 	}
@@ -973,19 +1038,8 @@ Gallery design
 	.innerpage-con-wrap{
 		padding-bottom: 50px;
 	}
-	.dfp-realization-module .realizatin-grd-item-des{
-		padding-right: 0px;
-	}
-	.dfp-realization-module .realization-grd-item-img{
-		min-height: 210px;
-	}
-	.dfp-realization-module .fl-next,
-	.dfp-realization-module .fl-prev{
-		top: 25%!important;
-	}
 	.dft-blockquote blockquote {
-	    font-size: 27px;
-	    padding: 110px 10px 35px 20px;
+	    padding: 135px 30px 48px 60px;
 	}
 	.dft-blockquote i {
 	    left: 20px;
@@ -997,13 +1051,6 @@ Gallery design
 	.dfp-promo-module h1, 
 	.dfp-promo-module-title{
 		font-size: 26px;
-	}
-	.dfp-usp-module .nw-usp-grd-item-des i{
-		max-width: 40px;
-		margin-right: 15px;
-	}
-	.dfp-usp-module .usp-grd-item-title{
-		font-size: 18px;
 	}
 }
 
