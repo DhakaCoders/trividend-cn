@@ -229,6 +229,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
       speed: 300,
       slidesToShow: 1,
       slidesToScroll: 1,
+      prevArrow: $('.hm-banner-cntlr .fl-nxt-prev .fl-prev'),
+      nextArrow: $('.hm-banner-cntlr .fl-nxt-prev .fl-next'),
       responsive: [
         {
           breakpoint: 1024,
