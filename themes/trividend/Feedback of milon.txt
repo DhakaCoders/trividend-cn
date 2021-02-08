@@ -1,0 +1,64 @@
+Contact
+------------------------
+Desktop
+
+
+1. https://prnt.sc/yooip4
+	error asteche.
+
+2. https://prnt.sc/yooke3
+	aikhane class daw. '.fl-h1'
+	font-size and line height typo thake asbe.
+	r baki sob '.tvd-nieuws-entry-hdr-title' ai calss ta diye korte hobe.
+
+	aivabe joto heading ache sobgulote same hobe , jgulote amra class niyechi.
+
+
+	kothao jodi amon hoy j h1 dite hosche r font-size h2 ar tahole amra 
+
+	h1 tag use korbo akta nijer moto class nibo then tar sathe 'fl-h2' class dibo.
+
+
+	avabe sokol heading manage korte hobe.
+
+	https://prnt.sc/yop8e8
+
+
+
+3. https://prnt.sc/yooour
+	atate click korle ai class ta '.wpforms-has-error' remove hoye jabe.
+
+	2 ta filed a validation rekhe check korte hobe. aktate click korle jeno sobgulor na chole jay.
+	jetar close a click korbe setar chole jabe.
+
+4. https://prnt.sc/yoor39
+	ai class ta tule dile ai div ta show hoye thakteche. ai div ta age thakei none kore rakhte hobe.
+	class ta add hole show hobe.
+
+
+5. https://prnt.sc/yoov9c
+	ai border ta jehetu 1px tahole focus border o 1px hobe.
+
+
+6. https://prnt.sc/yoowjx
+	button tar charpase white hoye ache.
+	border color dite hobe. button ar bg te jeta ache.
+
+7. https://prnt.sc/yop4rp
+	page reload dile slider item gulo j break hoye jay seta off korar kono code dekhtechina.
+
+
+8. https://prnt.sc/yop6d4
+	text jodi bere jay , tahole left and right a lege jasche. padding lagbe. amon jodi aro kothao problem thake fix koro.
+
+
+9. https://prnt.sc/yop76k
+	heading ar vitore link hobe and hover color dite hobe.
+
+
+10. https://prnt.sc/yop9uh
+	2 ta p use korle 2 ta line hosche. p ar pore akta span niye img tag a svg dite paro.
+
+
+	
+	
