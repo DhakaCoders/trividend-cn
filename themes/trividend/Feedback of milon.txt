@@ -64,8 +64,49 @@ Desktop--->
 	last child na dhore li te akta class daw j , '.text-code'
 	then ai class ta dhore manage koro.	
 
+12. https://prnt.sc/yor0f0
+	alignment ta mileni.
 
+	
 
-
+Overons
 ------------------------
 Desktop--->
+
+1. https://prnt.sc/yoqh6o
+	amader 2 bar container width update hoyeche,
+	tai 
+	https://prnt.sc/yoqho6
+	ai media guloteo responsive kore rakhte hobe. ai media gulo teo 1920px ar look tai rakhte hobe hobe 
+	ate jodi amader gap , font-size etc komate hoy to amra komabo.
+
+	ai technique ta sob element ar jonnoi hobe.
+
+
+2. i) https://prnt.sc/yoqk9b
+	class use kora jabena aikhane. parent dhore ul ar code reset korte hobe
+   ii) https://prnt.sc/yoqm7j
+   	aigulo akta div ar moddhe hobe. aigulo akta editor thake asbe. tai ul a class nite parbona. 
+
+   	r heading 2 ta alada vabe call hobe tai class nite parbo amra.
+
+
+
+ 3. https://prnt.sc/yoqouf
+ 	ai div ar vitore akta img tag diye img ta use kore rkahte hobe, jodi div a na dorkar hoy img tag a dorkar hoy tahole amra customize kore nite parbo pore.
+
+ 	same vabe amon joto img ache sobgulote korte hobe.
+
+
+ 4. https://prnt.sc/yoqsv1
+ 	hover a text color ta border ar color ta hobe.
+
+
+ 5. https://prnt.sc/yoqutb
+ 	ai page a gap ta kom hoyeche.
+
+
+ 6. https://prnt.sc/yoqyst
+ 	alignment ta mileni.
+
+
