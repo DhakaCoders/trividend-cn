@@ -42,7 +42,7 @@ ul{
 	margin: 0;
 	padding: 0;
 	padding-left: 0;
-	padding-bottom: 0px;
+	padding-bottom: 20px;
 }
 .default-page-con ul li,
 ul li {
@@ -419,6 +419,13 @@ Gallery design
     font-size: 20px;
     line-height: 1;
 }
+.fancy-border{
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	border-top: 50px solid #E0861A;
+    border-right: 40px solid transparent;
+}
 
 /*extra*/
 
@@ -692,6 +699,19 @@ Gallery design
 	background: #42BD73;
 	color: #fff;
 	border-color: #42BD73;
+}
+
+.dfp-btn-inr ul li a:hover{
+	background: #42BD73;
+	color: #fff;
+}
+.dfp-btn-inr ul li.orange a:hover{
+	background: transparent;
+	color: #E0861A;
+}
+.dfp-btn-inr ul li.green a:hover{
+	background: transparent;
+	color: #42BD73;
 }
 
 /*.dft-text-module h3{
