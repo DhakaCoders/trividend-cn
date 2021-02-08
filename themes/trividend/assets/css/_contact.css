@@ -66,7 +66,7 @@
 	height: 50px;
 	background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
-    border:2px solid#fff;
+    border:1px solid#fff;
 	box-sizing: border-box;
 	padding: 15px 20px 16px;
 	color: #D0D0D0;
@@ -89,7 +89,7 @@
 	height: 150px;
 	background: #FFFFFF;
 	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
-	border: 2px solid #FFF;
+	border: 1px solid #FFF;
 	box-sizing: border-box;
 	color: #D0D0D0;
 	font-size: 16px;
@@ -111,7 +111,7 @@
     max-width: 180px;
     width: 100%;
     height: 50px;
-    border: 2px solid!important;
+    border: 2px solid #E0861A!important;
     background: #E0861A;
     box-shadow: 0px 0px 20px rgb(0 0 0 / 3%);
     font-size: 16px;
@@ -133,27 +133,34 @@
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
+.contact-form-wrp .wpforms-container .wpforms-form.was-validated .wpforms-field-container .wpforms-has-error label.wpforms-error{
+	display: block;
 
-.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error {
+}
+.contact-form-wrp .wpforms-container .wpforms-form.was-validated .wpforms-field-container label.wpforms-error{
+	display: none;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error{
     font-weight: 400;
     font-size: 10px;
     line-height: 12px;
     color: #D92A2B;
     position: absolute;
     right: 30px;
-    top: 47px;
+    top: 45px;
     text-align: right;
     width: auto;
     text-transform: inherit;
     margin-bottom: 0;
+    display: none;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error span{
 	font-weight: 700;
 	font-size: 12px;
 	padding-left: 2px;
 }
-.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error input {
-    border: 1px solid #DB4655 !important;
+.contact-form-wrp .wpforms-container .wpforms-form.was-validated .wpforms-field-container .wpforms-has-error input {
+    border: 1px solid #D92A2B !important;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container p {
     font-size: 12px;
@@ -176,7 +183,7 @@
 	background: #FAEDDD;
 	padding: 55px 60px 30px;
 }
-.contact-form-info h2{
+.contact-form-info-title{
 	color:#4B4B4B;
 	margin-bottom: 15px; 
 }
@@ -189,10 +196,10 @@
 	padding-left: 30px;
 	position: relative;
 }
-.contact-form-info  ul li:nth-child(2){
+.contact-form-info  ul li.text-code{
 	padding-bottom: 4px;
 }
-.contact-form-info  ul li:nth-child(4){
+.contact-form-info  ul li.text-code-btw{
 	padding-left: 40px;
 	margin-left: -8px;
 }
@@ -201,7 +208,7 @@
 	left: 0;
 	top: 0;
 }
-.contact-form-info  ul li:first-child i{
+.contact-form-info  ul li.text-code-address i{
 	top: 2px;
 }
 .contact-form-info  ul li span,
@@ -268,17 +275,41 @@
 .tvd-team-member-wec-wrp{
 	padding-top: 75px;
 }
+.tvd-team-member-wec-wrp .tvd-nieuws-enty-hdr{
+	padding-bottom: 45px;
+}
 .tvd-team-member-wec-wrp .tvd-nieuws-enty-hdr p{
-	margin-bottom: 60px;
+	margin-bottom: 10px;
+	padding-bottom: 0;
+
+}
+.tvd-team-member-wec-wrp .tvd-nieuws-enty-hdr p:after{
+	content: none;
+}
+.tvd-nieuws-enty-hdr span{
+	display: inline-block;
+	vertical-align: baseline;
 }
 .tvd-team-grid-wrp{
-	padding-bottom: 65px;
+	padding-bottom: 70px;
 }
 .tvd-team-grid-bdr {
     height: 4px;
     background: #F9F9F9;
     margin-left: -25px;
     margin-right: -25px;
+}
+.tvd-team-grid-slider{
+	margin: 0 -12px;
+}
+.tvd-team-grid-slider .tvd-team-grid-slide-item{
+	display: none;
+}
+.tvd-team-grid-slider .tvd-team-grid-slide-item:first-child{
+	display: block;
+}
+.tvd-team-grid-slider.slick-initialized .tvd-team-grid-slide-item{
+	display: block;
 }
 .tvd-team-grid-slide-item{
 	padding: 0 12px;
@@ -302,6 +333,7 @@
 	-webkit-transition: all 0.5s;
 	opacity: 0;
 	cursor: pointer;
+	padding: 10px 20px;
 }
 .tvd-team-grid-slide-item-img:hover .tvd-team-grid-hover{
 	opacity: 1;
@@ -345,10 +377,19 @@
 .tvd-team-grid-social ul li a i:hover svg{
 	fill: #E0861A;
 }
-.tvd-team-grid-mk h3.fl-h3{
+.tvd-team-mk-title{
 	color: #4B4B4B;
 	font-weight: 500;
 	margin-bottom: 5px;
+}
+.tvd-team-mk-title a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	color: initial;
+}
+.tvd-team-mk-title a:hover{
+	color: #8B0102;
 }
 .tvd-team-grid-mk span{
 	display: inline-block;
@@ -402,29 +443,17 @@
 	.contact-form-info ul li a br{
 		display: none;
 	}
-	.contact-form-info h2{
-		font-size: 28px;
-	}
 	.tvd-team-member-wec-wrp {
 	    padding-top: 65px;
 	}
 	.tvd-team-member-wec-wrp .tvd-nieuws-enty-hdr p {
 	    margin-bottom: 45px;
 	}
-	.tvd-team-member-wec-wrp .tvd-nieuws-enty-hdr-title{
-		font-size: 28px;
-	}
 	.tvd-team-grid-slide-item-img {
 	    min-height: 365px;
 	}
-	.tvd-team-grid-mk h3.fl-h3{
-		font-size: 22px;
-	}
 	.tvd-team-grid-mk span{
 		font-size: 15px;
-	}
-	.page-banner-sec-wrp .tvd-nieuws-entry-hdr-title {
-	    font-size: 55px;
 	}
 	.page-banner-sec-wrp .tvd-nieuws-grd-entry-hdr {
 	    margin-bottom: 70px;
@@ -432,6 +461,9 @@
 	.tvd-team-grid-bdr {
 	    margin-left: -20px;
 	    margin-right: -20px;
+	}
+	.tvd-team-member-wec-wrp .tvd-nieuws-enty-hdr {
+	    padding-bottom: 40px;
 	}
 
 
@@ -444,32 +476,20 @@
 	.contact-form-info {
 	    padding: 55px 20px 30px 30px;
 	}
-	.contact-form-info h2{
-		font-size: 26px;
-	}
 	.tvd-team-member-wec-wrp {
 	    padding-top: 55px;
 	}
 	.tvd-team-member-wec-wrp .tvd-nieuws-enty-hdr p {
 	    margin-bottom: 35px;
 	}
-	.tvd-team-member-wec-wrp .tvd-nieuws-enty-hdr-title{
-		font-size: 26px;
-	}
 	.tvd-team-grid-slide-item-img {
 	    min-height: 335px;
-	}
-	.tvd-team-grid-mk h3.fl-h3{
-		font-size: 20px;
 	}
 	.tvd-team-grid-mk span{
 		font-size: 14px;
 	}
 	.tvd-team-grid-wrp{
 		padding-bottom: 60px;
-	}
-	.page-banner-sec-wrp .tvd-nieuws-entry-hdr-title {
-	    font-size: 50px;
 	}
 	.page-banner-sec-wrp .tvd-nieuws-grd-entry-hdr {
 	    margin-bottom: 50px;
@@ -503,9 +523,6 @@
 	    padding: 30px 20px 5px 20px;
 	    margin-left: -20px;
 	    margin-right: -20px;
-	}
-	.contact-form-info h2{
-		font-size: 24px;
 	}
 	.contact-form-lft {
 	    width: 100%;
@@ -541,23 +558,21 @@
 	    height: 40px;
 	    font-size: 12px;
 	    line-height: 14px;
-	    padding: 12px 0 12px;
+	    padding: 11px 0 12px;
 	}
 	.tvd-team-member-wec-wrp {
 	    padding-top: 45px;
 	}
 	.tvd-team-member-wec-wrp .tvd-nieuws-enty-hdr p {
-	    margin-bottom: 30px;
+	    margin-bottom: 20px;
 	}
 	.tvd-team-member-wec-wrp .tvd-nieuws-enty-hdr-title{
-		font-size: 24px;
 		margin-bottom: 10px;
 	}
 	.tvd-team-grid-slide-item-img {
 	    min-height: 280px;
 	}
-	.tvd-team-grid-mk h3.fl-h3{
-		font-size: 18px;
+	.tvd-team-mk-title{
 		margin-bottom: 3px;
 	}
 	.tvd-team-grid-mk span{
@@ -569,15 +584,19 @@
 	.tvd-team-grid-wrp{
 		padding-bottom: 55px;
 	}
-	.page-banner-sec-wrp .tvd-nieuws-entry-hdr-title {
-	    font-size: 40px;
-	}
 	.page-banner-sec-wrp .tvd-nieuws-grd-entry-hdr {
 	    margin-bottom: 30px;
 	}
 	.tvd-team-grid-bdr {
 	    margin-left: -20px;
 	    margin-right: -20px;
+	}
+	.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error{
+		top: 39px;
+		right: 25px;
+	}
+	.tvd-team-member-wec-wrp .tvd-nieuws-enty-hdr {
+	    padding-bottom: 20px;
 	}
 }
 
@@ -593,9 +612,7 @@
 	    padding-left: 9px !important;
 	    margin-top: 14px !important;
 	}
-	.page-banner-sec-wrp .tvd-nieuws-entry-hdr-title {
-	    font-size: 30px;
-	}
+	
 }
 
 @media(max-width: 479px){
@@ -604,5 +621,7 @@
 }
 
 @media(max-width: 359px){
-
+	.page-banner-sec-wrp .tvd-nieuws-grd-entry-hdr p br{
+		display: none;
+	}
 }

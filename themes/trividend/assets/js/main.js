@@ -349,6 +349,11 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
   /* Start of Milon */
+  $('label.wpforms-error').on('click', function(){
+    $(this).parent('.wpforms-field').removeClass('wpforms-has-error');
+  });
+
+
   /*slider */
   if( $('.tvd-team-grid-slider').length ){
     $('.tvd-team-grid-slider').slick({

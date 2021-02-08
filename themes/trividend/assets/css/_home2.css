@@ -7,10 +7,7 @@
 }
 .tvd-nieuws-enty-hdr-title{
 	display: block;
-	font-size: 30px;
-	line-height: 1;
 	margin-bottom: 18px;
-	font-weight: 700;
 	color: #8B0102;
 }
 .tvd-nieuws-enty-hdr p{
@@ -212,10 +209,7 @@
 .tvd-fin-title,
 .tvd-nieuws-title{
 	display: block;
-	font-size: 30px;
-	line-height: 1;
 	margin-bottom: 7px;
-	font-weight: 700;
 	color: #4B4B4B;
 }
 .tvd-fin-inr p{
