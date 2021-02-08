@@ -60,5 +60,6 @@ Desktop
 	2 ta p use korle 2 ta line hosche. p ar pore akta span niye img tag a svg dite paro.
 
 
-	
-	
+11. https://prnt.sc/yoq903
+	last child na dhore li te akta class daw j , '.text-code'
+	then ai class ta dhore manage koro.	
