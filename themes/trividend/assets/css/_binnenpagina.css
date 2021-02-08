@@ -487,6 +487,10 @@ Gallery design
 	background: #E0861A;
 	border-color: #E0861A;
 }
+.dfp-fin-module.orange .tvd-fin-inr a:hover{
+	background: #42BD73;
+	border-color: #42BD73;
+}
 .dfp-fin-module.orange{
 	margin-bottom: 40px;
 }
@@ -505,6 +509,7 @@ Gallery design
 	font-weight: 500;
 	border: 1px solid #EEEEEE;
 	position: relative;
+	cursor: pointer;
 }
 .dfp-accordion h5 i{
 	position: absolute;

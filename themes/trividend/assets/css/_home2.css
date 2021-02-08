@@ -340,3 +340,68 @@
 .tvd-inputfield em p a:hover{
 	color: #E0861A;
 }
+
+
+/*min width*/
+
+@media(min-width: 1599px){
+	
+}
+@media(min-width: 1920px){
+	
+}
+/*min width*/
+@media(max-width: 1599px){
+
+}
+@media(max-width: 1599px){
+	
+}
+@media(max-width: 1499px){
+
+}
+@media(max-width: 1399px){
+	.tvd-nieuws-enty-hdr-title,
+	.tvd-fin-title, 
+	.tvd-nieuws-title{
+		font-size: 28px;
+	}
+	.tvd-nieuws-grd-item-des-title{
+		font-size: 22px;
+	}
+}
+
+
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+
+	
+
+}
+
+@media(max-width: 991px){
+	
+	
+}
+
+@media(max-width: 767px){
+	
+}
+
+@media(max-width: 575px){
+	
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
+}

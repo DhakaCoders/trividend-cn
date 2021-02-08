@@ -206,7 +206,19 @@
 }
 
 @media(max-width: 1399px){
-
+	.ftr-logo-ctlr{
+		width: 28%;
+	}
+	.ftr-col-1 {
+	    width: 20%;
+	}
+	.ftr-col-2 {
+	    width: 30%;
+	}
+	.ftr-col-3 {
+	    width: 22%;
+	}
+	
 }
 
 @media(max-width: 1299px){
