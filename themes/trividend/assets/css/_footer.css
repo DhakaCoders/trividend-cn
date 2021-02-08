@@ -170,3 +170,12 @@
     line-height: 1;
     color: #6A6A6A;
 }
+
+
+.footer-wrp.ftr-border-top{
+	margin-top: 0;
+}
+.ftr-border-top .ftr-top{
+	padding-top: 70px;
+	border-top: 4px solid #F9F9F9;
+}
