@@ -243,13 +243,26 @@ ol li::before {
 .dfp-goal{
 	margin-left: -15px;
 	margin-right: -15px;
+	margin-bottom: 30px;
 }
 
 .dfp-goal-img{
 	display: inline-block;
 	vertical-align: baseline;
+	margin-right: 10px;
 }
 .dfp-goal-des{
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+.dfp-goal-des p{
+	margin-bottom: 5px;
+}
+.dfp-goal-des p:last-child{
+	margin-bottom: 0;
+}
+.dfp-goal-img i{
 	display: inline-block;
 	vertical-align: baseline;
 }
@@ -266,6 +279,15 @@ ol li::before {
 }
 .dfp-conversal-text-module p:last-child{
 	margin-bottom: 0;
+}
+.red .dfp-goal-des p strong{
+	color: #A21943;
+}
+.green .dfp-goal-des p strong{
+	color: #3F7E45;
+}
+.blue .dfp-goal-des p strong{
+	color: #14496B;
 }
 
 .dfp-convarsal-triangle{
