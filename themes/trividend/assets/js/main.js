@@ -334,6 +334,17 @@ google.maps.event.addDomListener(window, 'load', initialize);
     }
 
 
+    if (windowWidth <= 767) {
+      $('.ftr-menu h4').on('click', function(){
+        $(this).toggleClass('active');
+        $(this).parent().siblings().find('h4').removeClass('active');
+        $(this).parent().find('.ftr-menu-des').slideToggle(300);
+        $(this).parent().siblings().find('.ftr-menu-des').slideUp(300);
+      });
+
+    }
+
+
 
 
 
