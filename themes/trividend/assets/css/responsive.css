@@ -220,6 +220,9 @@
 	body{
 		font-size: 12px;
 	}
+	p{
+		line-height: 1.6;
+	}
 }
 
 @media(max-width: 575px){
