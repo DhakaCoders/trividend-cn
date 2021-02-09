@@ -326,7 +326,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient(0deg, rgba(224, 134, 26, 0.9), rgba(224, 134, 26, 0.9)), url(business-JGLN3V2.jpg);
+	background: linear-gradient(0deg, rgba(224, 134, 26, 0.9), rgba(224, 134, 26, 0.9));
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
