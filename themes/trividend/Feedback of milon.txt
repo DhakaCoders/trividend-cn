@@ -156,6 +156,34 @@ Desktop--->
  	alignment ta mileni.
 
 
+
+
+new----->
+
+1.https://prnt.sc/ytrgwg
+	error asteche.
+
+Responsive------>
+
+1. https://prnt.sc/ytqydj
+	ai media te padding-right ata rakho.
+
+2.https://prnt.sc/yts9ps
+	aigulor width gulo media te komano jabena, desktop ar tai thakbe.
+	width kom beshi korle design ar moto look ta thakena.
+
+3. https://prnt.sc/ytss2h
+	ai media te ai gap ato rakho, left a khub kom hoye geche kharap lagteche.
+
+
+4. https://prnt.sc/ytt00z
+	991px a bottom gap ta ata rakho
+
+
+
+
+
+
 Finaciering
 -------------------------
 Desktop-->
