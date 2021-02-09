@@ -247,7 +247,7 @@
 	.ftr-logo-ctlr {
 	    width: 100%;
 	    text-align: center;
-	    margin-bottom: 30px;
+	    margin-bottom: 35px;
 	}
 	.ftr-col-1 {
 	    width: 30%;
@@ -262,6 +262,12 @@
 	.ftr-btm-menu ul li a,
 	.ftr-btm-designby a{
 		font-size: 12px;
+	}
+	.ftr-top{
+		padding-bottom: 30px;
+	}
+	.footer-wrp {
+	    margin-top: 60px;
 	}
 	
 }
@@ -332,6 +338,15 @@
 	}
 	.ftr-btm-designby{
 		text-align: center;
+	}
+	.footer-wrp {
+	    margin-top: 45px;
+	}
+	.ftr-logo {
+	    padding-bottom: 0px;
+	} 
+	.ftr-cnt-menu-mail{
+		padding-bottom: 0;
 	}
 	
 }
