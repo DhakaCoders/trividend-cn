@@ -298,6 +298,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
           {
             breakpoint: 768,
             settings: {
+              dots: true,
+              arrows: false,
               slidesToShow: 1,
               slidesToScroll: 1
             }
