@@ -107,6 +107,11 @@
 .ftr-cnt-menu-adrs,
 .ftr-cnt-menu-mail{
 	padding-bottom: 30px;
+	padding-left: 35px;
+}
+.ftr-cnt-menu-phn,
+.ftr-cnt-menu-vat{
+	padding-left: 35px;
 }
 .ftr-cnt-menu-cv a,
 .ftr-cnt-menu-cv span,
@@ -238,6 +243,9 @@
 	}
 	.ftr-col-3 {
 	    width: 22%;
+	}
+	.ftr-cnt-menu-adrs a br{
+		display: none;
 	}
 	
 
