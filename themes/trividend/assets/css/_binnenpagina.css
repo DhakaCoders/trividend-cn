@@ -958,8 +958,9 @@ Gallery design
 	}
 	.dfp-nieuws-module.slick-slider ul.slick-dots{
 		position: absolute;
-		right: 0;
+		right: 65px;
 		bottom: 28px;
+		width: 100px;
 	}
 	.dfp-fin-module .tvd-fin-inr {
 	    padding-left: 30px;
@@ -1044,6 +1045,22 @@ Gallery design
 	.dft-blockquote i {
 	    left: 20px;
 	}
+	.dfp-nieuws-module.slick-slider ul.slick-dots{
+		right: 20px;
+	}
+	.dfp-convarsal-border{
+		right: 45px;
+	}
+	.dfp-convarsal-triangle i{
+		right: 60px;
+	}
+	.table-dsc table thead tr th:first-child, 
+	.table-dsc table tbody tr td:first-child{
+		width: 90px;
+	}
+	.ac-fancy-module{
+		height: 300px;
+	}
 }
 
 
@@ -1051,6 +1068,13 @@ Gallery design
 	.dfp-promo-module h1, 
 	.dfp-promo-module-title{
 		font-size: 26px;
+	}
+	.ac-fancy-module{
+		height: 250px;
+		margin-bottom: 20px;
+	}
+	.dfp-nieuws-module.slick-slider ul.slick-dots {
+	    right: 0px;
 	}
 }
 
