@@ -264,6 +264,9 @@
 	.dfp-corona-module {
 	    padding: 60px 50px;
 	}
+	.tvd-deinsten-con-sec-inr {
+	    padding-bottom: 90px;
+	}
 }
 
 @media(max-width: 767px){
@@ -300,6 +303,9 @@
 	.dfp-corona-module {
 	    padding: 60px 30px;
 	}
+	.tvd-deinsten-con-sec-inr {
+	    padding-bottom: 75px;
+	}
 }
 
 @media(max-width: 575px){
@@ -311,11 +317,25 @@
 		width: 100%;
 		margin: 0 auto;
 	}
+	.dfp-corona-module {
+	    padding: 50px 20px;
+	}
+	.tvd-deinsten-con-sec-inr {
+	    padding-bottom: 55px;
+	}
 
 }
 
 @media(max-width: 479px){
-
+	.dfp-corona-module {
+	    padding: 45px 15px;
+	}
+	.tvd-deinsten-con-sec-inr {
+	    padding-bottom: 45px;
+	}
+	.tvd-deinsten-con-sec{
+		border-bottom: 4px solid #F9F9F9;
+	}
 
 }
 
