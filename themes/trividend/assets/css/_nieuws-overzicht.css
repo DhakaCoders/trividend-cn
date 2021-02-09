@@ -211,15 +211,8 @@
 }
 
 
-/*min width*/
 
-@media(min-width: 1599px){
-	
-}
-@media(min-width: 1920px){
-	
-}
-/*min width*/
+
 @media(max-width: 1599px){
 
 }
@@ -247,7 +240,12 @@
 }
 
 @media(max-width: 1199px){
-
+	.tvd-nieuws-grd-entry-hdr {
+	    margin-bottom: 30px;
+	}
+	.tvd-nieuws-entry-hdr-title{
+		margin-bottom: 40px;
+	}
 	
 
 }
