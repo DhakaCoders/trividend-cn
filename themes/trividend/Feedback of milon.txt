@@ -188,6 +188,21 @@ Responsive------>
 	ata sob section ai design dekhe right gap ta dite hobe
 
 
+6. https://prnt.sc/ytulk5
+	575px a ai 2 ta width xs design dekhe milate hobe. besi boro boro lagteche.
+
+	amon aro kothaw fix thakle korte hobe.
+
+
+7. https://prnt.sc/ytuumq
+	ai gap gulo design ar moto hoyni.
+	767px thakei xs deisgn ar moto koro.
+
+
+8. https://prnt.sc/ytv2n4
+	767px a ai gap ta xs design ar moto hoyni . mepe niye bosao.
+
+
 
 
 Finaciering
@@ -199,6 +214,31 @@ Desktop-->
 
 
 
+Responsive----->
 
-N.B.---->  ai fix gulor moddhe onno kohtao pele fix kore felte hobe carefully. 
+1. https://prnt.sc/ytvndu
+	ai gap ta aktu beshi beshi lagteche.
+
+2. https://prnt.sc/ytvz5w
+	ai gap ta kom hoye geche. mape niye fix korte hobe.
+
+
+3. https://prnt.sc/ytw80w
+	767px a button ar top gap ta kome geche, ager moto thakbe
+
+	r 575px ao xs design dekhe mape niye dite hobe
+
+
+4. https://prnt.sc/ytwmaq
+	767px ai gulor size aktu komate hobe
+
+	575px ar design tai 767px a diye dekhte paro valo lagle otai rakho, na valo lagle aktu baray dite hobe
+
+
+
+
+
+
+N.B.---->  i) ai fix gulor moddhe onno kohtao pele , fix kore felte hobe carefully. 
+			ii) sob svg gulo home page diye dite hobe.
 
