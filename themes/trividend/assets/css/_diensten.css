@@ -18,13 +18,11 @@
 .tvd-diensten-img{
 	min-height: 550px;
 }
+.tvd-diensten-img img{
+	display: none;
+}
 
 .tvd-diensten-title{
-	display: block;
-	font-size: 60px;
-	line-height: 1;
-	margin-bottom: 20px;
-	font-weight: 700;
 	color: #8B0102;
 }
 
@@ -36,27 +34,22 @@
 }
 .tvd-process-entry-hdr{
 	text-align: center;
+	padding-bottom: 50px;
+	position: relative;
 }
 .tvd-process-entry-hdr-title{
-	display: block;
-	font-size: 30px;
-	line-height: 1;
 	margin-bottom: 18px;
-	font-weight: 700;
 	color: #8B0102;
 	text-transform: capitalize;
 }
 
 .tvd-process-entry-hdr p{
-	margin-bottom: 40px;
-	padding-bottom: 30px;
-	position: relative;
 }
-.tvd-process-entry-hdr p:after{
+.tvd-process-entry-hdr:after{
 	content: "";
     position: absolute;
     left: 50%;
-    top: 100%;
+    bottom: 30px;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
@@ -112,9 +105,6 @@
 
 
 .tvd-pgi-des-title{
-	display: block;
-	font-size: 24px;
-	line-height: 1;
 	margin-bottom: 8px;
 	font-weight: 500;
 	color: #4B4B4B;
@@ -127,9 +117,6 @@
 	padding: 70px 90px;
 }
 .corona-module-title{
-	display: block;
-	font-size: 30px;
-	line-height: 1;
 	margin-bottom: 10px;
 	font-weight: 700;
 	color: #4B4B4B;
