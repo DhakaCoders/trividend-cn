@@ -421,7 +421,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
             slidesToShow: 2,
             slidesToScroll: 1,
             infinite: true,
-            dots: false
+            dots: true
           }
         },
         {
