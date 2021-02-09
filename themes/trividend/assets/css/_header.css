@@ -437,6 +437,9 @@ body.allWork{
         content: none;
         display: none;
     }
+    nav.main-nav > ul > li > a:hover{
+        color: initial;
+    }
     nav.main-nav > ul > li.menu-item-has-children ul.sub-menu {
         position: initial;
         background: transparent;
@@ -456,11 +459,11 @@ body.allWork{
     nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li{
         border: none;
     }
-    nav.main-nav > ul > li.menu-item-has-children a{
+    nav.main-nav > ul > li.menu-item-has-children > a{
         padding-right: 15px;
         position: relative;
     }
-    nav.main-nav > ul > li.menu-item-has-children a:before{
+    nav.main-nav > ul > li.menu-item-has-children > a:before{
         content: "\f107"!important;
         font-family: 'Font Awesome 5 Free';
         font-weight: 600;
@@ -475,11 +478,14 @@ body.allWork{
         transition: all 0.5s;
         -ms-transition: all 0.5s;
         -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
     }
-    nav.xs-mbl-main-nav > ul > li.menu-item-has-children.sub-menu-arrow > a:before {
+    nav.xs-mbl-main-nav > ul > li.sub-menu-arrow > a:before {
         color: #FF5C26!important;
-        transform: rotate(
-            -180deg
-            )!important;
+        transition: rotate(-180deg)!important;
+        -ms-transition: rotate(-180deg)!important;
+        -webkit-transition: rotate(-180deg)!important;
+        -o-transition: rotate(-180deg)!important;
+
     }
 }
