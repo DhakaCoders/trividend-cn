@@ -206,9 +206,17 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
   if( $('.humberger-icon').length ){
     $('.humberger-icon').click(function(){
-      $(this).parent().toggleClass('close-icon');
+      $('body').toggleClass('allWork');
     });
   }
+  if( $('li.menu-item-has-children a').length ){
+    $('li.menu-item-has-children a').click(function(e){
+       event.preventDefault();
+      $(this).next().slideToggle(300);
+      $(this).parent().toggleClass('sub-menu-arrow');
+    });
+  }
+
 
   if( $('.hdr-search').length ){
     $('.hdr-search button').click(function(e){
@@ -298,6 +306,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
           {
             breakpoint: 768,
             settings: {
+              dots: true,
+              arrows: false,
               slidesToShow: 1,
               slidesToScroll: 1
             }
@@ -356,6 +366,21 @@ google.maps.event.addDomListener(window, 'load', initialize);
     if(windowWidth <= 767){
       if($('.bnwsSlider').length ){
         $('.bnwsSlider').slick({
+          dots: true,
+          infinite: false,
+          autoplay: false,
+          arrows: false,
+          autoplaySpeed: 2000,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        });
+      }
+    }
+
+    if(windowWidth <= 575){
+      if($('.proSlider').length ){
+        $('.proSlider').slick({
           dots: true,
           infinite: false,
           autoplay: false,
