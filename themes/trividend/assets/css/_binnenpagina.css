@@ -976,7 +976,10 @@ Gallery design
 	    margin-bottom: 25px;
 	}
 	.dfp-goal-des:before{
-		margin-top: -8px;
+		margin-top: 0;
+	}
+	.dfp-goal-des p{
+		margin-bottom: 5px;
 	}
 }
 
@@ -1008,11 +1011,14 @@ Gallery design
 		margin-bottom: 15px;
 	}
 	.default-page-con ul li, ul li {
-	    padding: 2px 0 14px 20px;
+	    padding: 2px 0 2px 15px;
 	    line-height: 22px;
 	}
+	.default-page-con ul li::before, ul li::before{
+		top: 10px;
+	}
 	.default-page-con ol li, ol li{
-		padding-bottom: 15px;
+		padding-bottom: 5px;
 	}
 	
 	.default-page-con h1, .default-page-con h2, .default-page-con h3, .default-page-con h4, .default-page-con h5 {
@@ -1040,7 +1046,7 @@ Gallery design
 		padding-bottom: 50px;
 	}
 	.dft-blockquote blockquote {
-	    padding: 135px 30px 48px 60px;
+	    padding: 85px 30px 48px 60px;
 	}
 	.dft-blockquote i {
 	    left: 20px;
@@ -1061,6 +1067,20 @@ Gallery design
 	.ac-fancy-module{
 		height: 300px;
 	}
+	.table-dsc{
+		overflow-x: scroll;
+	    overflow-y: hidden;
+	    white-space: nowrap;
+	}
+	.dfp-fin-module .tvd-fin-inr {
+	    padding-left: 15px;
+	    padding-right: 15px;
+	}
+	.dfp-covesal-logo {
+	    margin-bottom: 70px;
+	    max-width: 140px;
+	    width: 100%;
+	}
 }
 
 
@@ -1076,6 +1096,12 @@ Gallery design
 	.dfp-nieuws-module.slick-slider ul.slick-dots {
 	    right: 0px;
 	}
+	.fl-dft-lftimg-rgtdes-lft, 
+	.fl-dft-lftimg-rgtdes-lft-img-inr{
+		min-height: 150px;
+    	height: 100%;
+	}
+
 }
 
 

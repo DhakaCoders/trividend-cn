@@ -376,6 +376,21 @@ google.maps.event.addDomListener(window, 'load', initialize);
       }
     }
 
+    if(windowWidth <= 575){
+      if($('.proSlider').length ){
+        $('.proSlider').slick({
+          dots: true,
+          infinite: false,
+          autoplay: false,
+          arrows: false,
+          autoplaySpeed: 2000,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        });
+      }
+    }
+
 
 
 

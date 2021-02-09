@@ -78,3 +78,12 @@
 .sitemap ol li a:focus{
 	text-decoration: underline;
 }
+
+
+
+@media(max-width: 767px){
+	.slick-slider .slick-dots li{
+		height: 8px!important;
+		width: 8px!important;
+	}
+}
