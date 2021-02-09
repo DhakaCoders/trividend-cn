@@ -457,9 +457,13 @@
 		right: 0;
 		bottom: 25px;
 	}
+	.tvd-nieuws-slider {
+	    margin-left: 0;
+	    margin-right: 0;
+	}
 	.tvd-nieuws-grds {
-	    padding-left: 12px;
-	    padding-right: 12px;
+	    padding-left: 0;
+	    padding-right: 0;
 	    padding-bottom: 25px;
 	}
 	.tvd-nieuws-img{
@@ -496,6 +500,10 @@
 		width: 180px;
 		height: 44px;
 		font-size: 12px;
+	}
+	.tvd-nieuws-slider-ctlr {
+	    padding-left: 0;
+	    padding-right: 0;
 	}
 
 }
