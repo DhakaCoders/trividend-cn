@@ -68,10 +68,49 @@ Desktop--->
 	alignment ta mileni.
 
 
+
 New---->
 
-1. https://prnt.sc/yooip4
+1. https://prnt.sc/ytfcti
+	center a hobe
+
+2. https://prnt.sc/yooip4
 	error asteche.
+
+3.https://prnt.sc/yti4nh
+	jgulo img div ar inline a use korechi amra, segulor inner a akta img tag diye img rakhte bolechilam,
+	jodo lage kokhono pore use kora jabe.
+
+
+11. https://prnt.sc/yoq903
+	last child na dhore li te akta class daw j , '.text-code'
+	then ai class ta dhore manage koro.	
+
+	atate type korte aktu vul hoyeche.
+
+	'.tax-code' calss hobe only last child tate . r baki li ar class gulote tax-code ta hobena.
+
+
+Responsive----------->
+
+1. https://prnt.sc/ytgrbu
+	575px a ai gap design ar moto dite hobe, beshi hoiche.
+
+2. https://prnt.sc/ythcd4
+	991px a padding-left 25px rakho.
+
+3. https://prnt.sc/ythi0o
+	jokhon full-width hoye jay ai gap ta thakbena.
+	xs design a ki ai gap ta ache?
+
+4. https://prnt.sc/ythq8y
+	ai header ar responsive ta thik nai. niche gele p ar bottom gap ta aro bere jay.
+	sundor kore manage korte hobe .
+
+5. https://prnt.sc/ytim9a
+	jokhon 2 ta items korechi amra , tokhon dots true korte hobe, center a thakbe,
+	r  jokhon 1 ta item tokhon dots ta toh left ai ache ota thik ache.
+
 
 
 
