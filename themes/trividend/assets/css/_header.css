@@ -10,7 +10,7 @@
 
 }
 .logo{
-
+    padding-right: 10px;
 }
 .logo a{
 	display: inline-block;
@@ -175,24 +175,134 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a:hover{
 	background: transparent;
 	cursor: pointer;
 }
+.hdr-search button i{
+    display: inline-block;
+}
 .hdr-search button:hover i svg,
 .hdr-search-input-show button i svg{
 	fill: #8B0102;
 }
 
 
+/*humberger icon*/
+.xs-humberger-cntlr{
+    text-align: center;
+    display: none;
+}
+.humberger-icon{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 14px;
+    width: 16px;
+}
+.humberger-icon span{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #8B0102;
+    height: 2.5px;
+    border-radius: 50px;
+}
+.humberger-icon span:nth-child(2){
+    top: 5px;
+}
+.humberger-icon span:nth-child(3){
+    top: 10px;
+}
+.close-icon .humberger-icon{
+    margin-bottom: 5px;
+}
+.close-icon .humberger-icon span:nth-child(1){
+    top: 5px;
+    transform: rotate(45deg);
+}
+.close-icon .humberger-icon span:nth-child(2){
+    top: 5px;
+    transform: rotate(-45deg);
+}
+.close-icon .humberger-icon span:nth-child(3){
+    display: none;
+    content: none;
+}
+.humberger-cmn-title{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #8B0102;
+}
+.close-title{
+    display: none;
+}
+.close-icon .humberger-title{
+    display: none;
+}
+.close-icon .close-title{
+    display: block;
+}
 
-@media(max-width: 1399px){
-    .header-menu {
-        padding-right: 30px;
+@media(max-width: 1799px){
+    nav.main-nav > ul{
+        margin: 0 -15px;
     }
     nav.main-nav > ul > li{
         padding: 0 15px;
+    }
+     nav.main-nav > ul > li > a{
+        font-size: 17px;
+    }
+    .header-menu{
+        padding-right: 30px;
+    }
+    .logo a{
+        max-width: 180px;
+    }
+}
+@media(max-width: 1399px){
+    .header-menu {
+        padding-right: 30px;
     }
     nav.main-nav > ul > li > a{
         font-size: 15px;
     }
     nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a{
          font-size: 15px;
+    }
+    .logo a{
+        max-width: 160px;
+    }
+}
+@media(max-width: 1199px){
+    nav.main-nav > ul{
+        margin: 0 -10px;
+    }
+    nav.main-nav > ul > li{
+        padding: 0 10px;
+    }
+    nav.main-nav > ul > li > a{
+        font-size: 13px;
+    }
+    nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a{
+         font-size: 13px;
+    }
+    .header-menu{
+        padding-right: 25px;
+    }
+}
+@media(max-width: 991px){
+    .header-inr{
+        padding: 29px 0;
+    }
+    .header-menu,
+    .hdr-search{
+        display: none;
+    }
+    .xs-humberger-cntlr{
+        display: block;
     }
 }
