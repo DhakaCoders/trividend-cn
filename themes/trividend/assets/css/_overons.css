@@ -132,27 +132,16 @@ overons-tvd-fin-sec-wrp
 		padding-left: 45px;
 	}
 	.lft-dsc-rt-img-mdul-dsc {
-	    width: 60%;
 	    padding-right: 15px;
 	}
-	.lft-dsc-rt-img-mdul-img{
-		width: 40%;
-	}
+	
 }
 @media(max-width: 1399px){
 	.lft-img-rt-dsc-mdul-dsc {
-	    padding-left: 40px;
-	    width: 55%;
-	}
-	.lft-img-rt-dsc-mdul-img{
-		width: 45%;
+	    padding-left: 74px;
 	}
 	.lft-dsc-rt-img-mdul-dsc {
-	    width: 65%;
 	    padding-right: 10px;
-	}
-	.lft-dsc-rt-img-mdul-img{
-		width: 35%;
 	}
 }
 @media(max-width: 1199px){
@@ -187,7 +176,7 @@ overons-tvd-fin-sec-wrp
 		font-size: 14px;
 	}
 	.lft-img-rt-dsc-mdul-dsc {
-	    padding-left: 25px;
+	    padding-left: 55px;
 	}
 	.overons-team-sec-wrp .tvd-team-grid-wrp{
 		padding-bottom: 80px;
@@ -214,6 +203,9 @@ overons-tvd-fin-sec-wrp
 	.overons-team-sec-wrp .tvd-team-grid-wrp{
 		padding-bottom: 70px;
 	}
+	.rgt-mdul-dsc-title{
+		margin-bottom: 30px;
+	}
 }
 
 @media(max-width: 767px){
@@ -234,6 +226,10 @@ overons-tvd-fin-sec-wrp
 	    padding-left: 0;
 	    padding-top: 30px;
 	    width: 100%;
+	    padding-right: 10px;
+	}
+	.rt-dsc-dsc-img-mdul-dsc-sm{
+		padding-right: 10px;
 	}
 	.lft-img-rt-dsc-mdul-dsc a {
 	    font-size: 12px;
@@ -259,7 +255,7 @@ overons-tvd-fin-sec-wrp
 	}
 	.overons-lft-dsc-rt-img-sec-wrp {
 	    padding-top: 35px;
-	    padding-bottom: 85px;
+	    padding-bottom: 40px;
 	}
 	.overons-tvd-fin-wrp{
 		padding-bottom: 60px;
@@ -269,6 +265,9 @@ overons-tvd-fin-sec-wrp
 	}
 	.overons-tvd-fin-wrp {
 	    padding: 60px 18px;
+	    margin-top: 0;
+	    margin-left: -20px;
+	    margin-right: -20px;
 	}
 	.overons-tvd-fin-wrp .tvd-fin-inr a {
 	    margin: 0;
@@ -284,6 +283,12 @@ overons-tvd-fin-sec-wrp
 	.overons-team-sec-wrp .tvd-team-grid-wrp{
 		padding-bottom: 50px;
 	}
+	.tvd-fin-title{
+		margin-bottom: 10px;
+	}
+	.tvd-fin-inr i{
+		margin-bottom: 17px;
+	}
 
 
 }
@@ -291,6 +296,15 @@ overons-tvd-fin-sec-wrp
 @media(max-width: 575px){
 	.lft-dsc-rt-img-mdul-img {
 	    height: 150px;
+	}
+	.tvd-fin-inr i{
+		width: 32px;
+		height: 32px;
+	}
+	.overons-tvd-fin-sec-wrp .tvd-fin-inr a {
+	    width: 140px;
+	    height: 40px;
+	    font-size: 12px;
 	}
 
 }
