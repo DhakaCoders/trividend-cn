@@ -180,6 +180,12 @@ Responsive------>
 	991px a bottom gap ta ata rakho
 
 
+5. https://prnt.sc/yttp46
+	right pase des ta jeno kokhono img ar sathe lege na jay,
+	tai right a padding-right 10px diye rakhte hobe.
+	mane design right pase xs design a jemon gap ache dite hobe.
+
+	ata sob section ai design dekhe right gap ta dite hobe
 
 
 
