@@ -71,7 +71,7 @@ nav.main-nav > ul > li > a:after {
 	opacity: 0;
 
 }
-nav.main-nav > ul > li.menu-item-has-children:hover a:after,
+
 nav.main-nav > ul > li > a:hover:after,
 nav.main-nav > ul > li.current-menu-item > a:after{
 	opacity: 1;
@@ -88,7 +88,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu {
     background: #fff;
     z-index: 2;
     width: 225px;
-    padding: 15px 10px 10px 0;
+    padding: 0 10px 0 0;
     transition: all 0.5s;
     -ms-transition: all 0.5s;
     -webkit-transition: all 0.5s;
@@ -107,16 +107,19 @@ nav.main-nav > ul > li.menu-item-has-children:hover ul.sub-menu {
     opacity: 1;
 }
 nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li{
-	padding: 8px 0;
+	padding: 6px 0;
 	line-height: 1;
     display: block;
     position: relative;
     border-bottom: 1px solid #E0861A;
 }
+nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:last-child{
+    border-bottom: none;
+}
 nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a{
-	display: inline-block;
+	display: block;
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 1;
 	color: #4B4B4B;
     padding: 5px 20px;
@@ -188,5 +191,8 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a:hover{
     }
     nav.main-nav > ul > li > a{
         font-size: 15px;
+    }
+    nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a{
+         font-size: 15px;
     }
 }
