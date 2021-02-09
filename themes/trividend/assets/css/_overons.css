@@ -45,6 +45,7 @@ overons-lft-img-rt-dsc-sec-wrp
 	align-items: center;
 	margin-top: 15px;
 	border:2px solid#E0861A;
+	padding: 0 10px;
 }
 .lft-img-rt-dsc-mdul-dsc a:hover{
 	background: transparent;
@@ -99,6 +100,7 @@ overons-tvd-fin-sec-wrp
 }
 .overons-tvd-fin-wrp .tvd-fin-inr a{
 	margin: 0 auto;
+	padding: 0 10px;
 }
 .overons-tvd-fin-wrp .tvd-fin-inr p{
 	color: #4B4B4B;
