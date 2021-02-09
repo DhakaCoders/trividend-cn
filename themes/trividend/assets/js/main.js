@@ -206,9 +206,17 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
   if( $('.humberger-icon').length ){
     $('.humberger-icon').click(function(){
-      $(this).parent().toggleClass('close-icon');
+      $('body').toggleClass('allWork');
     });
   }
+  if( $('li.menu-item-has-children a').length ){
+    $('li.menu-item-has-children a').click(function(e){
+       event.preventDefault();
+      $(this).next().slideToggle(300);
+      $(this).parent().toggleClass('sub-menu-arrow');
+    });
+  }
+
 
   if( $('.hdr-search').length ){
     $('.hdr-search button').click(function(e){
