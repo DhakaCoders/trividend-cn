@@ -2,7 +2,7 @@
 .tvd-nieuws-sec{
 	padding: 90px 0 100px;
 }
-.tvd-nieuws-entry-hdr{
+.fl-entry-hdr{
 	text-align: center;
 	padding-bottom: 50px;
 	position: relative;
@@ -15,7 +15,7 @@
 .tvd-nieuws-enty-hdr p{
 	margin-bottom: 10px;
 }
-.tvd-nieuws-entry-hdr:after{
+.fl-entry-hdr:after{
 	content: "";
 	position: absolute;
 	left: 50%;
