@@ -240,15 +240,19 @@
 	    margin-left: 100px;
 	    margin-right: 100px;
 	}
-	.Our-services-sliders-cntlr{
-		padding-left: 30px;
-    	padding-right: 30px;
+	.tvd-nieuws-slider-ctlr {
+	    padding-left: 50px;
+	    padding-right: 50px;
 	}
 	.Our-services-sliders-cntlr .fl-prev {
-	    left: -5px;
+	    left: 10px;
 	}
 	.Our-services-sliders-cntlr .fl-next {
-	    right: -5px;
+	    right: 5px;
+	}
+	.Our-services-sliders-cntlr{
+		padding-left: 50px;
+		padding-right: 50px;
 	}
 }
 @media(max-width: 991px){
@@ -281,7 +285,7 @@
 	}
 	.our-services-grids {
 	    padding: 0 0;
-	    margin: 0 0 24px 0;
+	    margin: 0 0 0 0;
 	}
 	
 	.tvd-customer-grd-img{
