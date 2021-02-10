@@ -506,12 +506,11 @@ body.allWork{
         -webkit-transition: all 0.5s;
         -o-transition: all 0.5s;
     }
-    nav.xs-mbl-main-nav > ul > li.sub-menu-arrow > a:before {
-        color: #FF5C26!important;
-        transition: rotate(-180deg)!important;
-        -ms-transition: rotate(-180deg)!important;
-        -webkit-transition: rotate(-180deg)!important;
-        -o-transition: rotate(-180deg)!important;
-
+    nav.main-nav > ul > li.menu-item-has-children.sub-menu-arrow > a:before{
+        color: #E0861A!important;
+        transform: rotate(-180deg)!important;
+        -ms-transform: rotate(-180deg)!important;
+        -webkit-transform: rotate(-180deg)!important;
+        -o-transform: rotate(-180deg)!important;
     }
 }
