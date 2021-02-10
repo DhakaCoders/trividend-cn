@@ -8,7 +8,6 @@ $thisID = get_the_ID();
 
 
 <?php 
-  /*$form = get_field('shortcode', $thisID);*/
   $formsec = get_field('formsec', $thisID);
   if( $formsec ):
 ?>

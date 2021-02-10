@@ -1,8 +1,8 @@
-<!-- <?php 
+<?php 
   $thisID = get_the_ID();
   $teamsec = get_field('teamsec', $thisID);
   if( $teamsec ):
-?> -->
+?>
 
 <section class="tvd-team-member-wec-wrp">
   <div class="container">
@@ -10,8 +10,6 @@
       <div class="col-md-12">
         <div class="tvd-team-member-wrp">
           <div class="tvd-nieuws-enty-hdr">
-<!--             <h2 class="fl-h2 tvd-nieuws-enty-hdr-title">Team</h2>
-            <p>Accumsan pharetra lectus ut purus nec quam massa non.</p> -->
             <?php 
               if( !empty($teamsec['titel']) ) printf('<h2 class="fl-h2 tvd-nieuws-enty-hdr-title">%s</h2>', $teamsec['titel']);
               if( !empty($teamsec['beschrijving'])) echo wpautop($teamsec['beschrijving']); 
@@ -235,4 +233,4 @@
 </section>
 
 
-<!-- <?php endif; ?> -->
+<?php endif; ?>
