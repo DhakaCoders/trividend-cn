@@ -4,7 +4,7 @@
 }
 .fl-entry-hdr{
 	text-align: center;
-	padding-bottom: 50px;
+	padding-bottom: 35px;
 	position: relative;
 }
 .tvd-nieuws-enty-hdr-title{
@@ -12,30 +12,17 @@
 	margin-bottom: 18px;
 	color: #8B0102;
 }
-.tvd-nieuws-enty-hdr p{
+.tvd-nieuws-entry-hdr p{
 	margin-bottom: 10px;
 }
-.fl-entry-hdr:after{
-	content: "";
-	position: absolute;
-	left: 50%;
-	bottom: 30px;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
-	height: 14px;
-	width: 100px;
-	background: url('../images/border-btm.jpg');
-	background-repeat: no-repeat!important;
-	background-size: cover!important;
-	background-position: center center!important;
+.fl-entry-hdr span{
+	display: inline-block;
+	vertical-align: baseline;
 }
 
-
-
-.tvd-nieuws-slider{
-	margin-left: -12px;
-	margin-right: -12px;
+.tvd-nieuws-slider-ctlr{
+	padding-left: 12px;
+	padding-right: 12px;
 }
 .tvd-nieuws-grds{
 	padding-left: 12px;
@@ -322,7 +309,7 @@
 .tvd-inputfield em p{
 	font-size: 11px;
 	margin-bottom: 10px;
-	line-height: 1;
+	line-height: 1.3;
 }
 .tvd-inputfield em p a{
 	color: #6A6A6A;
@@ -360,6 +347,10 @@
 	.tvd-nieuws-grd-item-des-title{
 		font-size: 22px;
 	}
+	.tvd-nieuws{
+		padding-left: 65px;
+		padding-right: 65px;
+	}
 }
 
 
@@ -370,8 +361,8 @@
 		padding-right: 70px;
 	}
 	.tvd-nieuws{
-		padding-left: 70px;
-		padding-right: 70px;
+		padding-left: 65px;
+		padding-right: 65px;
 	}
 }
 
@@ -402,7 +393,7 @@
 	    padding-left: 8px;
 	    padding-right: 8px;
 	}
-	
+
 	
 
 }
@@ -476,7 +467,7 @@
 	.tvd-nieuws-grds {
 	    padding-left: 0;
 	    padding-right: 0;
-	    padding-bottom: 0;
+	    padding-bottom: 10px;
 	}
 	.tvd-nieuws-img{
 		min-height: 270px;
@@ -501,6 +492,14 @@
 	.tvd-nieuws-sec {
 	    padding: 80px 0 40px;
 	}
+	.tvd-nieuws-entry-hdr{
+		max-width: 500px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.tvd-nieuws-grd-item-des{
+		padding-right: 12px;
+	}
 
 }
 
@@ -509,15 +508,7 @@
 	.tvd-nieuws-inr i{
 		max-width: 32px;
 	}
-	.tvd-inputfields-row.diveder2 {
-	    margin-left: 0;
-	    margin-right: 0;
-	}
-	.diveder2 .tvd-inputfield{
-		width: 100%;
-		padding-left: 0;
-    	padding-right: 0;
-	}
+	
 	.tvd-nieuws-img{
 		min-height: 220px;
 	}
@@ -559,9 +550,26 @@
 	    padding: 60px 0 15px;
 	}
 	.tvd-nieuws-grd-item {
-	    max-width: 100%;
+	    max-width: 100%!important;
+	}
+	.tvd-nieuws-grds{
+		padding-bottom: 0;
+	}
+	.tvd-inputfield em p{
+		line-height: 1.5;
 	}
 
+}
+@media(max-width: 370px){
+	.tvd-inputfields-row.diveder2 {
+	    margin-left: 0;
+	    margin-right: 0;
+	}
+	.diveder2 .tvd-inputfield{
+		width: 100%;
+		padding-left: 0;
+    	padding-right: 0;
+	
 }
 
 @media(max-width: 359px){

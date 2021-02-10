@@ -1233,7 +1233,7 @@ Gallery design
 		padding: 0 0!important;
 	}
 	.tvd-nieuws-grd-item{
-		max-width: 100%;
+		max-width: 100%!important;
 		width: 100%;
 	}
 

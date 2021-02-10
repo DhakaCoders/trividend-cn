@@ -210,28 +210,28 @@
 	text-align: center;
 }
 .tvd-customer-title{
-	display: block;
-	font-size: 30px;
-	line-height: 1;
-	margin-bottom: 35px;
-	font-weight: 700;
+	margin-bottom: 25px;
 	color: #8B0102;
 }
 
 .tvd-customer-slider-ctlr{
-	margin-left: 150px;
-	margin-right: 150px;
+	margin-left: 100px;
+	margin-right: 100px;
 }
 
 .tvd-customer-slider{
 	margin-bottom: 60px!important;
 }
 .tvd-customer-grd-img{
-	padding-bottom: 30px;
+	padding: 10px 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
 }
 .tvd-customer-grd-img img{
-	margin-left: auto;
-	margin-right: auto;
+	max-height: 60px;
+	width: auto;
 }
 
 
@@ -251,8 +251,11 @@
 	    right: 5px;
 	}
 	.Our-services-sliders-cntlr{
-		padding-left: 50px;
-		padding-right: 50px;
+		padding-left: 38px;
+		padding-right: 38px;
+	}
+	.Our-services-sliders{
+		margin: 0 0;
 	}
 }
 @media(max-width: 991px){
@@ -285,15 +288,18 @@
 	}
 	.our-services-grids {
 	    padding: 0 0;
-	    margin: 0 0 0 0;
+	    margin: 0 0 10px 0;
 	}
 	
-	.tvd-customer-grd-img{
-		max-width: 75px;
-	}
 	.Our-services-sliders-cntlr .fl-prev,
 	.Our-services-sliders-cntlr .fl-next{
 		display: none;
+	}
+	.osgi-desc-cntlr{
+		padding-right: 12px;
+	}
+	.tvd-customer-grd-img{
+		margin-bottom: 30px;
 	}
 }
 @media(max-width: 575px){
@@ -316,5 +322,12 @@
 	    right: 0;
 	    bottom: 0;
 	    padding: 0 0!important;
+	}
+	.our-services-grids {
+	    padding: 0 0;
+	    margin: 0 0 0 0;
+	}
+	.our-services-grd-item{
+		max-width: 100%;
 	}
 }
