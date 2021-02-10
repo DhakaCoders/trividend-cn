@@ -8,7 +8,6 @@ $thisID = get_the_ID();
 
 
 <?php 
-  /*$form = get_field('shortcode', $thisID);*/
   $formsec = get_field('formsec', $thisID);
   if( $formsec ):
 ?>
@@ -33,10 +32,10 @@ $thisID = get_the_ID();
       <div class="col-md-12">
         <div class="contact-form-block clearfix">
           <div class="contact-form-lft">
-            <?php if( $form ): ?>
+            <?php if( !empty( $formsec['shortcode'] ) ): ?>
             <div class="contact-form-wrp clearfix">
               <div class="wpforms-container">
-              <?php if( !empty( $form['shortcode'] ) ) echo do_shortcode( $form['shortcode'] ); ?>
+              <?php echo do_shortcode( $formsec['shortcode'] ); ?>
               </div>
             </div>
             <?php endif; ?>
