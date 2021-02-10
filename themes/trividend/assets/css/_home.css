@@ -283,14 +283,13 @@
 	    padding: 0 0;
 	    margin: 0 0 24px 0;
 	}
-	.Our-services-sliders-cntlr .slick-slider ul.slick-dots {
-	    width: 110px;
-	    position: absolute;
-	    right: 0;
-	    bottom: 25px;
-	}
+	
 	.tvd-customer-grd-img{
 		max-width: 75px;
+	}
+	.Our-services-sliders-cntlr .fl-prev,
+	.Our-services-sliders-cntlr .fl-next{
+		display: none;
 	}
 }
 @media(max-width: 575px){
@@ -306,5 +305,11 @@
 	.tvd-customer-sec{
 		margin-left: -20px;
 		margin-right: -20px;
+	}
+	.Our-services-sliders-cntlr .slick-slider ul.slick-dots {
+	    width: 110px;
+	    position: absolute;
+	    right: 0;
+	    bottom: 25px;
 	}
 }

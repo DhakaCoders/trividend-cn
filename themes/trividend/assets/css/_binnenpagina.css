@@ -963,12 +963,7 @@ Gallery design
 	    padding-right: 0;
 	    padding-bottom: 25px;
 	}
-	.dfp-nieuws-module.slick-slider ul.slick-dots{
-		position: absolute;
-		right: 65px;
-		bottom: 28px;
-		width: 100px;
-	}
+	
 	.dfp-fin-module .tvd-fin-inr {
 	    padding-left: 30px;
 	    padding-right: 30px;
@@ -1157,6 +1152,13 @@ Gallery design
 	}
 	.dfp-accordion h5{
 		font-size: 16px;
+	}
+	.dfp-nieuws-module.slick-slider ul.slick-dots{
+		position: absolute;
+		right: 0;
+		bottom: 28px;
+		width: 40px;
+		padding: 0 0!important;
 	}
 
 }
