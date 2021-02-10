@@ -775,11 +775,78 @@ Gallery design
 
 
 #fl-nieuws-details .dfp-promomodule-author{
-	
+	padding-bottom: 20px;
+}
+#fl-nieuws-details .dfp-promomodule-author strong{
+	font-weight: 500;
+	margin-left: 12px;
+}
+#fl-nieuws-details .dfp-promo-share-module{
+	text-align: right;
+	margin-top: 20px;
+}
+#fl-nieuws-details .dfp-promo-share-module span{
+	display: inline-block;
+	vertical-align: baseline;
+	margin-right: 25px;
+}
+.dfp-social-media-module{
+	display: inline-block;
+	vertical-align: baseline;
+}
+.dfp-social-media-module ul{
+	margin-left: -8px;
+	margin-right: -8px;
+	padding-bottom: 0;
+}
+.dfp-social-media-module ul li{
+	display: inline-block;
+	vertical-align: baseline;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+.dfp-social-media-module ul li a{
+	width: 24px;
+	height: 24px;
+	background: #4B4B4B;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+.dfp-social-media-module ul li a:hover{
+	background: #E0861A;
+}
+#fl-nieuws-details .dfp-promo-module{
+	border-bottom: 2px solid #F9F9F9;
+	margin-bottom: 35px;
+}
+#fl-nieuws-details .tvd-tringle-border{
+	border-bottom: 190px solid #E0861A;
+    border-left: 155px solid transparent;
 }
 
-
-
+.dfp-backlink-module a{
+	padding-left: 20px;
+	color: #E0861A;
+	font-weight: 700;
+	position: relative;
+}
+.dfp-backlink-module a i{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+.dfp-backlink-module a:hover{
+	color: #8B0102;
+}
+.dfp-backlink-module a:hover svg{
+	fill: #8B0102;
+}
 
 
 
