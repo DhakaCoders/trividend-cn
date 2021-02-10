@@ -288,6 +288,7 @@
 	.ftr-col-2,
 	.ftr-col-3{
 		width: 100%;
+		padding-right: 0;
 	}
 	.ftr-menu{
 		text-align: center;
