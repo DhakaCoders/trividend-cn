@@ -71,6 +71,10 @@ $thisID = get_the_ID();
 </section>
 
 
+<?php 
+  $ft_financiering = get_field('ft_financiering', 'options');
+  if( $ft_financiering ):
+?>
 <section class="overons-tvd-fin-sec-wrp">
   <div class="container">
     <div class="row">
@@ -80,8 +84,13 @@ $thisID = get_the_ID();
             <i>
               <img src="<?php echo THEME_URI; ?>/assets/images/tvd-fin-img-01.svg">
             </i>
-            <h2 class="fl-h2 tvd-fin-title">Financiering</h2>
-            <p>Egestas pellentesque urna mattis pellentesque et commodo rutrum. Risus placerat tempor dolor<br> sagittis porttitor consectetur pulvinar accumsan.</p>
+            <?php 
+              if( !empty($ft_financiering['titel']) ) printf('<h2 class="fl-h2 tvd-fin-title">%s</h2>', $ft_financiering['titel']);
+              if( !empty($ft_financiering['beschrijving'])) echo wpautop($ft_financiering['beschrijving']); 
+              $fincknop = $ft_financiering['knop'];
+            ?>
+            <!-- <h2 class="fl-h2 tvd-fin-title">Financiering</h2>
+            <p>Egestas pellentesque urna mattis pellentesque et commodo rutrum. Risus placerat tempor dolor<br> sagittis porttitor consectetur pulvinar accumsan.</p> -->
             <a href="#">Financiering</a>
           </div>
         </div>
@@ -89,6 +98,9 @@ $thisID = get_the_ID();
     </div>
   </div>
 </section>
+<?php endif; ?>
+
+
 
 
 <div class="overons-team-sec-wrp">

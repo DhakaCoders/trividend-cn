@@ -1,6 +1,6 @@
 <?php 
   $thisID = get_the_ID();
-  $teamsec = get_field('teamsec', $thisID);
+  $teamsec = get_field('teamsec', 'options');
   if( $teamsec ):
 ?>
 
