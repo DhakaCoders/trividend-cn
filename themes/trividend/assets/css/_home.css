@@ -170,6 +170,12 @@
     width: 20px;
     background: #42BD73;
 }
+.osgi-desc-btn a:hover{
+	color: #E0861A;
+}
+.osgi-desc-btn a:hover:before{
+	background: #E0861A;
+}
 
 .Our-services-sliders-cntlr .fl-prev{
 	left: -50px;
