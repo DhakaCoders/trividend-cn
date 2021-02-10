@@ -458,12 +458,12 @@
 		padding-top: 55px;
 		padding-bottom: 55px;
 	}
-	.tvd-nieuws-slider-ctlr .slick-slider ul.slick-dots{
+	/*.tvd-nieuws-slider-ctlr .slick-slider ul.slick-dots{
 		width: 110px;
 		position: absolute;
 		right: 0;
 		bottom: 25px;
-	}
+	}*/
 	.tvd-nieuws-slider {
 	    margin-left: 0;
 	    margin-right: 0;
@@ -485,6 +485,10 @@
 	.tvd-nieuws-slider-ctlr {
 	    padding-left: 0;
 	    padding-right: 0;
+	}
+	.tvd-nieuws-slider-ctlr .fl-prev,
+	.tvd-nieuws-slider-ctlr .fl-next{
+		display: none;
 	}
 
 }
@@ -526,8 +530,14 @@
 		height: 40px;
 		font-size: 12px;
 	}
-	.tvd-fin-left,
-	.tvd-nieuws-rgt {
+	.tvd-nieuws-slider-ctlr .slick-slider ul.slick-dots{
+		width: 65px;
+		position: absolute;
+		right: 0;
+		bottom: 25px;
+		padding: 0 0!important;
+	}
+	.tvd-financing-sec-inr{
 		margin-left: -20px;
 		margin-right: -20px;
 	}
