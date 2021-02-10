@@ -3,16 +3,23 @@
   Template Name: Contact
 */
 get_header(); 
-
+$thisID = get_the_ID();
 ?>
 
+
+<?php 
+  $formsec = get_field('formsec', $thisID);
+  if( $formsec ):
+?>
 <section class="page-banner-sec-wrp contact-page-bnr">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="tvd-nieuws-grd-entry-hdr">
-          <h1 class="fl-h1 tvd-nieuws-entry-hdr-title">Contacteer Ons</h1>
-          <p>Diam aenean in cursus sollicitudin. Accumsan pharetra <br> lectus ut purus nec quam massa non.</p>
+          <?php 
+            if( !empty($formsec['titel']) ) printf('<h1 class="fl-h1 tvd-nieuws-entry-hdr-title">%s</h1>', $formsec['titel']);
+            if( !empty($formsec['korte_beschrijving'])) echo wpautop($formsec['korte_beschrijving']); 
+          ?>
         </div>
       </div>
     </div>
@@ -67,10 +74,20 @@ get_header();
               </div>
             </div>
           </div>
+          <?php 
+              $address = get_field('address', 'options');
+              $map_url = get_field('url', 'options');
+              $gmaplink = !empty($map_url)?$map_url: 'javascript:void()';
+              $show_telefoon = get_field('telefoon', 'options');
+              $telefoon  = phone_preg($show_telefoon);
+              $emailadres = get_field('emailadres', 'options');
+              $btw = get_field('btw', 'options');
+          ?>
           <div class="contact-form-rgt">
             <div class="contact-form-info">
-              <h2 class="fl-h2 contact-form-info-title">Contact Info</h2>
+              <h2 class="fl-h2 contact-form-info-title"><?php _e( 'Contact Info', THEME_NAME );?> </h2>
               <ul class="reset-list">
+                <?php if( !empty($address) ): ?>
                 <li>
                   <i>
                     <svg class="contact-map-svg" width="16" height="20" viewBox="0 0 16 20" fill="#E0861A">
@@ -79,6 +96,7 @@ get_header();
                   </i>
                   <a href="#">Vooruitgangstraat 333/12<br>1030 Brussels</a>
                 </li>
+                <?php ?>
                 <li>
                   <i>
                     <svg class="contact-phone-svg" width="16" height="16" viewBox="0 0 16 16" fill="#E0861A">
@@ -111,6 +129,7 @@ get_header();
   </div>
 </section>
 
+<?php endif; ?>
 
 <section class="tvd-team-member-wec-wrp">
   <div class="container">
