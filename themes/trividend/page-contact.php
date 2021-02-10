@@ -100,11 +100,5 @@ $thisID = get_the_ID();
 </section>
 
 <?php endif; ?>
-
-
 <?php get_template_part('templates/team'); ?>
-
-
-
-
 <?php get_footer(); ?>
