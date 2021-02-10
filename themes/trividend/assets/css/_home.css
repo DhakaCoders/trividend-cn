@@ -307,9 +307,10 @@
 		margin-right: -20px;
 	}
 	.Our-services-sliders-cntlr .slick-slider ul.slick-dots {
-	    width: 110px;
+	    width: 65px;
 	    position: absolute;
 	    right: 0;
-	    bottom: 25px;
+	    bottom: 0;
+	    padding: 0 0!important;
 	}
 }
