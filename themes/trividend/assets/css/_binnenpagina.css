@@ -211,9 +211,9 @@ ol li::before {
 
 .default-page-con hr{
 	border-top: 2px solid #F9F9F9;
-	margin-bottom: 54px;
+	margin-bottom: 45px;
 	margin-top: 0;
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 
@@ -875,6 +875,10 @@ Gallery design
 	.dfp-goal-des p {
 	    font-size: 13px;
 	}
+	.dfp-fin-module .tvd-fin-inr{
+		padding-left: 70px;
+    	padding-right: 70px;
+	}
 	
 	
 }
@@ -959,6 +963,10 @@ Gallery design
 	.dfp-convarsal-triangle i{
 		right: 55px;
 	}
+	.dfp-btn-inr ul li{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
 }
 @media(max-width: 850px){
 
@@ -1028,7 +1036,7 @@ Gallery design
 	    width: 100%;
 	    padding-left: 0;
 	    padding-right: 0;
-	    padding-bottom: 25px;
+	    padding-bottom: 0;
 	}
 	
 	.dfp-fin-module .tvd-fin-inr {
@@ -1054,6 +1062,9 @@ Gallery design
 		width: 210px;
 		height: 46px;
 		font-size: 14px;
+	}
+	.ac-fancy-module{
+		margin-bottom: 20px;
 	}
 }
 
@@ -1113,9 +1124,6 @@ Gallery design
 	    padding-top: 25px;
 	}
 	
-	.dfp-usp-module .nw-usp-sec-inr ul li{
-		padding-left: 20px;
-	}
 	.innerpage-con-wrap{
 		padding-bottom: 50px;
 	}
@@ -1124,9 +1132,6 @@ Gallery design
 	}
 	.dft-blockquote i {
 	    left: 20px;
-	}
-	.dfp-nieuws-module.slick-slider ul.slick-dots{
-		right: 20px;
 	}
 	.dfp-convarsal-border{
 		right: 45px;
@@ -1215,7 +1220,7 @@ Gallery design
 		font-size: 12px;
 	}
 	.dfp-nieuws-module.slick-slider ul.slick-dots{
-		bottom: 22px;
+		bottom: 0;
 	}
 	.dfp-accordion h5{
 		font-size: 16px;
@@ -1223,9 +1228,13 @@ Gallery design
 	.dfp-nieuws-module.slick-slider ul.slick-dots{
 		position: absolute;
 		right: 0;
-		bottom: 28px;
+		bottom: 0;
 		width: 40px;
 		padding: 0 0!important;
+	}
+	.tvd-nieuws-grd-item{
+		max-width: 100%;
+		width: 100%;
 	}
 
 }
@@ -1233,8 +1242,6 @@ Gallery design
 
 
 @media(max-width: 359px){
-	.dfp-nieuws-module.slick-slider ul.slick-dots{
-		bottom: 22px;
-	}
+
 }
 
