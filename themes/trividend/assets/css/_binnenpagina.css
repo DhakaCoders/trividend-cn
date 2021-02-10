@@ -19,7 +19,7 @@
 .default-page-con h4,
 .default-page-con h5{
 	margin-bottom: 30px;
-	line-height: 1.1;
+	line-height: 1.15;
 }
 .default-page-con h2.red-color{
 	color: #8B0102;
@@ -555,6 +555,7 @@ Gallery design
 	padding-left: 18px;
 	display: none;
 }
+
 .dfp-accordion h5.active{
 	background: #E0861A;
 	border-color: #E0861A;
@@ -967,6 +968,9 @@ Gallery design
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
+	.tvd-fin-inr p{
+		padding-right: 20px;
+	}
 }
 @media(max-width: 850px){
 
@@ -1048,6 +1052,7 @@ Gallery design
 	}
 	.dfp-klanten-module {
 	    padding-top: 35px;
+	    margin-top: 10px;
 	}
 	.dfp-klanten-module .tvd-customer-title {
 	    margin-bottom: 25px;
@@ -1065,6 +1070,19 @@ Gallery design
 	}
 	.ac-fancy-module{
 		margin-bottom: 20px;
+	}
+	.dfp-fin-module.orange {
+	    margin-bottom: 50px;
+	    margin-top: 10px;
+	}
+	.table-dsc table tbody tr td span {
+	    font-size: 14px;
+	}
+	.table-dsc table tbody tr td:first-child span{
+		font-size: 18px;
+	}
+	.dfp-btn-inr ul li{
+		padding-bottom: 10px;
 	}
 }
 
@@ -1194,6 +1212,28 @@ Gallery design
 	    padding-top: 0;
 	    padding-bottom: 0;
 	}
+	.ms-video-play-cntlr{
+		width: 50px;
+    	height: 50px;
+	}
+	.ms-video-play-cntlr i svg{
+		max-width: 50px;
+		width: 100%;
+		height: 50px;
+	}
+	.dfp-nieuws-module{
+		margin-top: 7px;
+	}
+	.dfp-nieuws-module .tvd-nieuws-grd-item-des-title{
+		margin-bottom: 10px;
+	}
+	.tvd-customer-slider {
+	    margin-bottom: 40px!important;
+	}
+	.dfp-btn-inr ul li{
+		padding-bottom: 10px;
+	}
+
 }
 
 
@@ -1235,6 +1275,9 @@ Gallery design
 	.tvd-nieuws-grd-item{
 		max-width: 100%!important;
 		width: 100%;
+	}
+	.tvd-fin-inr p {
+	    padding-right: 0px;
 	}
 
 }
