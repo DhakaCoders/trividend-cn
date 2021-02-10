@@ -335,11 +335,11 @@ google.maps.event.addDomListener(window, 'load', initialize);
     if( $('.nwSlider').length ){
         $('.nwSlider').slick({
           dots: false,
-          infinite: false,
+          infinite: true,
           autoplay: false,
           arrows: true,
-          autoplaySpeed: 2000,
-          speed: 300,
+          autoplaySpeed: 3000,
+          speed: 700,
           slidesToShow: 3,
           slidesToScroll: 1,
           prevArrow: $('.tvd-nieuws-slider-ctlr .fl-nxt-prev .fl-prev'),
@@ -379,11 +379,11 @@ google.maps.event.addDomListener(window, 'load', initialize);
      if($('.bnpgnSlider').length ){
       $('.bnpgnSlider').slick({
         dots: true,
-        infinite: false,
+        infinite: true,
         autoplay: true,
         arrows: false,
-        autoplaySpeed: 2000,
-        speed: 300,
+        autoplaySpeed: 3000,
+        speed: 700,
         slidesToShow: 5,
         slidesToScroll: 1,
         responsive: [
@@ -416,11 +416,11 @@ google.maps.event.addDomListener(window, 'load', initialize);
       if($('.bnwsSlider').length ){
         $('.bnwsSlider').slick({
           dots: true,
-          infinite: false,
+          infinite: true,
           autoplay: false,
           arrows: false,
-          autoplaySpeed: 2000,
-          speed: 300,
+          autoplaySpeed: 3000,
+          speed: 700,
           slidesToShow: 1,
           slidesToScroll: 1,
         });
@@ -431,11 +431,11 @@ google.maps.event.addDomListener(window, 'load', initialize);
       if($('.proSlider').length ){
         $('.proSlider').slick({
           dots: true,
-          infinite: false,
+          infinite: true,
           autoplay: false,
           arrows: false,
-          autoplaySpeed: 2000,
-          speed: 300,
+          autoplaySpeed: 3000,
+          speed: 700,
           slidesToShow: 1,
           slidesToScroll: 1,
         });
