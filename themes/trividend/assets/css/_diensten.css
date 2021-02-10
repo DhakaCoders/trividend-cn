@@ -132,6 +132,7 @@
 	align-items: center;
 	justify-content: center;
 	border: 2px solid #42BD73;
+	padding: 0 10px;
 }
 .dfp-corona-module-inr a:hover{
 	background: #E0861A;
@@ -309,6 +310,11 @@
 	.tvd-diensten-img {
 	    min-height: 350px;
 	}
+	.dfp-corona-module-inr a{
+		width: 210px;
+		height: 46px;
+		font-size: 14px;
+	}
 }
 
 @media(max-width: 575px){
@@ -329,6 +335,10 @@
 	.tvd-diensten-img {
 	    min-height: 300px;
 	}
+	.dfp-corona-module-inr a{
+		width: 180px;
+		height: 44px;
+	}
 
 }
 
@@ -344,6 +354,11 @@
 	}
 	.tvd-diensten-img {
 	    min-height: 250px;
+	}
+	.dfp-corona-module-inr a{
+		width: 140px;
+		height: 40px;
+		font-size: 12px;
 	}
 
 }
