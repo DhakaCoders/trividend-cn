@@ -335,7 +335,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
     if( $('.nwSlider').length ){
         $('.nwSlider').slick({
           dots: false,
-          infinite: true,
+          infinite: false,
           autoplay: false,
           arrows: true,
           autoplaySpeed: 3000,
@@ -379,7 +379,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
      if($('.bnpgnSlider').length ){
       $('.bnpgnSlider').slick({
         dots: true,
-        infinite: true,
+        infinite: false,
         autoplay: true,
         arrows: false,
         autoplaySpeed: 3000,
@@ -416,7 +416,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
       if($('.bnwsSlider').length ){
         $('.bnwsSlider').slick({
           dots: true,
-          infinite: true,
+          infinite: false,
           autoplay: false,
           arrows: false,
           autoplaySpeed: 3000,
@@ -431,7 +431,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
       if($('.proSlider').length ){
         $('.proSlider').slick({
           dots: true,
-          infinite: true,
+          infinite: false,
           autoplay: false,
           arrows: false,
           autoplaySpeed: 3000,
