@@ -23,6 +23,7 @@
 
 .tvd-diensten-title{
 	color: #8B0102;
+	margin-bottom: 22px;
 }
 
 
@@ -324,6 +325,9 @@
 	}
 	.diensten-ctlr .Our-services-cntlr{
 		padding-bottom: 40px;
+	}
+	.tvd-diensten-title{
+		margin-bottom: 30px;
 	}
 }
 
