@@ -1,15 +1,8 @@
-<?php 
-    $address = get_field('address', 'options');
-    $map_url = get_field('url', 'options');
-    $gmaplink = !empty($map_url)?$map_url: 'javascript:void()';
-    $show_telefoon = get_field('telefoon', 'options');
-    $telefoon  = phone_preg($show_telefoon);
-    $emailadres = get_field('emailadres', 'options');
-    $btw = get_field('btw', 'options');
-?>
-
-
-
+<!-- <?php 
+  $thisID = get_the_ID();
+  $teamsec = get_field('teamsec', $thisID);
+  if( $teamsec ):
+?> -->
 
 <section class="tvd-team-member-wec-wrp">
   <div class="container">
@@ -17,8 +10,12 @@
       <div class="col-md-12">
         <div class="tvd-team-member-wrp">
           <div class="tvd-nieuws-enty-hdr">
-            <h2 class="fl-h2 tvd-nieuws-enty-hdr-title">Team</h2>
-            <p>Accumsan pharetra lectus ut purus nec quam massa non.</p>
+<!--             <h2 class="fl-h2 tvd-nieuws-enty-hdr-title">Team</h2>
+            <p>Accumsan pharetra lectus ut purus nec quam massa non.</p> -->
+            <?php 
+              if( !empty($teamsec['titel']) ) printf('<h2 class="fl-h2 tvd-nieuws-enty-hdr-title">%s</h2>', $teamsec['titel']);
+              if( !empty($teamsec['beschrijving'])) echo wpautop($teamsec['beschrijving']); 
+            ?>
             <span><i><img src="<?php echo THEME_URI; ?>/assets/images//team-border-btm.svg"></i></span>
           </div>
           <div class="tvd-team-grid-wrp">
@@ -236,3 +233,6 @@
     </div>
   </div>
 </section>
+
+
+<!-- <?php endif; ?> -->
