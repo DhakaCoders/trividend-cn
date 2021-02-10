@@ -298,8 +298,9 @@
 	}
 	.ftr-menu-title{
 		display: inline-block;
+		vertical-align: baseline;
 		padding-left: 0;
-		padding-right: 22px;
+		padding-right: 0;
 		position: relative;
 	}
 	.ftr-menu-title:after{
@@ -315,7 +316,7 @@
 	    transform: translateY(-50%);
 	    -ms-transform: translateY(-50%);
 	    -webkit-transform: translateY(-50%);
-	    right: 0;
+	    right: -25px;
 	    line-height: 15px;
 	}
 	.ftr-menu-title.active:after{
@@ -324,7 +325,7 @@
 	.ftr-cnt-menu-cv, 
 	.ftr-cnt-menu-adrs, 
 	.ftr-cnt-menu-mail {
-	    padding-bottom: 15px;
+	    padding-bottom: 10px;
 	}
 	.ftr-menu.ftr-col-2 ul li {
 	    padding-bottom: 15px;
@@ -362,6 +363,13 @@
 	}
 	.ftr-menu-title{
 		margin-bottom: 25px;
+	}
+	.ftr-menu ul {
+	    padding-left: 0;
+	    padding-bottom: 20px;
+	}
+	.ftr-btm-designby a{
+		color: #B9B9B9;
 	}
 	
 }

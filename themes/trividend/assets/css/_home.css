@@ -224,11 +224,10 @@
 }
 .tvd-customer-grd-img{
 	padding: 10px 15px;
-	height: 60px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 .tvd-customer-grd-img img{
 	max-height: 60px;
@@ -299,6 +298,9 @@
 	.osgi-desc-cntlr{
 		padding-right: 12px;
 	}
+	.tvd-customer-grd-img{
+		margin-bottom: 30px;
+	}
 }
 @media(max-width: 575px){
 	.tvd-customer-sec {
@@ -327,5 +329,8 @@
 	}
 	.our-services-grd-item{
 		max-width: 100%;
+	}
+	.tvd-customer-grd-img{
+		margin-bottom: 20px;
 	}
 }
