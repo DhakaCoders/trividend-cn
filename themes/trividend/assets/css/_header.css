@@ -150,36 +150,62 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a:hover{
 .hdr-search{
 	position: relative;
 }
-.hdr-search input {
-    position: absolute;
-    top: 100%;
-    padding: 10px 15px;
+.hdr-search-inr{
     width: 0;
     opacity: 0;
-    background: #fff;
+    position: absolute;
     right: 0px;
-    margin-top: 15px;
-    border: 1px solid #4B4B4B;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
     transition: all 0.5s;
     -ms-transition: all 0.5s;
     -webkit-transition: all 0.5s;
+
+
 }
-.hdr-search-input-show input {
+.hdr-search-inr > button{
+    position: absolute;
+    padding: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    -webkit-transition: all 0.7s;
+}
+.hdr-search-input-show .hdr-search-inr button{
+    right: 10px;
+}
+.hdr-search-inr input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    background: #fff;
+    border: 1px solid #4B4B4B;
+}
+.hdr-search-input-show .hdr-search-inr {
     width: 435px;
     opacity: 1;
 }
-.hdr-search-input-show input:focus{
+.hdr-search-inr input:focus{
 	border-color: #E0861A;
 }
-.hdr-search button{
+.hdr-search button,
+.hdr-search-inr button{
 	background: transparent;
 	cursor: pointer;
 }
-.hdr-search button i{
+.hdr-search button i,
+.hdr-search-inr button i{
     display: inline-block;
 }
-.hdr-search button:hover i svg,
-.hdr-search-input-show button i svg{
+.hdr-search-inr button:hover i svg,
+.hdr-search button:hover i svg{
 	fill: #8B0102;
 }
 
