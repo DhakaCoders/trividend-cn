@@ -166,6 +166,9 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a:hover{
 
 
 }
+.hdr-search-inr{
+    z-index: -1;
+}
 .hdr-search-inr > button{
     position: absolute;
     padding: 0;
@@ -178,9 +181,18 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a:hover{
     transition: all 0.7s;
     -ms-transition: all 0.7s;
     -webkit-transition: all 0.7s;
+    z-index: -1;
 }
 .hdr-search-input-show .hdr-search-inr button{
     right: 10px;
+    z-index: 10;
+}
+.hdr-search-input-show .hdr-search-inr{
+     z-index: 10;
+}
+.hdr-search button.hdr-search-btn{
+    z-index: 9;
+    padding: 0;
 }
 .hdr-search-inr input {
     width: 100%;

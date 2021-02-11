@@ -218,8 +218,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
   }
 
 
-  if( $('.hdr-search').length ){
-    $('.hdr-search button').click(function(e){
+  if( $('.hdr-search-btn').length ){
+    $('.hdr-search-btn').click(function(e){
       event.preventDefault();
       $('.hdr-search').toggleClass('hdr-search-input-show');
     });
