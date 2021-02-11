@@ -84,7 +84,16 @@
 	background: #fff!important;
 }
 
-
+.homeBnrSlider .hm-bnr-slider-item-cntlr.slick-current .hm-bnr-slider-item .hm-bsi-arrow{
+  -webkit-animation-name: fadeInLeftShort;
+  animation-name: fadeInLeftShort;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;	
+}
 .homeBnrSlider .hm-bnr-slider-item-cntlr.slick-current .hm-bnr-slider-item  .hm-bsi-desc-sub-title{
   -webkit-animation-name: fadeInUpShort;
   animation-name: fadeInUpShort;
@@ -92,8 +101,8 @@
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;	
-  -webkit-animation-delay: 0.7s;
-  animation-delay: 0.7s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 .homeBnrSlider .hm-bnr-slider-item-cntlr.slick-current .hm-bnr-slider-item  .hm-bsi-desc-title{
   -webkit-animation-name: fadeInUpShort;
@@ -102,8 +111,8 @@
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;	
-  -webkit-animation-delay: 1.2s;
-  animation-delay: 1.2s;	
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s;	
 }
 .homeBnrSlider .hm-bnr-slider-item-cntlr.slick-current .hm-bnr-slider-item  p{
   -webkit-animation-name: fadeInUpShort;
@@ -112,8 +121,8 @@
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;	
-  -webkit-animation-delay: 1.6s;
-  animation-delay: 1.6s;	
+  -webkit-animation-delay: 1.7s;
+  animation-delay: 1.7s;	
 }
 
 .homeBnrSlider .hm-bnr-slider-item-cntlr.slick-current .hm-bnr-slider-item .hm-bsi-desc-btn{
@@ -123,8 +132,8 @@
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;	
-  -webkit-animation-delay: 1.6s;
-  animation-delay: 1.6s;	
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;	
 }
 
 
