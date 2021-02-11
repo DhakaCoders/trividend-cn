@@ -162,7 +162,7 @@
 .contact-form-wrp .wpforms-container .wpforms-form.was-validated .wpforms-field-container .wpforms-has-error input {
     border: 1px solid #D92A2B !important;
 }
-.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container p {
+.contact-form-wrp .wpforms-container .wpforms-form .form-privacy-text p {
     font-size: 12px;
     line-height: 14px;
     color: #6A6A6A;
@@ -170,13 +170,13 @@
     text-align: left;
     font-style: italic;
 }
-.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container p a{
+.contact-form-wrp .wpforms-container .wpforms-form .form-privacy-text p a{
 	display: inline-block;
 	vertical-align: baseline;
 	text-decoration: underline;
 	color: #6A6A6A;
 }
-.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container p a:hover{
+.contact-form-wrp .wpforms-container .wpforms-form .form-privacy-text p a:hover{
 	color: #E0861A;
 }
 .contact-form-info{
@@ -547,7 +547,7 @@
 	    line-height: 14px;
 	    padding: 10px 15px;
 	}
-	.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container p{
+	.contact-form-wrp .wpforms-container .wpforms-form .form-privacy-text p{
 		margin-bottom: 20px;
 	}
 	.contact-form-wrp .wpforms-field-pagebreak .wpforms-clear button, .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button {

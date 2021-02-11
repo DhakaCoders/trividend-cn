@@ -222,7 +222,7 @@
           <?php if( !empty($home_klanten['titel']) ) printf('<div class="tvd-customer-hdr"><h2 class="tvd-customer-title fl-h2">%s</h2></div>', $home_klanten['titel']); ?>
 
           <?php 
-            $klanten_logos = get_field('klanten_logo', HOMEID);
+            $klanten_logos = $home_klanten['klanten_logo'];
             if( $klanten_logos ):
               printr($klanten_logos);
           ?>
@@ -235,7 +235,7 @@
               ?>
               <div class="tvd-customer-grd">
                 <div class="tvd-customer-grd-img">
-                  <?php echo $klanten_logoIcon;  printr($klanten_logoIcon);?>
+                  <?php echo $klanten_logoIcon;?>
                 </div>
               </div>
               <?php endforeach ?>
@@ -293,18 +293,29 @@
 <?php endif; ?>
 
 
-
+<?php 
+  $home_nieuws = get_field('home_nieuws', HOMEID);
+  if( $home_nieuws ):
+?>
 <section class="tvd-nieuws-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="tvd-nieuws-sec-inr">
           <div class="tvd-nieuws-entry-hdr fl-entry-hdr">
-            <h2 class="tvd-nieuws-enty-hdr-title fl-h2">Nieuws</h2>
-            <p>Morbi in lectus ut mauris cursus efficitur sit amet ut neque. Sed congue arcu ligula, sit <br> amet fringilla magna porttitor</p>
+            <?php 
+              if( !empty($home_nieuws['titel']) ) printf('<h2 class="tvd-nieuws-enty-hdr-title fl-h2">%s</h2>', $home_nieuws['titel']);
+              if( !empty($home_nieuws['beschrijving'])) echo wpautop($home_nieuws['beschrijving']); 
+            ?>
+
+
+            <!-- <h2 class="tvd-nieuws-enty-hdr-title fl-h2">Nieuws</h2>
+            <p>Morbi in lectus ut mauris cursus efficitur sit amet ut neque. Sed congue arcu ligula, sit <br> amet fringilla magna porttitor</p> -->
+            <?php if(!empty($home_nieuws['titel'])): ?>
             <span>
               <i><img src="<?php echo THEME_URI; ?>/assets/images/team-border-btm.svg"></i>
             </span>
+            <?php endif; ?>
           </div>
 
           <div class="tvd-nieuws-slider-ctlr">
@@ -436,6 +447,9 @@
     </div>
   </div>
 </section>
+
+
+<?php endif; ?>
 
 <section class="tvd-financing-sec">
   <div class="container">
