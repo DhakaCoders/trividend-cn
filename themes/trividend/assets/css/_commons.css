@@ -19,7 +19,9 @@ a, a:hover, a:focus, button:hover, button:focus{
 	text-decoration: none;
 	outline: 0;
 }
-
+html{
+	font-size: 16px;
+}
 body {
     background: #ffffff;
     color: #6A6A6A;
@@ -44,7 +46,7 @@ u{
 }
 ::selection {
   color: #fff;
-  background: #512C36;
+  background: #8b0101;
 }
 /*-- app gap use pattern --*/
 /*data-xxs = 575
@@ -388,4 +390,7 @@ form .dropdown-menu li a{
     padding: 50px 0;
     color: #8B0102;
     font-size: 24px;
+}
+ul.slick-dots li:only-child {
+    display: none;
 }
