@@ -256,7 +256,6 @@ if( $('.hm-bnr-slider-item-cntlr').length ){
       prevArrow: $('.hm-banner-cntlr .fl-nxt-prev .fl-prev'),
       nextArrow: $('.hm-banner-cntlr .fl-nxt-prev .fl-next'),
     });
-
 }
 
     if($('.ourServicesSliders').length ){

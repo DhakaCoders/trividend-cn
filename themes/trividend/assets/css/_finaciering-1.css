@@ -3,6 +3,18 @@
 steps-form-sec-wrp
 ------------------
 */
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container:after,
+.wpforms-page:after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.hide-label label{
+	opacity: 0;
+}
+.steps-form-sec-wrp .contact-form-block .wpforms-container form .wpforms-page-indicator .wpforms-page-indicator-page:last-child .wpforms-page-indicator-page-number{
+	margin-right: 0;
+}
 .steps-form-sec-wrp{
 	background:#F9F9F9;
 	padding: 125px 0;
@@ -12,40 +24,37 @@ steps-form-sec-wrp
 	width: 100%;
 	margin: 0 auto;
 }
-.steps-form-sec-wrp .wpforms-page-indicator {
+.steps-form-sec-wrp .contact-form-block .wpforms-container form .wpforms-page-indicator {
     position: relative;
     text-align: right;
-    padding-bottom: 25px;
-    border-bottom: 2px solid#EEE;
+    padding: 0 0 25px!important;
+    border-bottom: 2px solid#EEE!important;
     margin-bottom: 45px;
+    border-top: 0!important;
 }
-.steps-form-sec-wrp .wpforms-page-indicator-page{
+.steps-form-sec-wrp .contact-form-block .wpforms-container form .wpforms-page-indicator-page{
 	display: inline-block;
 	vertical-align: baseline;
+	float: none!important;
+	margin: 0!important;
 }
-.contact-form-wrp .wpforms-page-indicator-page span.wpforms-page-indicator-page-number{
+.steps-form-sec-wrp .contact-form-block .wpforms-container 
+form .wpforms-page-indicator-page span.wpforms-page-indicator-page-number{
+	color: #42BD73!important;
+	background: #42BD73 !important;
+	float: left;
+	margin: 0 25px;
+	position: relative;
+	border-radius: 0;
+	width: 40px;
+	height: 40px;
 	display:flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 18px;
 	line-height: 1;
-	color: #4B4B4B;
-	width: 40px;
-	height: 40px;
-	background: #fff !important;
-	float: left;
-	margin: 0 25px;
-	position: relative;
 }
-.contact-form-wrp .step-checkmark-3 .wpforms-page-indicator-page:nth-child(2) span.wpforms-page-indicator-page-number,
-.contact-form-wrp .step-checkmark-3 .wpforms-page-indicator-page:nth-child(1) span.wpforms-page-indicator-page-number,
-.contact-form-wrp .step-checkmark-1 .wpforms-page-indicator-page:nth-child(1) span.wpforms-page-indicator-page-number{
-	background: #42BD73 !important;
-	color:#42BD73; 
-}
-.contact-form-wrp .step-checkmark-3 .wpforms-page-indicator-page:nth-child(2) span.wpforms-page-indicator-page-number:before,
-.contact-form-wrp .step-checkmark-3 .wpforms-page-indicator-page:nth-child(1) span.wpforms-page-indicator-page-number:before,
-.contact-form-wrp .step-checkmark-1 .wpforms-page-indicator-page:nth-child(1) span.wpforms-page-indicator-page-number:before{
+.wpforms-page-indicator-page span.wpforms-page-indicator-page-number:before{
 	content: "";
 	position: absolute;
 	left: 16px;
@@ -58,6 +67,30 @@ steps-form-sec-wrp
 	-ms-transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
 }
+.wpforms-page-indicator-page.active ~ .wpforms-page-indicator-page span.wpforms-page-indicator-page-number:before{
+	display: none;
+}
+.steps-form-sec-wrp .contact-form-block .wpforms-container 
+form .wpforms-page-indicator-page.active span.wpforms-page-indicator-page-number{
+	color: #fff!important;
+	background: #E0861A!important;
+}
+.steps-form-sec-wrp .contact-form-block .wpforms-container 
+form .wpforms-page-indicator-page.active span.wpforms-page-indicator-page-number:before{
+	display: none;
+}
+.steps-form-sec-wrp .contact-form-block .wpforms-container 
+form .wpforms-page-indicator-page.active ~ .wpforms-page-indicator-page span.wpforms-page-indicator-page-number{
+	color: #4B4B4B!important;
+	background: #fff !important;
+}
+.contact-form-wrp .step-checkmark-3 .wpforms-page-indicator-page:nth-child(2) span.wpforms-page-indicator-page-number,
+.contact-form-wrp .step-checkmark-3 .wpforms-page-indicator-page:nth-child(1) span.wpforms-page-indicator-page-number,
+.contact-form-wrp .step-checkmark-1 .wpforms-page-indicator-page:nth-child(1) span.wpforms-page-indicator-page-number{
+	background: #42BD73 !important;
+	color:#42BD73; 
+}
+
 .contact-form-wrp .wpforms-page-indicator-page-3 span.wpforms-page-indicator-page-number{
 	margin-right: 0;
 }
@@ -71,8 +104,7 @@ steps-form-sec-wrp
 	-webkit-transform: translateY(-50%);
 	width: 12px;
 	height: 2px;
-	border: 2px solid #E1E1E1;
-	transform: matrix(1, 0, 0, -1, 0, 0);
+	background: #E1E1E1;
 }
 .contact-form-wrp .wpforms-page-indicator-page-3 span.wpforms-page-indicator-page-number:after{
 	content: none !important;
@@ -111,9 +143,6 @@ steps-form-sec-wrp
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.ProjectFull textarea{
 	height: 166px;
-}
-.contact-form-wrp .wpforms-container .wpforms-form .wpforms-page{
-	display: none;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-page.active{
 	display: block;
@@ -178,20 +207,22 @@ steps-form-sec-wrp
 }
 
 @media(max-width: 575px){
-	.steps-form-sec-wrp .wpforms-page-indicator{
-		text-align: left;
-		padding-top: 65px;
-		margin-bottom: 25px;
-	}
-	.contact-form-wrp .wpforms-page-indicator-page-1 span.wpforms-page-indicator-page-number {
-	    margin-left: 0 !important;
-	}
-	
-	.contact-form-wrp .wpforms-page-indicator-page span.wpforms-page-indicator-page-number:after{
-		right: -28px;
-	}
 	.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.ProjectFull input {
 	    height: 250px;
+	}
+	.steps-form-sec-wrp .contact-form-block .wpforms-container form .wpforms-page-indicator{
+		padding-top: 55px!important;
+	}
+	.steps-form-sec-wrp .contact-form-block .wpforms-container form .wpforms-page-indicator{
+		text-align: left;
+	}
+	.steps-form-sec-wrp .contact-form-block .wpforms-container form .wpforms-page-indicator .wpforms-page-indicator-page:first-child .wpforms-page-indicator-page-number {
+	    margin-left: 0;
+	}
+	.steps-form-sec-wrp .contact-form-block .wpforms-container form .wpforms-page-indicator-page span.wpforms-page-indicator-page-number{
+		height: 32px;
+		width: 32px;
+		font-size: 16px;
 	}
 
 
