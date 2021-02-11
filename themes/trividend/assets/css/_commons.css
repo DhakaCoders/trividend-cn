@@ -191,7 +191,8 @@ ul.reset-list,
 ol.reset-list,
 ul.sub-menu,
 .fl-pagi-ctlr ul,
-.reset-slect ul{
+.reset-slect ul,
+.fl-pagination-ctlr ul{
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -200,7 +201,8 @@ nav.main-nav > ul > li.menu-item-has-children ul li,
 .reset-list li,
 ul.sub-menu li,
 .fl-pagi-ctlr ul li,
-.reset-slect ul li{
+.reset-slect ul li,
+.fl-pagination-ctlr ul li{
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -210,7 +212,8 @@ nav.main-nav > ul > li.menu-item-has-children ul li:before,
 .reset-list li:before,
 ul.sub-menu li:before,
 .fl-pagi-ctlr ul li:before,
-.reset-slect ul li:before{
+.reset-slect ul li:before,
+.fl-pagination-ctlr ul li:before{
 	content: none!important;
 }
 
