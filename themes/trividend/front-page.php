@@ -120,6 +120,7 @@
               <div class="our-services-grids">
                 <div class="our-services-grd-item">
                   <div class="osgi-img-cntlr">
+                    <a class="overlay-link" href="#"></a>
                     <div class="osgi-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/our-services-grd-item-img-001.jpg');"></div>
                   </div>
                   <div class="osgi-desc-cntlr">
@@ -137,6 +138,7 @@
               <div class="our-services-grids">
                 <div class="our-services-grd-item">
                   <div class="osgi-img-cntlr">
+                    <a class="overlay-link" href="#"></a>
                     <div class="osgi-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/our-services-grd-item-img-002.jpg');"></div>
                   </div>
                   <div class="osgi-desc-cntlr">
@@ -154,6 +156,7 @@
               <div class="our-services-grids">
                 <div class="our-services-grd-item">
                   <div class="osgi-img-cntlr">
+                    <a class="overlay-link" href="#"></a>
                     <div class="osgi-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/our-services-grd-item-img-003.jpg');"></div>
                   </div>
                   <div class="osgi-desc-cntlr">
@@ -171,6 +174,7 @@
               <div class="our-services-grids">
                 <div class="our-services-grd-item">
                   <div class="osgi-img-cntlr">
+                    <a class="overlay-link" href="#"></a>
                     <div class="osgi-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/our-services-grd-item-img-001.jpg');"></div>
                   </div>
                   <div class="osgi-desc-cntlr">
