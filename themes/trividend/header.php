@@ -112,9 +112,9 @@
                 </nav>
               </div>
               <div class="hdr-search">
-                <form action="">
+                <form action="<?php echo esc_url(home_url('/')); ?>" method="get">
                   <div class="hdr-search-inr">
-                    <input type="text" placeholder="Zoeken">
+                    <input type="text" placeholder="Zoeken" name="s" value="<?php echo get_search_query(); ?>">
                     <button>
                       <i>
                         <svg class="hdr-serach-icon" width="24" height="24" viewBox="0 0 24 24" fill="#E0861A">
@@ -166,7 +166,8 @@
       </div>
     </div>
     <div class="xs-mbl-menu-srch">
-      <input type="text" placeholder="Zoeken">
+      <form action="<?php echo esc_url(home_url('/')); ?>" method="get">
+      <input type="text" placeholder="Zoeken" name="s" value="<?php echo get_search_query(); ?>">
       <button>
         <i>
           <svg class="hdr-serach-icon" width="24" height="24" viewBox="0 0 24 24" fill="#E0861A">
@@ -174,6 +175,7 @@
           </svg>
         </i>
       </button>
+      </form>
     </div>
   </div>
 

@@ -204,8 +204,6 @@
   </div>
 </section>
 <?php endif; ?>
-
-
 <?php 
   $showhide_nieuws = get_field('showhide_nieuws', HOMEID);
   $home_nieuws = get_field('home_nieuws', HOMEID);
