@@ -81,8 +81,8 @@ if( $('.responsive-slider').length ){
       dots: true,
       infinite: false,
       autoplay: true,
-      autoplaySpeed: 2000,
-      speed: 300,
+      autoplaySpeed: 4000,
+      speed: 700,
       slidesToShow: 4,
       slidesToScroll: 1,
       responsive: [
@@ -206,12 +206,20 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
   if( $('.humberger-icon').length ){
     $('.humberger-icon').click(function(){
-      $(this).parent().toggleClass('close-icon');
+      $('body').toggleClass('allWork');
+    });
+  }
+  if( $('li.menu-item-has-children a').length ){
+    $('li.menu-item-has-children a').click(function(e){
+       event.preventDefault();
+      $(this).next().slideToggle(300);
+      $(this).parent().toggleClass('sub-menu-arrow');
     });
   }
 
-  if( $('.hdr-search').length ){
-    $('.hdr-search button').click(function(e){
+
+  if( $('.hdr-search-btn').length ){
+    $('.hdr-search-btn').click(function(e){
       event.preventDefault();
       $('.hdr-search').toggleClass('hdr-search-input-show');
     });
@@ -225,7 +233,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
   }        
 });
   /*slider */
-  if( $('.homeBnrSlider').length ){
+  /*if( $('.homeBnrSlider').length ){
     $('.homeBnrSlider').slick({
       dots: true,
       infinite: true,
@@ -238,7 +246,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
       prevArrow: $('.hm-banner-cntlr .fl-nxt-prev .fl-prev'),
       nextArrow: $('.hm-banner-cntlr .fl-nxt-prev .fl-next'),
     });
-}
+}*/
 
     if($('.ourServicesSliders').length ){
       $('.ourServicesSliders').slick({
@@ -246,12 +254,33 @@ google.maps.event.addDomListener(window, 'load', initialize);
         infinite: false,
         autoplay: false,
         arrows: true,
-        autoplaySpeed: 2000,
-        speed: 300,
+        autoplaySpeed: 4000,
+        speed: 700,
         slidesToShow: 3,
         slidesToScroll: 1,
         prevArrow: $('.Our-services-sliders-cntlr .fl-nxt-prev .fl-prev'),
         nextArrow: $('.Our-services-sliders-cntlr .fl-nxt-prev .fl-next'),
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              dots: true,
+              arrows: false,
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
       });
     }
 
@@ -262,10 +291,38 @@ google.maps.event.addDomListener(window, 'load', initialize);
         infinite: false,
         autoplay: true,
         arrows: false,
-        autoplaySpeed: 2000,
-        speed: 300,
+        autoplaySpeed: 4000,
+        speed: 700,
         slidesToShow: 6,
         slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 5,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              dots: true,
+              arrows: false,
+              slidesToShow: 3,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
       });
     }
 
@@ -281,8 +338,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
           infinite: false,
           autoplay: false,
           arrows: true,
-          autoplaySpeed: 2000,
-          speed: 300,
+          autoplaySpeed: 4000,
+          speed: 700,
           slidesToShow: 3,
           slidesToScroll: 1,
           prevArrow: $('.tvd-nieuws-slider-ctlr .fl-nxt-prev .fl-prev'),
@@ -298,6 +355,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
           {
             breakpoint: 768,
             settings: {
+              dots: true,
+              arrows: false,
               slidesToShow: 1,
               slidesToScroll: 1
             }
@@ -323,8 +382,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
         infinite: false,
         autoplay: true,
         arrows: false,
-        autoplaySpeed: 2000,
-        speed: 300,
+        autoplaySpeed: 4000,
+        speed: 700,
         slidesToShow: 5,
         slidesToScroll: 1,
         responsive: [
@@ -360,8 +419,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
           infinite: false,
           autoplay: false,
           arrows: false,
-          autoplaySpeed: 2000,
-          speed: 300,
+          autoplaySpeed: 4000,
+          speed: 700,
           slidesToShow: 1,
           slidesToScroll: 1,
         });
@@ -375,8 +434,23 @@ google.maps.event.addDomListener(window, 'load', initialize);
           infinite: false,
           autoplay: false,
           arrows: false,
-          autoplaySpeed: 2000,
-          speed: 300,
+          autoplaySpeed: 4000,
+          speed: 700,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        });
+      }
+    }
+
+    if(windowWidth <= 767){
+      if($('.rnSlider').length ){
+        $('.rnSlider').slick({
+          dots: true,
+          infinite: false,
+          autoplay: false,
+          arrows: false,
+          autoplaySpeed: 3000,
+          speed: 700,
           slidesToShow: 1,
           slidesToScroll: 1,
         });
@@ -388,8 +462,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
   /* Start of Milon */
-  $('label.wpforms-error').on('click', function(){
-    $(this).parent('.wpforms-field').removeClass('wpforms-has-error');
+  $('.wpforms-error').on('click', function(){
+    $(this).parents('.wpforms-field').removeClass('wpforms-has-error');
   });
 
 
@@ -400,8 +474,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
       infinite: true,
       autoplay: false,
       arrows: false,
-      autoplaySpeed: 2000,
-      speed: 300,
+      autoplaySpeed: 4000,
+      speed: 700,
       slidesToShow: 3,
       slidesToScroll: 1,
       responsive: [
@@ -411,7 +485,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
             slidesToShow: 2,
             slidesToScroll: 1,
             infinite: true,
-            dots: false
+            dots: true
           }
         },
         {

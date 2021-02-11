@@ -23,6 +23,7 @@
 
 .tvd-diensten-title{
 	color: #8B0102;
+	margin-bottom: 22px;
 }
 
 
@@ -132,6 +133,7 @@
 	align-items: center;
 	justify-content: center;
 	border: 2px solid #42BD73;
+	padding: 0 10px;
 }
 .dfp-corona-module-inr a:hover{
 	background: #E0861A;
@@ -267,6 +269,9 @@
 	.tvd-deinsten-con-sec-inr {
 	    padding-bottom: 90px;
 	}
+	.diensten-ctlr .Our-services-cntlr{
+		padding-bottom: 55px;
+	}
 }
 
 @media(max-width: 767px){
@@ -286,6 +291,7 @@
 	}
 	.tvd-process-sec {
 	    padding-top: 55px;
+	    padding-bottom: 25px;
 	}
 	.rvd-process-grd-items {
 	    margin-left: -10px;
@@ -309,6 +315,20 @@
 	.tvd-diensten-img {
 	    min-height: 350px;
 	}
+	.dfp-corona-module-inr a{
+		width: 210px;
+		height: 46px;
+		font-size: 14px;
+	}
+	.diensten-ctlr .our-services-grids{
+		margin-bottom: 0;
+	}
+	.diensten-ctlr .Our-services-cntlr{
+		padding-bottom: 40px;
+	}
+	.tvd-diensten-title{
+		margin-bottom: 30px;
+	}
 }
 
 @media(max-width: 575px){
@@ -329,6 +349,25 @@
 	.tvd-diensten-img {
 	    min-height: 300px;
 	}
+	.dfp-corona-module-inr a{
+		width: 180px;
+		height: 44px;
+	}
+	/*.tvd-pgi-img{
+		position: relative;
+	}
+	.tvd-pgi-img:after{
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		width: 15px;
+		height: 3px;
+		background: red;
+	}*/
 
 }
 
@@ -344,6 +383,14 @@
 	}
 	.tvd-diensten-img {
 	    min-height: 250px;
+	}
+	.dfp-corona-module-inr a{
+		width: 140px;
+		height: 40px;
+		font-size: 12px;
+	}
+	.diensten-ctlr .Our-services-cntlr{
+		padding-bottom: 30px;
 	}
 
 }

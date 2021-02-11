@@ -84,6 +84,60 @@
 	background: #fff!important;
 }
 
+.homeBnrSlider .hm-bnr-slider-item-cntlr.slick-current .hm-bnr-slider-item .hm-bsi-arrow{
+  -webkit-animation-name: fadeInLeftShort;
+  animation-name: fadeInLeftShort;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;	
+}
+.homeBnrSlider .hm-bnr-slider-item-cntlr.slick-current .hm-bnr-slider-item  .hm-bsi-desc-sub-title{
+  -webkit-animation-name: fadeInUpShort;
+  animation-name: fadeInUpShort;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.homeBnrSlider .hm-bnr-slider-item-cntlr.slick-current .hm-bnr-slider-item  .hm-bsi-desc-title{
+  -webkit-animation-name: fadeInUpShort;
+  animation-name: fadeInUpShort;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s;	
+}
+.homeBnrSlider .hm-bnr-slider-item-cntlr.slick-current .hm-bnr-slider-item  p{
+  -webkit-animation-name: fadeInUpShort;
+  animation-name: fadeInUpShort;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 1.7s;
+  animation-delay: 1.7s;	
+}
+
+.homeBnrSlider .hm-bnr-slider-item-cntlr.slick-current .hm-bnr-slider-item .hm-bsi-desc-btn{
+  -webkit-animation-name: fadeInUpShort;
+  animation-name: fadeInUpShort;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;	
+}
+
+
+
 
 .Our-services{
 	padding-top: 60px;
@@ -170,6 +224,12 @@
     width: 20px;
     background: #42BD73;
 }
+.osgi-desc-btn a:hover{
+	color: #E0861A;
+}
+.osgi-desc-btn a:hover:before{
+	background: #E0861A;
+}
 
 .Our-services-sliders-cntlr .fl-prev{
 	left: -50px;
@@ -204,26 +264,128 @@
 	text-align: center;
 }
 .tvd-customer-title{
-	display: block;
-	font-size: 30px;
-	line-height: 1;
-	margin-bottom: 35px;
-	font-weight: 700;
+	margin-bottom: 25px;
 	color: #8B0102;
 }
 
 .tvd-customer-slider-ctlr{
-	margin-left: 150px;
-	margin-right: 150px;
+	margin-left: 100px;
+	margin-right: 100px;
 }
 
 .tvd-customer-slider{
 	margin-bottom: 60px!important;
 }
 .tvd-customer-grd-img{
-	padding-bottom: 30px;
+	padding: 10px 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
 }
 .tvd-customer-grd-img img{
-	margin-left: auto;
-	margin-right: auto;
+	max-height: 60px;
+	width: auto;
+}
+
+
+@media(max-width: 1199px){
+	.tvd-customer-slider-ctlr {
+	    margin-left: 100px;
+	    margin-right: 100px;
+	}
+	.tvd-nieuws-slider-ctlr {
+	    padding-left: 50px;
+	    padding-right: 50px;
+	}
+	.Our-services-sliders-cntlr .fl-prev {
+	    left: 10px;
+	}
+	.Our-services-sliders-cntlr .fl-next {
+	    right: 5px;
+	}
+	.Our-services-sliders-cntlr{
+		padding-left: 38px;
+		padding-right: 38px;
+	}
+	.Our-services-sliders{
+		margin: 0 0;
+	}
+}
+@media(max-width: 991px){
+	.tvd-customer-slider-ctlr {
+	    margin-left: 50px;
+	    margin-right: 50px;
+	}
+	.Our-services-sliders-cntlr{
+		margin-bottom: 50px;
+	}
+}
+@media(max-width: 767px){
+	.tvd-customer-sec {
+	    padding-top: 45px;
+	}
+	.tvd-customer-slider-ctlr {
+	    margin-left: 20px;
+	    margin-right: 20px;
+	}
+	.tvd-customer-slider {
+	    margin-bottom: 40px!important;
+	}
+	.our-services-grd-item{
+		max-width: 350px;
+	    width: 100%;
+	    margin: 0 auto;
+	}
+	.Our-services-sliders {
+	    margin: 0 0;
+	}
+	.our-services-grids {
+	    padding: 0 0;
+	    margin: 0 0 10px 0;
+	}
+	
+	.Our-services-sliders-cntlr .fl-prev,
+	.Our-services-sliders-cntlr .fl-next{
+		display: none;
+	}
+	.osgi-desc-cntlr{
+		padding-right: 12px;
+	}
+	.tvd-customer-grd-img{
+		margin-bottom: 30px;
+	}
+}
+@media(max-width: 575px){
+	.tvd-customer-sec {
+	    padding-top: 35px;
+	}
+	.Our-services-sliders-cntlr {
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+}
+@media(max-width: 479px){
+	.tvd-customer-sec{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.Our-services-sliders-cntlr .slick-slider ul.slick-dots {
+	    width: 65px;
+	    position: absolute;
+	    right: 0;
+	    bottom: 0;
+	    padding: 0 0!important;
+	}
+	.our-services-grids {
+	    padding: 0 0;
+	    margin: 0 0 0 0;
+	}
+	.our-services-grd-item{
+		max-width: 100%;
+	}
+	.tvd-customer-grd-img{
+		margin-bottom: 20px;
+		padding: 5px 10px;
+	}
 }

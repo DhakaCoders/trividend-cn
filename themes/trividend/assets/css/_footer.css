@@ -107,6 +107,11 @@
 .ftr-cnt-menu-adrs,
 .ftr-cnt-menu-mail{
 	padding-bottom: 30px;
+	padding-left: 35px;
+}
+.ftr-cnt-menu-phn,
+.ftr-cnt-menu-vat{
+	padding-left: 35px;
 }
 .ftr-cnt-menu-cv a,
 .ftr-cnt-menu-cv span,
@@ -239,6 +244,9 @@
 	.ftr-col-3 {
 	    width: 22%;
 	}
+	.ftr-cnt-menu-adrs a br{
+		display: none;
+	}
 	
 
 }
@@ -280,6 +288,7 @@
 	.ftr-col-2,
 	.ftr-col-3{
 		width: 100%;
+		padding-right: 0;
 	}
 	.ftr-menu{
 		text-align: center;
@@ -289,8 +298,9 @@
 	}
 	.ftr-menu-title{
 		display: inline-block;
+		vertical-align: baseline;
 		padding-left: 0;
-		padding-right: 22px;
+		padding-right: 0;
 		position: relative;
 	}
 	.ftr-menu-title:after{
@@ -306,7 +316,7 @@
 	    transform: translateY(-50%);
 	    -ms-transform: translateY(-50%);
 	    -webkit-transform: translateY(-50%);
-	    right: 0;
+	    right: -25px;
 	    line-height: 15px;
 	}
 	.ftr-menu-title.active:after{
@@ -315,7 +325,7 @@
 	.ftr-cnt-menu-cv, 
 	.ftr-cnt-menu-adrs, 
 	.ftr-cnt-menu-mail {
-	    padding-bottom: 15px;
+	    padding-bottom: 10px;
 	}
 	.ftr-menu.ftr-col-2 ul li {
 	    padding-bottom: 15px;
@@ -325,7 +335,7 @@
 	}
 	.ftr-btm {
 	    padding-top: 22px;
-	    padding-bottom: 25px;
+	    padding-bottom: 22px;
 	    display: block;
 	}
 	.ftr-copywrite{
@@ -348,11 +358,31 @@
 	.ftr-cnt-menu-mail{
 		padding-bottom: 0;
 	}
+	.ftr-btm-logo ul li{
+		margin-top: 20px;
+	}
+	.ftr-menu-title{
+		margin-bottom: 25px;
+	}
+	.ftr-menu ul {
+	    padding-left: 0;
+	    padding-bottom: 20px;
+	}
+	.ftr-btm-designby a{
+		color: #B9B9B9;
+	}
 	
 }
 
 @media(max-width: 575px){
-	
+	.ftr-logo{
+		max-width: 140px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.ftr-top {
+	    padding-bottom: 25px;
+	}
 
 }
 

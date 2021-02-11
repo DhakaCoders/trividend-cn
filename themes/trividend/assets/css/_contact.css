@@ -122,7 +122,7 @@
     -ms-transition: all 0.5s;
     -webkit-transition: all 0.5s;
     cursor: pointer;
-    padding: 15px 0 15px;
+    padding: 15px 10px 15px;
 }
 .contact-form-wrp .wpforms-field-pagebreak .wpforms-clear button:hover,
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button:hover{
@@ -140,43 +140,64 @@
 .contact-form-wrp .wpforms-container .wpforms-form.was-validated .wpforms-field-container label.wpforms-error{
 	display: none;
 }
-.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error{
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error {
     font-weight: 400;
     font-size: 10px;
-    line-height: 12px;
+    line-height: 1;
     color: #D92A2B;
     position: absolute;
     right: 30px;
-    top: 45px;
+    top: 49px;
     text-align: right;
     width: auto;
     text-transform: inherit;
     margin-bottom: 0;
     display: none;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error:after{
+	content: "x";
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	color: #D92A2B;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error span{
 	font-weight: 700;
 	font-size: 12px;
 	padding-left: 2px;
 }
-.contact-form-wrp .wpforms-container .wpforms-form.was-validated .wpforms-field-container .wpforms-has-error input {
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error input {
     border: 1px solid #D92A2B !important;
 }
-.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container p {
+.contact-form-wrp .wpforms-container .wpforms-form .form-privacy-text{
+	width: 100%!important;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.form-privacy-text{
+	margin-bottom: 15px;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .form-privacy-text p {
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.4;
     color: #6A6A6A;
     margin-bottom: 24px;
     text-align: left;
     font-style: italic;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-right: 20px;
 }
-.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container p a{
+.contact-form-wrp .wpforms-container .wpforms-form .form-privacy-text p a{
 	display: inline-block;
 	vertical-align: baseline;
 	text-decoration: underline;
 	color: #6A6A6A;
 }
-.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container p a:hover{
+.contact-form-wrp .wpforms-container .wpforms-form .form-privacy-text p a:hover{
 	color: #E0861A;
 }
 .contact-form-info{
@@ -197,9 +218,6 @@
 	position: relative;
 }
 .contact-form-info  ul li.text-code{
-	padding-bottom: 4px;
-}
-.contact-form-info  ul li.text-code-btw{
 	padding-left: 40px;
 	margin-left: -8px;
 }
@@ -207,9 +225,6 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-}
-.contact-form-info  ul li.text-code-address i{
-	top: 2px;
 }
 .contact-form-info  ul li span,
 .contact-form-info  ul li a{
@@ -277,6 +292,7 @@
 }
 .tvd-team-member-wec-wrp .tvd-nieuws-enty-hdr{
 	padding-bottom: 45px;
+	text-align: center;
 }
 .tvd-team-member-wec-wrp .tvd-nieuws-enty-hdr p{
 	margin-bottom: 10px;
@@ -289,6 +305,7 @@
 .tvd-nieuws-enty-hdr span{
 	display: inline-block;
 	vertical-align: baseline;
+	line-height: initial;
 }
 .tvd-team-grid-wrp{
 	padding-bottom: 70px;
@@ -318,6 +335,9 @@
 	min-height: 395px;
 	position: relative;
 }
+.tvd-team-grid-slide-item-img img{
+	display: none;
+}
 .tvd-team-grid-hover{
 	position: absolute;
 	left: 0;
@@ -327,12 +347,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient(0deg, rgba(224, 134, 26, 0.9), rgba(224, 134, 26, 0.9)), url(business-JGLN3V2.jpg);
+	background: linear-gradient(0deg, rgba(224, 134, 26, 0.9), rgba(224, 134, 26, 0.9));
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	opacity: 0;
-	cursor: pointer;
 	padding: 10px 20px;
 }
 .tvd-team-grid-slide-item-img:hover .tvd-team-grid-hover{
@@ -446,9 +465,6 @@
 	.tvd-team-member-wec-wrp {
 	    padding-top: 65px;
 	}
-	.tvd-team-member-wec-wrp .tvd-nieuws-enty-hdr p {
-	    margin-bottom: 45px;
-	}
 	.tvd-team-grid-slide-item-img {
 	    min-height: 365px;
 	}
@@ -474,13 +490,10 @@
 	    padding: 60px 0;
 	}
 	.contact-form-info {
-	    padding: 55px 20px 30px 30px;
+	    padding: 55px 20px 30px 20px;
 	}
 	.tvd-team-member-wec-wrp {
 	    padding-top: 55px;
-	}
-	.tvd-team-member-wec-wrp .tvd-nieuws-enty-hdr p {
-	    margin-bottom: 35px;
 	}
 	.tvd-team-grid-slide-item-img {
 	    min-height: 335px;
@@ -498,6 +511,12 @@
 	    margin-left: -15px;
 	    margin-right: -15px;
 	}
+	.tvd-team-grid-slider.slick-slider ul.slick-dots{
+		margin-top: 25px;
+	}
+	.tvd-team-grid-slider.slick-dotted.slick-slider {
+	    margin-bottom: 0;
+	}
 	
 }
 
@@ -511,7 +530,7 @@
 		margin-top: 10px;
 	}
 	.contact-form-sec-wrp {
-	    padding: 30px 0 40px;
+	    padding: 30px 0 0;
 	}
 	.contact-form-rgt {
 	    width: 100%;
@@ -549,8 +568,8 @@
 	    line-height: 14px;
 	    padding: 10px 15px;
 	}
-	.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container p{
-		margin-bottom: 20px;
+	.contact-form-wrp .wpforms-container .wpforms-form .form-privacy-text p{
+		margin-bottom: 0;
 	}
 	.contact-form-wrp .wpforms-field-pagebreak .wpforms-clear button, .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button {
 	    max-width: 140px;
@@ -562,9 +581,6 @@
 	}
 	.tvd-team-member-wec-wrp {
 	    padding-top: 45px;
-	}
-	.tvd-team-member-wec-wrp .tvd-nieuws-enty-hdr p {
-	    margin-bottom: 20px;
 	}
 	.tvd-team-member-wec-wrp .tvd-nieuws-enty-hdr-title{
 		margin-bottom: 10px;
@@ -596,8 +612,9 @@
 		right: 25px;
 	}
 	.tvd-team-member-wec-wrp .tvd-nieuws-enty-hdr {
-	    padding-bottom: 20px;
+	    padding-bottom: 18px;
 	}
+
 }
 
 @media(max-width: 575px){
@@ -611,6 +628,9 @@
 	    text-align: left;
 	    padding-left: 9px !important;
 	    margin-top: 14px !important;
+	}
+	.contact-page-bnr .tvd-nieuws-grd-entry-hdr{
+		margin-bottom: 20px;
 	}
 	
 }

@@ -39,7 +39,9 @@
 
 
     <!-- start of Noyon -->
-
+    <symbol id="hdr-serach-icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16.0277 2.74617C12.3665 -0.915064 6.40754 -0.915064 2.74631 2.74617C-0.914133 6.40819 -0.914133 12.3663 2.74631 16.0284C6.00673 19.288 11.0847 19.6372 14.7435 17.0919C14.8205 17.4562 14.9967 17.8038 15.2801 18.0872L20.612 23.4191C21.389 24.1945 22.6446 24.1945 23.4176 23.4191C24.1938 22.6429 24.1938 21.3873 23.4176 20.6134L18.0857 15.2799C17.8039 14.999 17.4555 14.822 17.0912 14.745C19.6381 11.0853 19.2889 6.00818 16.0277 2.74617ZM14.3443 14.345C11.6109 17.0784 7.16232 17.0784 4.42969 14.345C1.69786 11.6115 1.69786 7.16377 4.42969 4.43035C7.16232 1.69772 11.6109 1.69772 14.3443 4.43035C17.0777 7.16377 17.0777 11.6115 14.3443 14.345Z"/>
+    </symbol>
 
 
 
@@ -72,7 +74,8 @@
 
 </head>
 <body>
-<header class="header">
+<div class="bdoverlay"></div>
+  <header class="header">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
@@ -116,6 +119,14 @@
                 </i>
               </button>
             </div>
+            <div class="xs-humberger-cntlr">
+              <div class="humberger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <strong class="humberger-title humberger-cmn-title">menu</strong>
+            </div>
           </div>
         </div>
       </div>
@@ -129,7 +140,7 @@
       <div class="col-md-12">
         <div class="tvd-nieuws-grd-sec-inr">
           <div class="tvd-nieuws-grd-entry-hdr">
-            <h1 class="tvd-nieuws-entry-hdr-title">Nieuws</h1>
+            <h1 class="tvd-nieuws-entry-hdr-title fl-h1">Nieuws</h1>
             <ul class="reset-list">
               <li class="active"><a href="#">Filter</a></li>
               <li><a href="#">Filter</a></li>
@@ -444,7 +455,7 @@
             <h4 class="ftr-menu-title fl-h4">Contact info</h4>
             <div class="ftr-menu-des">
               <div class="ftr-cnt-menu-cv">
-                <a href="#">Trividend cv</a>
+                <span>Trividend cv</span>
               </div>
               <div class="ftr-cnt-menu-adrs">
                 <a href="#">Vooruitgangstraat 333/12 <br> 1030 Brussels</a>
@@ -460,15 +471,12 @@
               </div>
             </div>
           </div>
-          <div class="ftr-btm-logo-ctlr show-sm">
-            <div class="ftr-btm-logo ">
+          <div class="ftr-btm-logo show-sm">
               <ul class="reset-list">
                 <li><a href="#"><img src="assets/images/ftr-btm-logo-1.png"></a></li>
                 <li><a href="#"><img src="assets/images/ftr-btm-logo-2.png"></a></li>
               </ul>
             </div>
-          </div>
-          
         </div>
       </div>
     </div>
