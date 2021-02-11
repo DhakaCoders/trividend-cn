@@ -471,7 +471,6 @@ if( $('.hm-bnr-slider-item-cntlr').length ){
 
 
 
-  /* Start of Milon */
   $('.wpforms-error').on('click', function(){
     $(this).parents('.wpforms-field').removeClass('wpforms-has-error');
   });
@@ -522,6 +521,10 @@ if( $('.hm-bnr-slider-item-cntlr').length ){
 }
 
 
+
+$("input[type=checkbox]").change(function() {
+    $(this).parent().toggleClass("chked");
+});
 
     new WOW().init();
 
