@@ -233,7 +233,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
   }        
 });
   /*slider */
-  /*if( $('.homeBnrSlider').length ){
+  if( $('.homeBnrSlider').length ){
     $('.homeBnrSlider').slick({
       dots: true,
       infinite: true,
@@ -246,7 +246,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
       prevArrow: $('.hm-banner-cntlr .fl-nxt-prev .fl-prev'),
       nextArrow: $('.hm-banner-cntlr .fl-nxt-prev .fl-next'),
     });
-}*/
+}
 
     if($('.ourServicesSliders').length ){
       $('.ourServicesSliders').slick({

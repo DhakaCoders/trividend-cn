@@ -85,14 +85,14 @@
 }
 
 .homeBnrSlider .hm-bnr-slider-item-cntlr.slick-current .hm-bnr-slider-item .hm-bsi-arrow{
-  -webkit-animation-name: fadeInLeftShort;
-  animation-name: fadeInLeftShort;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;	
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;	
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;	
 }
 .homeBnrSlider .hm-bnr-slider-item-cntlr.slick-current .hm-bnr-slider-item  .hm-bsi-desc-sub-title{
   -webkit-animation-name: fadeInUpShort;
@@ -101,8 +101,8 @@
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;	
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 .homeBnrSlider .hm-bnr-slider-item-cntlr.slick-current .hm-bnr-slider-item  .hm-bsi-desc-title{
   -webkit-animation-name: fadeInUpShort;
@@ -111,8 +111,8 @@
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;	
-  -webkit-animation-delay: 1.6s;
-  animation-delay: 1.6s;	
+  -webkit-animation-delay: 1.3s;
+  animation-delay: 1.3s;	
 }
 .homeBnrSlider .hm-bnr-slider-item-cntlr.slick-current .hm-bnr-slider-item  p{
   -webkit-animation-name: fadeInUpShort;
@@ -132,8 +132,8 @@
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;	
-  -webkit-animation-delay: 1.8s;
-  animation-delay: 1.8s;	
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;	
 }
 
 
