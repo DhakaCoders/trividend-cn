@@ -85,15 +85,24 @@
 </section>
 
 
+
+<?php 
+  $homeintro = get_field('homeintro', HOMEID);
+  if( $homeintro ):
+?>
 <section class="Our-services">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="Our-services-cntlr">
-
-          <div class="tvd-nieuws-entry-hdr">
-            <h2 class="tvd-nieuws-enty-hdr-title">Onze diensten</h2>
-            <p>Morbi in lectus ut mauris cursus efficitur sit amet ut neque. Sed congue arcu ligula, sit<br> amet fringilla magna porttitor</p>
+          <div class="tvd-nieuws-entry-hdr fl-entry-hdr">
+            <?php 
+              if( !empty($homeintro['titel']) ) printf('<h2 class="tvd-nieuws-enty-hdr-title fl-h2">%s</h2>', $homeintro['titel']);
+              if( !empty($homeintro['beschrijving'])) echo wpautop($homeintro['beschrijving']); 
+            ?>
+            <span>
+              <i><img src="<?php echo THEME_URI; ?>/assets/images/team-border-btm.svg"></i>
+            </span>
           </div>
 
           <div class="Our-services-sliders-cntlr">
@@ -196,25 +205,42 @@
     </div>
   </div>
 </section>
+<?php endif; ?>
 
 
+
+
+<?php 
+  $home_klanten = get_field('home_klanten', HOMEID);
+  if( $home_klanten ):
+?>
 <section class="tvd-customer-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="tvd-customer-sec-inr">
-          <div class="tvd-customer-hdr">
-            <h2 class="tvd-customer-title">Klanten</h2>
-          </div>
+          <?php if( !empty($home_klanten['titel']) ) printf('<div class="tvd-customer-hdr"><h2 class="tvd-customer-title fl-h2">%s</h2></div>', $home_klanten['titel']); ?>
+
+          <?php 
+            $klanten_logos = get_field('klanten_logo', HOMEID);
+            if( $klanten_logos ):
+              printr($klanten_logos);
+          ?>
           <div class="tvd-customer-slider-ctlr">
             <div class="tvd-customer-slider customerSlider">
               
+              <?php  
+                foreach( $klanten_logos as $klanten_logo ): 
+                  $klanten_logoIcon = !empty($klanten_logo['icon'])? cbv_get_image_tag( $klanten_logo['icon'], 'full' ): '';
+              ?>
               <div class="tvd-customer-grd">
                 <div class="tvd-customer-grd-img">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/customer-1.png">
+                  <?php echo $klanten_logoIcon;  printr($klanten_logoIcon);?>
                 </div>
               </div>
-              <div class="tvd-customer-grd">
+              <?php endforeach ?>
+
+              <!-- <div class="tvd-customer-grd">
                 <div class="tvd-customer-grd-img">
                   <img src="<?php echo THEME_URI; ?>/assets/images/customer-2.png">
                 </div>
@@ -253,15 +279,19 @@
                 <div class="tvd-customer-grd-img">
                   <img src="<?php echo THEME_URI; ?>/assets/images/customer-3.png">
                 </div>
-              </div>
+              </div> -->
 
             </div>
           </div>
+          <?php endif; ?>
+
         </div>
       </div>
     </div>
   </div>
 </section>
+<?php endif; ?>
+
 
 
 <section class="tvd-nieuws-sec">
@@ -269,10 +299,14 @@
     <div class="row">
       <div class="col-md-12">
         <div class="tvd-nieuws-sec-inr">
-          <div class="tvd-nieuws-entry-hdr">
-            <h2 class="tvd-nieuws-enty-hdr-title">Nieuws</h2>
+          <div class="tvd-nieuws-entry-hdr fl-entry-hdr">
+            <h2 class="tvd-nieuws-enty-hdr-title fl-h2">Nieuws</h2>
             <p>Morbi in lectus ut mauris cursus efficitur sit amet ut neque. Sed congue arcu ligula, sit <br> amet fringilla magna porttitor</p>
+            <span>
+              <i><img src="<?php echo THEME_URI; ?>/assets/images/team-border-btm.svg"></i>
+            </span>
           </div>
+
           <div class="tvd-nieuws-slider-ctlr">
             <div class="tvd-nieuws-nxt-prev-btn fl-nxt-prev">
               <span class="fl-prev">
