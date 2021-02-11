@@ -64,8 +64,9 @@
 
 
 <?php 
+  $showhide_intro = get_field('showhide_intro', HOMEID);
   $homeintro = get_field('homeintro', HOMEID);
-  if( $homeintro ):
+  if( $showhide_intro ):
 ?>
 <section class="Our-services">
   <div class="container">
@@ -84,7 +85,29 @@
             </span>
             <?php endif; ?>
           </div>
+            <?php 
+              $fc_dienstIDs = $homeintro['selecteer_diensten'];
+              if( !empty($fc_dienstIDs) ){
+                $dienstcount = count($fc_dienstIDs);
+                $dienstQuery = new WP_Query(array(
+                  'post_type' => 'diensten',
+                  'posts_per_page'=> $dienstcount,
+                  'post__in' => $fc_dienstIDs,
+                  'orderby' => 'rand'
 
+                ));
+                    
+              }else{
+                $dienstQuery = new WP_Query(array(
+                  'post_type' => 'diensten',
+                  'posts_per_page'=> 6,
+                  'orderby' => 'rand',
+                  'order'=> 'desc',
+
+                ));
+              }
+            if( $dienstQuery->have_posts() ): 
+            ?>
           <div class="Our-services-sliders-cntlr">
 
             <div class="fl-nxt-prev">
@@ -105,81 +128,34 @@
             </div>
 
             <div class="Our-services-sliders ourServicesSliders">
-
+              <?php 
+                while($dienstQuery->have_posts()): $dienstQuery->the_post();
+                $degridurl = cbv_get_image_src( get_post_thumbnail_id(get_the_ID()), 'dienstgrid' );
+                if( empty($degridurl) ){
+                  $degridurl = THEME_URI.'/assets/images/tvd-nieuws-grd-img-02.jpg';
+                }
+              ?> 
               <div class="our-services-grids">
                 <div class="our-services-grd-item">
                   <div class="osgi-img-cntlr">
-                    <a class="overlay-link" href="#"></a>
-                    <div class="osgi-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/our-services-grd-item-img-001.jpg');"></div>
+                    <a class="overlay-link" href="<?php the_permalink( ); ?>"></a>
+                    <div class="osgi-img inline-bg" style="background-image: url('<?php echo $degridurl; ?>');"></div>
                   </div>
                   <div class="osgi-desc-cntlr">
-                    <h3 class="osgi-desc-title mHc"><a href="#"><span>01.</span> Dienst naam</a></h3>
+                    <h3 class="osgi-desc-title mHc"><a href="<?php the_permalink( ); ?>"><span>01.</span> <?php the_title(); ?></a></h3>
                     <div class="osgi-desc mHc1">
-                      <p>Diam urna, diam aenean in cursus sollicitudin. Accumsan pharetra lectus ut purus nec quam massa non lacus.</p>
+                      <?php the_excerpt(); ?>
                     </div>
                     <div class="osgi-desc-btn">
-                      <a href="#">Lees meer</a>
+                      <a href="<?php the_permalink( ); ?>">Lees meer</a>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div class="our-services-grids">
-                <div class="our-services-grd-item">
-                  <div class="osgi-img-cntlr">
-                    <a class="overlay-link" href="#"></a>
-                    <div class="osgi-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/our-services-grd-item-img-002.jpg');"></div>
-                  </div>
-                  <div class="osgi-desc-cntlr">
-                    <h3 class="osgi-desc-title mHc"><a href="#"><span>01.</span> Dienst naam</a></h3>
-                    <div class="osgi-desc mHc1">
-                      <p>Diam urna, diam aenean in cursus sollicitudin. Accumsan pharetra lectus ut purus nec quam massa non lacus.</p>
-                    </div>
-                    <div class="osgi-desc-btn">
-                      <a href="#">Lees meer</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="our-services-grids">
-                <div class="our-services-grd-item">
-                  <div class="osgi-img-cntlr">
-                    <a class="overlay-link" href="#"></a>
-                    <div class="osgi-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/our-services-grd-item-img-003.jpg');"></div>
-                  </div>
-                  <div class="osgi-desc-cntlr">
-                    <h3 class="osgi-desc-title mHc"><a href="#"><span>01.</span> Dienst naam</a></h3>
-                    <div class="osgi-desc mHc1">
-                      <p>Diam urna, diam aenean in cursus sollicitudin. Accumsan pharetra lectus ut purus nec quam massa non lacus.</p>
-                    </div>
-                    <div class="osgi-desc-btn">
-                      <a href="#">Lees meer</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="our-services-grids">
-                <div class="our-services-grd-item">
-                  <div class="osgi-img-cntlr">
-                    <a class="overlay-link" href="#"></a>
-                    <div class="osgi-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/our-services-grd-item-img-001.jpg');"></div>
-                  </div>
-                  <div class="osgi-desc-cntlr">
-                    <h3 class="osgi-desc-title mHc"><a href="#"><span>01.</span> Dienst naam</a></h3>
-                    <div class="osgi-desc mHc1">
-                      <p>Diam urna, diam aenean in cursus sollicitudin. Accumsan pharetra lectus ut purus nec quam massa non lacus.</p>
-                    </div>
-                    <div class="osgi-desc-btn">
-                      <a href="#">Lees meer</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
+              <?php endwhile; ?>
             </div>
           </div>
+          <?php endif; wp_reset_postdata();?>
         </div>
       </div>
     </div>
@@ -191,8 +167,9 @@
 
 
 <?php 
+  $showhide_klanten = get_field('showhide_klanten', HOMEID);
   $home_klanten = get_field('home_klanten', HOMEID);
-  if( $home_klanten ):
+  if( $showhide_klanten ):
 ?>
 <section class="tvd-customer-sec">
   <div class="container">
@@ -230,8 +207,9 @@
 
 
 <?php 
+  $showhide_nieuws = get_field('showhide_nieuws', HOMEID);
   $home_nieuws = get_field('home_nieuws', HOMEID);
-  if( $home_nieuws ):
+  if( $showhide_nieuws ):
 ?>
 <section class="tvd-nieuws-sec">
   <div class="container">
