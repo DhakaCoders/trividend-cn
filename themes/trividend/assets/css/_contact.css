@@ -162,6 +162,9 @@
 .contact-form-wrp .wpforms-container .wpforms-form.was-validated .wpforms-field-container .wpforms-has-error input {
     border: 1px solid #D92A2B !important;
 }
+.contact-form-wrp .wpforms-container .wpforms-form .form-privacy-text{
+	width: 100%!important;
+}
 .contact-form-wrp .wpforms-container .wpforms-form .form-privacy-text p {
     font-size: 12px;
     line-height: 14px;
