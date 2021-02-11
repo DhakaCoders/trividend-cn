@@ -82,32 +82,14 @@
             <div class="header-right">
               <div class="header-menu">
                 <nav class="main-nav">
-                  <?php 
-                    $mmenuOptions = array( 
-                        'theme_location' => 'cbv_main_menu', 
-                        'menu_class' => 'clearfix reset-list',
-                        'container' => 'mnav',
-                        'container_class' => 'mnav'
-                      );
-                    wp_nav_menu( $mmenuOptions ); 
-                  ?>
-<!--                   <ul class="clearfix reset-list">
-                    <li class="current-menu-item"><a href="#">Home</a></li>
-                    <li class="menu-item-has-children">
-                      <a href="#">Ik zoek financiering</a>
-                      <ul class="sub-menu" style="">
-                        <li><a href="#">Sub Menu</a></li>
-                        <li><a href="#">Sub Menu</a></li>
-                        <li><a href="#">Sub Menu</a></li>
-                        <li><a href="#">Sub Menu</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Investeren met impact</a></li>
-                    <li><a href="#">Hoe we investeren</a></li>
-                    <li class="xs-mnfs"><a href="#">Over Trivident</a></li>
-                    <li class="xs-mnfs"><a href="#">Nieuws</a></li>
-                    <li class="xs-mnfs"><a href="#">Contact</a></li>
-                  </ul> -->
+                    <?php 
+                      $mmenuOptions = array( 
+                          'theme_location' => 'cbv_main_menu', 
+                          'menu_class' => 'clearfix reset-list',
+                          'container' => false,
+                        );
+                      wp_nav_menu( $mmenuOptions ); 
+                    ?>
                 </nav>
               </div>
               <div class="hdr-search">
@@ -182,28 +164,10 @@
         $mmenuOptions = array( 
             'theme_location' => 'cbv_main_menu', 
             'menu_class' => 'clearfix reset-list',
-            'container' => 'mnav',
-            'container_class' => 'mnav'
+            'container' => false,
           );
         wp_nav_menu( $mmenuOptions ); 
       ?>
-<!--       <ul class="clearfix reset-list">
-        <li class="current-menu-item"><a href="#">Home</a></li>
-        <li class="menu-item-has-children">
-          <a href="#">Ik zoek financiering</a>
-          <ul class="sub-menu" style="">
-            <li><a href="#">Sub Menu</a></li>
-            <li><a href="#">Sub Menu</a></li>
-            <li><a href="#">Sub Menu</a></li>
-            <li><a href="#">Sub Menu</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Investeren met impact</a></li>
-        <li><a href="#">Hoe we investeren</a></li>
-        <li class="xs-mnfs"><a href="#">Over Trivident</a></li>
-        <li class="xs-mnfs"><a href="#">Nieuws</a></li>
-        <li class="xs-mnfs"><a href="#">Contact</a></li>
-      </ul> -->
     </nav>
   </div>
 </div>
