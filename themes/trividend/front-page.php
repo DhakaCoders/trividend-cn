@@ -1,4 +1,10 @@
 <?php get_header(); ?>
+
+
+<?php 
+  $home_slides = get_field('home_slides', HOMEID);
+  if( $home_slides ):
+?>
 <section class="hm-banner-sec">
   <div class="container-fluid">
     <div class="row">
@@ -25,65 +31,41 @@
           </div>
 
           <div class="hm-bnr-slider homeBnrSlider">
-
+            <?php 
+              foreach( $home_slides as $home_slide ):
+            ?>
             <div class="hm-bnr-slider-item-cntlr">
-              <div class="hm-bnr-slider-item inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/hm-bnr-slider-item.jpg');">
+              <?php if( !empty($home_slide['afbeelding']) ): ?>
+              <div class="hm-bnr-slider-item inline-bg" style="background: url(<?php echo cbv_get_image_src($home_slide['afbeelding'], 'full'); ?>);">
                 <div class="hm-bsi-arrow"></div>
 
                 <div class="hm-bsi-desc-cntlr">
                   <div class="hm-bsi-desc">
-                    <h3 class="hm-bsi-desc-sub-title">Jij wil de wereld </h3>
-                    <h1 class="hm-bsi-desc-title">veranderen?</h1>
-                    <p>Sed eu aliquam nunc. Donec id tellus mattis, malesuada risus nec, mattis est. Duis tincidunt non risus eget pharetra. Sed tincidunt at nibh vel lacinia.</p>
-                    <div class="hm-bsi-desc-btn">
-                      <a class="fl-orange-btn" href="#">Vraag financiering aan</a>
-                    </div>
+                    <?php 
+                      if( !empty($home_slide['titel']) ) printf('<h3 class="hm-bsi-desc-sub-title">%s</h3>', $home_slide['titel']);
+                      if( !empty($home_slide['titel']) ) printf('<h2 class="hm-bsi-desc-title">%s</h2>', $home_slide['titel']);
+                      if( !empty($home_slide['beschrijving']) ) echo wpautop( $home_slide['beschrijving'] );
+                    ?>
+
+                    <?php
+                      $hsknop = $home_slide['knop'];
+                        if( is_array( $hsknop ) &&  !empty( $hsknop['url'] ) ){
+                            printf('<div class="hm-bsi-desc-btn"><a class="fl-orange-btn" href="%s" target="%s">%s</a></div>', $hsknop['url'], $hsknop['target'], $hsknop['title']); 
+                        }
+                     ?>
                   </div>
                 </div>
               </div>
+              <?php endif; ?>
             </div>
-
-            <div class="hm-bnr-slider-item-cntlr">
-              <div class="hm-bnr-slider-item inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/hm-bnr-slider-item.jpg');">
-                <div class="hm-bsi-arrow"></div>
-
-                <div class="hm-bsi-desc-cntlr">
-                  <div class="hm-bsi-desc">
-                    <h3 class="hm-bsi-desc-sub-title">Jij wil de wereld </h3>
-                    <h1 class="hm-bsi-desc-title">veranderen? 2</h1>
-                    <p>Sed eu aliquam nunc. Donec id tellus mattis, malesuada risus nec, mattis est. Duis tincidunt non risus eget pharetra. Sed tincidunt at nibh vel lacinia.</p>
-                    <div class="hm-bsi-desc-btn">
-                      <a class="fl-orange-btn" href="#">Vraag financiering aan</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="hm-bnr-slider-item-cntlr">
-              <div class="hm-bnr-slider-item inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/hm-bnr-slider-item.jpg');">
-                <div class="hm-bsi-arrow"></div>
-
-                <div class="hm-bsi-desc-cntlr">
-                  <div class="hm-bsi-desc">
-                    <h3 class="hm-bsi-desc-sub-title">Jij wil de wereld </h3>
-                    <h1 class="hm-bsi-desc-title">veranderen? 3</h1>
-                    <p>Sed eu aliquam nunc. Donec id tellus mattis, malesuada risus nec, mattis est. Duis tincidunt non risus eget pharetra. Sed tincidunt at nibh vel lacinia.</p>
-                    <div class="hm-bsi-desc-btn">
-                      <a class="fl-orange-btn" href="#">Vraag financiering aan</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+            <?php endforeach; ?>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
+<?php endif; ?>
 
 
 <?php 
