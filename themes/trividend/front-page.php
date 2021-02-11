@@ -100,9 +100,12 @@
               if( !empty($homeintro['titel']) ) printf('<h2 class="tvd-nieuws-enty-hdr-title fl-h2">%s</h2>', $homeintro['titel']);
               if( !empty($homeintro['beschrijving'])) echo wpautop($homeintro['beschrijving']); 
             ?>
+
+            <?php if( !empty($homeintro['titel']) ):  ?>
             <span>
               <i><img src="<?php echo THEME_URI; ?>/assets/images/team-border-btm.svg"></i>
             </span>
+            <?php endif; ?>
           </div>
 
           <div class="Our-services-sliders-cntlr">
@@ -224,11 +227,9 @@
           <?php 
             $klanten_logos = $home_klanten['klanten_logo'];
             if( $klanten_logos ):
-              printr($klanten_logos);
           ?>
           <div class="tvd-customer-slider-ctlr">
             <div class="tvd-customer-slider customerSlider">
-              
               <?php  
                 foreach( $klanten_logos as $klanten_logo ): 
                   $klanten_logoIcon = !empty($klanten_logo['icon'])? cbv_get_image_tag( $klanten_logo['icon'], 'full' ): '';
@@ -239,48 +240,6 @@
                 </div>
               </div>
               <?php endforeach ?>
-
-              <!-- <div class="tvd-customer-grd">
-                <div class="tvd-customer-grd-img">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/customer-2.png">
-                </div>
-              </div>
-              <div class="tvd-customer-grd">
-                <div class="tvd-customer-grd-img">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/customer-3.png">
-                </div>
-              </div>
-              <div class="tvd-customer-grd">
-                <div class="tvd-customer-grd-img">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/customer-4.png">
-                </div>
-              </div>
-              <div class="tvd-customer-grd">
-                <div class="tvd-customer-grd-img">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/customer-5.png">
-                </div>
-              </div>
-              <div class="tvd-customer-grd">
-                <div class="tvd-customer-grd-img">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/customer-6.png">
-                </div>
-              </div>
-              <div class="tvd-customer-grd">
-                <div class="tvd-customer-grd-img">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/customer-1.png">
-                </div>
-              </div>
-              <div class="tvd-customer-grd">
-                <div class="tvd-customer-grd-img">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/customer-2.png">
-                </div>
-              </div>
-              <div class="tvd-customer-grd">
-                <div class="tvd-customer-grd-img">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/customer-3.png">
-                </div>
-              </div> -->
-
             </div>
           </div>
           <?php endif; ?>
@@ -307,10 +266,6 @@
               if( !empty($home_nieuws['titel']) ) printf('<h2 class="tvd-nieuws-enty-hdr-title fl-h2">%s</h2>', $home_nieuws['titel']);
               if( !empty($home_nieuws['beschrijving'])) echo wpautop($home_nieuws['beschrijving']); 
             ?>
-
-
-            <!-- <h2 class="tvd-nieuws-enty-hdr-title fl-h2">Nieuws</h2>
-            <p>Morbi in lectus ut mauris cursus efficitur sit amet ut neque. Sed congue arcu ligula, sit <br> amet fringilla magna porttitor</p> -->
             <?php if(!empty($home_nieuws['titel'])): ?>
             <span>
               <i><img src="<?php echo THEME_URI; ?>/assets/images/team-border-btm.svg"></i>
@@ -457,16 +412,27 @@
       <div class="col-md-12">
         <div class="tvd-financing-sec-inr clearfix">
           <div class="tvd-fin-left ">
+            <?php 
+              $ft_financiering = get_field('ft_financiering', 'options');
+              if( $ft_financiering ):
+            ?>
             <div class="tvd-fin mHc">
               <div class="tvd-fin-inr">
                 <i>
                   <img src="<?php echo THEME_URI; ?>/assets/images/tvd-fin-img-01.svg">
                 </i>
-                <h2 class="tvd-fin-title">Financiering</h2>
-                <p>Egestas pellentesque urna mattis pellentesque et commodo rutrum. Risus placerat tempor dolor sagittis porttitor consectetur pulvinar accumsan.</p>
-                <a href="#">Financiering</a>
+                <?php 
+                  if( !empty($ft_financiering['titel']) ) printf('<h2 class="fl-h2 tvd-fin-title">%s</h2>', $ft_financiering['titel']);
+                  if( !empty($ft_financiering['beschrijving'])) echo wpautop($ft_financiering['beschrijving']); 
+                  $fincknop = $ft_financiering['knop'];
+                  if( is_array( $fincknop ) &&  !empty( $fincknop['url'] ) ){
+                      printf('<a href="%s" target="%s">%s</a>', $fincknop['url'], $fincknop['target'], $fincknop['title']); 
+                  }
+                ?>
               </div>
             </div>
+            <?php endif; ?>
+
           </div>
           <div class="tvd-nieuws-rgt ">
             <div class="tvd-nieuws mHc">

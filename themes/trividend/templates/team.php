@@ -14,8 +14,14 @@
               if( !empty($teamsec['titel']) ) printf('<h2 class="fl-h2 tvd-nieuws-enty-hdr-title">%s</h2>', $teamsec['titel']);
               if( !empty($teamsec['beschrijving'])) echo wpautop($teamsec['beschrijving']); 
             ?>
-            <span><i><img src="<?php echo THEME_URI; ?>/assets/images//team-border-btm.svg"></i></span>
+
+            <?php if( !empty($teamsec['titel']) ):  ?>
+            <span>
+              <i><img src="<?php echo THEME_URI; ?>/assets/images/team-border-btm.svg"></i>
+            </span>
+            <?php endif; ?>
           </div>
+          
           <?php 
           $teamIDS = $teamsec['selecteerteam'];
           if( !empty($teamIDS) ){
