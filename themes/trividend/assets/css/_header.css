@@ -277,10 +277,11 @@ body.allWork{
    -ms-transition: all 0.3s;
    -webkit-transition: all 0.3s;
    transition: all 0.3s;
-   overflow-y: auto;
    border-top: 6px solid #8b0101;
    padding: 0 25px;
-
+   padding-top: 170px;
+   height: 100%;
+   width: 100%;
 
 }
 .allWork .xs-mbl-menu-cntlr{
@@ -289,8 +290,18 @@ body.allWork{
    z-index: 99999;
    width: 100%;
 }
-
-
+.xs-mbl-menu-top-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 25px;
+}
+.xs-mbl-menu{
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+}
 
 .xs-mbl-menu-top{
     display: flex;
@@ -350,6 +361,7 @@ body.allWork{
 
 .xs-mbl-menu-srch{
     position: relative;
+    padding-top: 8px;
 }
 .xs-mbl-menu-srch input{
     width: 100%;
@@ -484,6 +496,10 @@ body.allWork{
     }
     nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li{
         border: none;
+    }
+    nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:after{
+        content: none;
+        display: none;
     }
     nav.main-nav > ul > li.menu-item-has-children > a{
         padding-right: 15px;
