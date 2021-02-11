@@ -6,18 +6,24 @@ get_header();
 $thisID = get_the_ID();
 ?>
 
+<?php 
+  $introsec = get_field('introsec', $thisID);
+  if( $introsec ):
+?>
 <section class="page-banner-sec-wrp">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="tvd-nieuws-grd-entry-hdr show-sm">
-          <h1 class="tvd-nieuws-entry-hdr-title">Over Ons</h1>
+          <?php 
+              if( !empty($introsec['titel']) ) printf('<h1 class="tvd-nieuws-entry-hdr-title">%s</h1>', $introsec['titel']);
+            ?>
         </div>
       </div>
     </div>
   </div>
 </section>
-
+<?php endif; ?>
 
 
 <?php 
