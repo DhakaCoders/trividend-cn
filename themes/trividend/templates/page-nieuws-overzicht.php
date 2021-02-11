@@ -1,38 +1,75 @@
-<?php get_header(); ?>
+<?php 
+/*Template Name: Nieuws Overview*/
+get_header(); 
+$filter_ids = get_option( 'filter_ids' );
+if ( ($_SERVER['REQUEST_METHOD'] === 'POST') && isset($_POST['category']) ) {
+    update_option( 'filter_ids', $_POST['category'] );
+    $filter_ids = get_option( 'filter_ids' );
+}
+$queryIDs = ( !empty($filter_ids) )? $filter_ids: '';
+?>
 <section class="tvd-nieuws-grd-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="tvd-nieuws-grd-sec-inr">
           <div class="tvd-nieuws-grd-entry-hdr">
-            <h1 class="tvd-nieuws-entry-hdr-title fl-h1">Nieuws</h1>
+            <h1 class="tvd-nieuws-entry-hdr-title fl-h1"><?php echo get_the_title(); ?></h1>
+            <?php 
+              $terms = get_terms( array(
+                'taxonomy' => 'category',
+                'hide_empty' => false,
+                'parent' => 0
+              ) );
+            ?>
+            <?php if( $terms ): ?>
+            <form action="" method="post">
             <ul class="reset-list">
-              <li class="active"><a href="#">Filter</a></li>
-              <li><a href="#">Filter</a></li>
-              <li><a href="#">Filter</a></li>
-              <li><a href="#">Filter</a></li>
-              <li><a href="#">Filter</a></li>
+              <?php
+                $i = 1;
+                foreach( $terms as $term ):
+                if( $term->slug != 'uncategorized' ){
+                if( empty($filter_ids) && ($i == 1)){
+                  $queryIDs = $term->term_id;
+                  update_option( 'filter_ids', array($term->term_id) );
+                  $checked = 'checked';
+                }else{
+                  if( in_array($term->term_id, $filter_ids) ){
+                    $checked = 'checked';
+                  }else{
+                    $checked = '';
+                  }
+                  
+                }
+              ?>
+              <li>
+                <label for="cat-<?php echo $i; ?>"><input type="checkbox" name="category[]" value="<?php echo $term->term_id; ?>" <?php echo $checked; ?> onclick="this.form.submit();" id="cat-<?php echo $i; ?>"><?php echo $term->name; ?></label>
+              </li>
+              <?php } ?>
+              <?php $i++; endforeach; ?>
             </ul>
+            </form>
+            <?php endif; ?>
           </div>
           <div class="tvd-nieuws-grds-item">
-		<?php 
-			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-			$nieuwsQuery = new WP_Query(array(
-				'post_type' => 'post',
-				'posts_per_page'=> 1,
-				'orderby' => 'date',
-				'order' => 'ASC',
-				'paged' => $paged,
-				'tax_query' => array(
-					array(
-					'taxonomy' => 'category',
-					'field'    => 'term_id',
-					'terms'    => 2,
-					)
-				)
-			));
-			if( $nieuwsQuery->have_posts() ): 
-		?>
+      		<?php 
+      			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+      			$nieuwsQuery = new WP_Query(array(
+      				'post_type' => 'post',
+      				'posts_per_page'=> 1,
+      				'orderby' => 'date',
+      				'order' => 'ASC',
+      				'paged' => $paged,
+      				'tax_query' => array(
+      					array(
+      					'taxonomy' => 'category',
+      					'field'    => 'term_id',
+      					'terms'    => $queryIDs,
+      					)
+      				)
+      			));
+      			if( $nieuwsQuery->have_posts() ): 
+      		?>
             <ul class="reset-list clearfix">
             <?php 
                 while($nieuwsQuery->have_posts()): $nieuwsQuery->the_post();
@@ -69,11 +106,13 @@
           	<?php endwhile; ?>
             </ul>
           </div>
-		<?php endif; wp_reset_postdata(); ?>
+          <?php else: ?>
+            <div class="no-results">Geen resultaten.</div>
+		      <?php endif; wp_reset_postdata(); ?>
         </div>
       </div>
     </div>
-    <?php if( $nieuwsQuery->have_posts() ): ?>
+    <?php if( $nieuwsQuery->max_num_pages > 1 ): ?>
     <div class="row">
       <div class="col-md-12">
         <div class="fl-pagination-ctlr">

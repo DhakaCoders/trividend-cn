@@ -22,9 +22,8 @@ if( !function_exists('cbv_theme_setup') ){
         if(function_exists('add_theme_support')) {
             add_theme_support('category-thumbnails');
         }
-        add_image_size( 'hhovergrid', 574, 576, true );
-        add_image_size( 'hprogrid', 364, 236, true );
-        add_image_size( 'hawgrid', 574, 420, true );
+        add_image_size( 'postsingle', 926, 550, true );
+        add_image_size( 'dftnieuws', 342, 310, true );
         
         // add size to media uploader
         add_filter( 'image_size_names_choose', 'cbv_custom_image_sizes' );
@@ -156,16 +155,15 @@ if( !function_exists('cbv_custom_both_breadcrump')){
     }
 }
 
-function faqcat_pagination($query) {
-    if (is_tax('faq_cat') && $query->is_main_query() && !is_admin() ) {
-        $query->set('post_type',array('faqs'));
-        $query->set( 'posts_per_page', 2 );
-        $query->set( 'orderby', 'modified' );
+/*function faqcat_pagination($query) {
+    if (is_archive() && $query->is_main_query() && !is_admin() ) {
+        $query->set('post_type',array('post'));
+        $query->set( 'posts_per_page', 1 );
     }
 return $query;
 }
  
-add_filter('pre_get_posts','faqcat_pagination');
+add_filter('pre_get_posts','faqcat_pagination');*/
 /**
 Debug->>
 */
