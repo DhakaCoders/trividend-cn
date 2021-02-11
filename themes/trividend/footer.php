@@ -61,13 +61,24 @@
           </div>
           <div class="ftr-menu ftr-col-2">
             <h4 class="ftr-menu-title fl-h4"><?php _e( 'Laatste Nieuws', THEME_NAME ); ?></h4>
+            <?php 
+              $nieuwsQuery = new WP_Query(array(
+                'post_type' => 'post',
+                'posts_per_page'=> 3,
+                'orderby' => 'rand',
+                'order'=> 'desc',
+
+              ));
+              if( $nieuwsQuery->have_posts() ): 
+            ?>
             <div class="ftr-menu-des">
               <ul class="reset-list">
-                <li><a href="#">Dignissim nisi leo pellentesque purus <br> tempor eros eu. </a></li>
-                <li><a href="#">Interdum habitant morbi sem fermentum <br> vel felis viverra imperdiet diam.</a></li>
-                <li><a href="#">Eget scelerisque non eu cum commodo <br> elit, donec eleifend at. </a></li>
+                <?php while($nieuwsQuery->have_posts()): $nieuwsQuery->the_post(); ?> 
+                <li><a href="<?php the_permalink( ); ?>"><?php the_title(); ?></a></li>
+                <?php endwhile; ?>
               </ul>
             </div>
+            <?php endif; wp_reset_postdata(); ?>
           </div>
           <div class="ftr-menu ftr-col-3">
             <h4 class="ftr-menu-title fl-h4"><?php _e( 'Contact info', THEME_NAME ); ?></h4>

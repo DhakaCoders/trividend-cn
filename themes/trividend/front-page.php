@@ -1,6 +1,4 @@
 <?php get_header(); ?>
-
-
 <?php 
   $home_slides = get_field('home_slides', HOMEID);
   if( $home_slides ):
@@ -36,23 +34,20 @@
             ?>
             <div class="hm-bnr-slider-item-cntlr">
               <?php if( !empty($home_slide['afbeelding']) ): ?>
-              <div class="hm-bnr-slider-item inline-bg" style="background: url(<?php echo cbv_get_image_src($home_slide['afbeelding'], 'full'); ?>);">
+              <div class="hm-bnr-slider-item inline-bg" style="background: url(<?php echo cbv_get_image_src($home_slide['afbeelding'], 'hmslide'); ?>);">
                 <div class="hm-bsi-arrow"></div>
 
                 <div class="hm-bsi-desc-cntlr">
                   <div class="hm-bsi-desc">
-                    <?php 
-                      if( !empty($home_slide['titel']) ) printf('<h3 class="hm-bsi-desc-sub-title">%s</h3>', $home_slide['titel']);
-                      if( !empty($home_slide['titel']) ) printf('<h2 class="hm-bsi-desc-title">%s</h2>', $home_slide['titel']);
-                      if( !empty($home_slide['beschrijving']) ) echo wpautop( $home_slide['beschrijving'] );
-                    ?>
-
-                    <?php
-                      $hsknop = $home_slide['knop'];
-                        if( is_array( $hsknop ) &&  !empty( $hsknop['url'] ) ){
-                            printf('<div class="hm-bsi-desc-btn"><a class="fl-orange-btn" href="%s" target="%s">%s</a></div>', $hsknop['url'], $hsknop['target'], $hsknop['title']); 
-                        }
-                     ?>
+                  <?php 
+                    if( !empty($home_slide['titel']) ) printf('<h3 class="hm-bsi-desc-sub-title">%s</h3>', $home_slide['titel']);
+                    if( !empty($home_slide['titel']) ) printf('<h2 class="hm-bsi-desc-title">%s</h2>', $home_slide['titel']);
+                    if( !empty($home_slide['beschrijving']) ) echo wpautop( $home_slide['beschrijving'] );
+                    $hsknop = $home_slide['knop'];
+                      if( is_array( $hsknop ) &&  !empty( $hsknop['url'] ) ){
+                          printf('<div class="hm-bsi-desc-btn"><a class="fl-orange-btn" href="%s" target="%s">%s</a></div>', $hsknop['url'], $hsknop['target'], $hsknop['title']); 
+                      }
+                   ?>
                   </div>
                 </div>
               </div>
@@ -254,7 +249,29 @@
             </span>
             <?php endif; ?>
           </div>
+         <?php 
+            $fc_nieuwsIDs = $home_nieuws['selecteer_nieuws'];
+            if( !empty($fc_nieuwsIDs) ){
+              $nieucount = count($fc_nieuwsIDs);
+              $nieuwsQuery = new WP_Query(array(
+                'post_type' => 'post',
+                'posts_per_page'=> $nieucount,
+                'post__in' => $fc_nieuwsIDs,
+                'orderby' => 'rand'
 
+              ));
+                  
+            }else{
+              $nieuwsQuery = new WP_Query(array(
+                'post_type' => 'post',
+                'posts_per_page'=> 6,
+                'orderby' => 'rand',
+                'order'=> 'desc',
+
+              ));
+            }
+          if( $nieuwsQuery->have_posts() ): 
+          ?>
           <div class="tvd-nieuws-slider-ctlr">
             <div class="tvd-nieuws-nxt-prev-btn fl-nxt-prev">
               <span class="fl-prev">
@@ -273,112 +290,43 @@
               </span>
             </div>
             <div class="tvd-nieuws-slider nwSlider clearfix">
+            <?php 
+                while($nieuwsQuery->have_posts()): $nieuwsQuery->the_post();
+                $gridurl = cbv_get_image_src( get_post_thumbnail_id(get_the_ID()), 'dftnieuws' );
+                if( empty($gridurl) ){
+                  $gridurl = THEME_URI.'/assets/images/tvd-nieuws-grd-img-02.jpg';
+                }
+              ?> 
               <div class="tvd-nieuws-grds">
                 <div class="tvd-nieuws-grd-item">
                   <div class="tvd-nieuws-img-ctlr">
-                    <a class="overlay-link" href="#"></a>
-                    <div class="tvd-nieuws-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/tvd-nieuws-grd-img-01.jpg');"></div>
+                    <a class="overlay-link" href="<?php the_permalink( ); ?>"></a>
+                    <div class="tvd-nieuws-img inline-bg" style="background: url('<?php echo $gridurl; ?>');"></div>
                     <div class="tvd-triangle">
                       <div class="tvd-tringle-border">
                         
                       </div>
                       <div class="tvd-date">
-                          <strong>20</strong>
-                          <span>DEC</span>
+                          <strong><?php echo get_the_date('d'); ?></strong>
+                          <span><?php echo get_the_date('M'); ?></span>
                         </div>
                     </div>
                   </div>
                   <div class="tvd-nieuws-grd-item-des mHc">
                     <h3 class="tvd-nieuws-grd-item-des-title mHc1">
-                      <a href="#">Dignissim nisi leo pellentesque purus tempor eros eu. </a>
+                      <a href="<?php the_permalink( ); ?>"><?php the_title(); ?></a>
                     </h3>
                     <div class="tvd-nieuws-grd-item-con mHc2">
-                      <p>Diam aenean in cursus sollicitudin. Accumsan pharetra lectus ut purus nec quam massa non. </p>
+                      <?php the_excerpt(); ?>
                     </div>
-                    <a href="#">Lees meer</a>
+                    <a href="<?php the_permalink( ); ?>">Lees meer</a>
                   </div>
                 </div>
               </div>
-              <div class="tvd-nieuws-grds">
-                <div class="tvd-nieuws-grd-item">
-                  <div class="tvd-nieuws-img-ctlr">
-                    <a class="overlay-link" href="#"></a>
-                    <div class="tvd-nieuws-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/tvd-nieuws-grd-img-02.jpg');"></div>
-                    <div class="tvd-triangle">
-                      <div class="tvd-tringle-border">
-                        
-                      </div>
-                      <div class="tvd-date">
-                          <strong>23</strong>
-                          <span>DEC</span>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="tvd-nieuws-grd-item-des mHc">
-                    <h3 class="tvd-nieuws-grd-item-des-title mHc1">
-                      <a href="#">Dignissim nisi leo pellentesque purus tempor eros eu. </a>
-                    </h3>
-                    <div class="tvd-nieuws-grd-item-con mHc2">
-                      <p>Diam aenean in cursus sollicitudin. Accumsan pharetra lectus ut purus nec quam massa non. </p>
-                    </div>
-                    <a href="#">Lees meer</a>
-                  </div>
-                </div>
-              </div>
-              <div class="tvd-nieuws-grds">
-                <div class="tvd-nieuws-grd-item">
-                  <div class="tvd-nieuws-img-ctlr">
-                    <a class="overlay-link" href="#"></a>
-                    <div class="tvd-nieuws-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/tvd-nieuws-grd-img-03.jpg');"></div>
-                    <div class="tvd-triangle">
-                      <div class="tvd-tringle-border">
-                        
-                      </div>
-                      <div class="tvd-date">
-                          <strong>27</strong>
-                          <span>DEC</span>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="tvd-nieuws-grd-item-des mHc">
-                    <h3 class="tvd-nieuws-grd-item-des-title mHc1">
-                      <a href="#">Dignissim nisi leo pellentesque purus tempor eros eu. </a>
-                    </h3>
-                    <div class="tvd-nieuws-grd-item-con mHc2">
-                      <p>Diam aenean in cursus sollicitudin. Accumsan pharetra lectus ut purus nec quam massa non. </p>
-                    </div>
-                    <a href="#">Lees meer</a>
-                  </div>
-                </div>
-              </div>
-              <div class="tvd-nieuws-grds">
-                <div class="tvd-nieuws-grd-item">
-                  <div class="tvd-nieuws-img-ctlr">
-                    <a class="overlay-link" href="#"></a>
-                    <div class="tvd-nieuws-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/tvd-nieuws-grd-img-01.jpg');"></div>
-                    <div class="tvd-triangle">
-                      <div class="tvd-tringle-border">
-                        
-                      </div>
-                      <div class="tvd-date">
-                          <strong>20</strong>
-                          <span>DEC</span>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="tvd-nieuws-grd-item-des mHc">
-                    <h3 class="tvd-nieuws-grd-item-des-title mHc1">
-                      <a href="#">Dignissim nisi leo pellentesque purus tempor eros eu. </a>
-                    </h3>
-                    <div class="tvd-nieuws-grd-item-con mHc2">
-                      <p>Diam aenean in cursus sollicitudin. Accumsan pharetra lectus ut purus nec quam massa non. </p>
-                    </div>
-                    <a href="#">Lees meer</a>
-                  </div>
-                </div>
-              </div>
+              <?php endwhile; ?>
             </div>
           </div>
+          <?php endif; wp_reset_postdata(); ?>
         </div>
       </div>
     </div>
@@ -395,18 +343,19 @@
         <div class="tvd-financing-sec-inr clearfix">
           <div class="tvd-fin-left ">
             <?php 
-              $ft_financiering = get_field('ft_financiering', 'options');
-              if( $ft_financiering ):
+              $showhide_cta = get_field('showhide_cta', HOMEID);
+              $cta = get_field('ctasec', HOMEID);
+              if( $showhide_cta ):
             ?>
             <div class="tvd-fin mHc">
               <div class="tvd-fin-inr">
                 <i>
-                  <img src="<?php echo THEME_URI; ?>/assets/images/tvd-fin-img-01.svg">
+                  <?php if( !empty($cta['icon']) ) echo cbv_get_image_tag($cta['icon']); ?>
                 </i>
                 <?php 
-                  if( !empty($ft_financiering['titel']) ) printf('<h2 class="fl-h2 tvd-fin-title">%s</h2>', $ft_financiering['titel']);
-                  if( !empty($ft_financiering['beschrijving'])) echo wpautop($ft_financiering['beschrijving']); 
-                  $fincknop = $ft_financiering['knop'];
+                  if( !empty($cta['titel']) ) printf('<h2 class="fl-h2 tvd-fin-title">%s</h2>', $cta['titel']);
+                  if( !empty($cta['beschrijving'])) echo wpautop($cta['beschrijving']); 
+                  $fincknop = $cta['knop'];
                   if( is_array( $fincknop ) &&  !empty( $fincknop['url'] ) ){
                       printf('<a href="%s" target="%s">%s</a>', $fincknop['url'], $fincknop['target'], $fincknop['title']); 
                   }
@@ -417,13 +366,20 @@
 
           </div>
           <div class="tvd-nieuws-rgt ">
+            <?php 
+              $showhide_nieuwsbrief = get_field('showhide_nieuwsbrief', HOMEID);
+              $nieuwsbrief = get_field('nieuwsbriefsec', HOMEID);
+              if( $showhide_nieuwsbrief ):
+            ?>
             <div class="tvd-nieuws mHc">
               <div class="tvd-nieuws-inr">
                 <i>
                   <img src="<?php echo THEME_URI; ?>/assets/images/tvd-nieuws-img-01.svg">
                 </i>
-                <h2 class="tvd-nieuws-title">Abonneren op de nieuwsbrief</h2>
-                <p>Egestas pellentesque urna mattis pellentesque placerat tempor dolor sagittis porttitor consectetur pulvinar accumsan.</p>
+                <?php 
+                  if( !empty($nieuwsbrief['titel']) ) printf('<h2 class="tvd-nieuws-title">%s</h2>', $nieuwsbrief['titel']);
+                  if( !empty($nieuwsbrief['beschrijving'])) echo wpautop($nieuwsbrief['beschrijving']); 
+                ?>
                 <div class="tvd-form-field">
                   <form class="form">
                     <div class="tvd-inputfields-row diveder2 clearfix">
@@ -451,7 +407,7 @@
                 </div>
               </div>
             </div>
-            
+             <?php endif; ?>
           </div>
         </div>
       </div>
