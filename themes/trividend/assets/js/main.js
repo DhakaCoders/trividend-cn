@@ -232,11 +232,21 @@ google.maps.event.addDomListener(window, 'load', initialize);
       $('.hdr-search').removeClass('hdr-search-input-show');
   }        
 });
+if( $('.hm-bnr-slider-item-cntlr').length ){
+  var length = $('.hm-bnr-slider-item-cntlr').length;
+  if (length <= 1) {
+    $('.hm-banner-cntlr').addClass('hide-hm-slide-arrows');
+  }
+  else{
+    $('.hm-banner-cntlr').removeClass('hide-hm-slide-arrows');
+  }
+}
+  
   /*slider */
-  /*if( $('.homeBnrSlider').length ){
+  if( $('.homeBnrSlider').length ){
     $('.homeBnrSlider').slick({
       dots: true,
-      infinite: true,
+      infinite: false,
       autoplay: true,
       arrows: true,
       autoplaySpeed: 4000,
@@ -246,7 +256,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
       prevArrow: $('.hm-banner-cntlr .fl-nxt-prev .fl-prev'),
       nextArrow: $('.hm-banner-cntlr .fl-nxt-prev .fl-next'),
     });
-}*/
+
+}
 
     if($('.ourServicesSliders').length ){
       $('.ourServicesSliders').slick({

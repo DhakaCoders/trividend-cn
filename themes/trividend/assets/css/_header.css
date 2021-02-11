@@ -60,7 +60,7 @@ nav.main-nav > ul > li > a:after {
     background: url(../images/menu-icon.svg);
     background-repeat: no-repeat;
     position: absolute;
-    bottom: 55px;
+    bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
     -ms-transform: translateX(-50%);
