@@ -33,7 +33,7 @@ if( $showhide_intro ):
 <?php endif; ?>
 <?php 
 $showhide_proces = get_field('showhide_proces', $thisID);
-$onspro = get_field('onspro', $thisID);
+$onspro = get_field('onsproces', $thisID);
 if( $showhide_proces ):
 ?>
 <section class="tvd-process-sec">
@@ -94,7 +94,7 @@ if( $showhide_diensten ):
                 if( !empty($diensten['beschrijving'])) echo wpautop($diensten['beschrijving']); 
               ?>
               <span>
-                <i><img src="assets/images/team-border-btm.svg"></i>
+                <i><img src="<?php echo THEME_URI; ?>/assets/images/team-border-btm.svg"></i>
               </span>
             </div>
             <?php 
