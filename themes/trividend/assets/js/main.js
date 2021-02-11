@@ -462,8 +462,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
   /* Start of Milon */
-  $('label.wpforms-error').on('click', function(){
-    $(this).parent('.wpforms-field').removeClass('wpforms-has-error');
+  $('.wpforms-error').on('click', function(){
+    $(this).parents('.wpforms-field').removeClass('wpforms-has-error');
   });
 
 
