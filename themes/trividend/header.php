@@ -55,109 +55,123 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+
+<?php 
+  $logoObj = get_field('hdlogo', 'options');
+  if( is_array($logoObj) ){
+    $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+  }else{
+    $logo_tag = '';
+  }
+?>
   <div class="bdoverlay"></div>
   <header class="header">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="header-inr">
-          <div class="header-left">
-            <div class="logo">
-              <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo.png"></a>
-            </div>
-          </div>
-          <div class="header-right">
-            <div class="header-menu">
-              <nav class="main-nav">
-                <ul class="clearfix reset-list">
-                  <li class="current-menu-item"><a href="#">Home</a></li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Ik zoek financiering</a>
-                    <ul class="sub-menu" style="">
-                      <li><a href="#">Sub Menu</a></li>
-                      <li><a href="#">Sub Menu</a></li>
-                      <li><a href="#">Sub Menu</a></li>
-                      <li><a href="#">Sub Menu</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Investeren met impact</a></li>
-                  <li><a href="#">Hoe we investeren</a></li>
-                  <li><a href="#">Over Trivident</a></li>
-                  <li><a href="#">Nieuws</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="hdr-search">
-              <form action="">
-                <input type="text" placeholder="Search">
-              </form>
-              <button>
-                <i>
-                  <svg class="hdr-serach-icon" width="24" height="24" viewBox="0 0 24 24" fill="#E0861A">
-                    <use xlink:href="#hdr-serach-icon"></use>
-                  </svg>
-                </i>
-              </button>
-            </div>
-            <div class="xs-humberger-cntlr">
-              <div class="humberger-icon">
-                <span></span>
-                <span></span>
-                <span></span>
+    <div class="container-xlg">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="header-inr">
+            <div class="header-left">
+              <?php if( !empty( $logo_tag ) ) :?>
+              <div class="logo">
+                <a href="<?php echo esc_url(home_url('/')); ?>">
+                  <?php echo $logo_tag; ?>
+                </a>
               </div>
-              <strong class="humberger-title humberger-cmn-title">menu</strong>
+              <?php endif; ?>
+            </div>
+            <div class="header-right">
+              <div class="header-menu">
+                <nav class="main-nav">
+                    <?php 
+                      $mmenuOptions = array( 
+                          'theme_location' => 'cbv_main_menu', 
+                          'menu_class' => 'clearfix reset-list',
+                          'container' => 'mnav',
+                          'container_class' => 'mnav',
+                          'depth' => 2,
+                        );
+                      wp_nav_menu( $mmenuOptions ); 
+                    ?>
+                </nav>
+              </div>
+              <div class="hdr-search">
+                <form action="">
+                  <div class="hdr-search-inr">
+                    <input type="text" placeholder="Zoeken">
+                    <button>
+                      <i>
+                        <svg class="hdr-serach-icon" width="24" height="24" viewBox="0 0 24 24" fill="#E0861A">
+                          <use xlink:href="#hdr-serach-icon"></use>
+                        </svg>
+                      </i>
+                    </button>
+                  </div>
+                </form>
+                <button class="hdr-search-btn">
+                  <i>
+                    <svg class="hdr-serach-icon" width="24" height="24" viewBox="0 0 24 24" fill="#E0861A">
+                      <use xlink:href="#hdr-serach-icon"></use>
+                    </svg>
+                  </i>
+                </button>
+              </div>
+              <div class="xs-humberger-cntlr">
+                <div class="humberger-icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <strong class="humberger-title humberger-cmn-title">menu</strong>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
 
 <div class="xs-mbl-menu-cntlr">
-  <div class="xs-mbl-menu-top">
-    <div class="xs-mmt-logo">
-      <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo.png" alt=""></a>
-    </div>
-    <div class="xs-mmt-close-icon">
-      <div class="close-icon humberger-icon">
-        <span></span>
-        <span></span>
+  <div class="xs-mbl-menu-top-wrap">
+    <div class="xs-mbl-menu-top">
+      <?php if( !empty( $logo_tag ) ) :?>
+      <div class="xs-mmt-logo">
+        <a href="<?php echo esc_url(home_url('/')); ?>">
+          <?php echo $logo_tag; ?>
+        </a>
       </div>
-      <strong class="close-title humberger-cmn-title">Sluiten</strong>
+      <?php endif; ?>
+      <div class="xs-mmt-close-icon">
+        <div class="close-icon humberger-icon">
+          <span></span>
+          <span></span>
+        </div>
+        <strong class="close-title humberger-cmn-title">Sluiten</strong>
+      </div>
     </div>
-  </div>
-  <div class="xs-mbl-menu-srch">
-    <input type="text" placeholder="Zoeken">
-    <button>
-      <i>
-        <svg class="hdr-serach-icon" width="24" height="24" viewBox="0 0 24 24" fill="#E0861A">
-          <use xlink:href="#hdr-serach-icon"></use>
-        </svg>
-      </i>
-    </button>
+    <div class="xs-mbl-menu-srch">
+      <input type="text" placeholder="Zoeken">
+      <button>
+        <i>
+          <svg class="hdr-serach-icon" width="24" height="24" viewBox="0 0 24 24" fill="#E0861A">
+            <use xlink:href="#hdr-serach-icon"></use>
+          </svg>
+        </i>
+      </button>
+    </div>
   </div>
 
   <div class="xs-mbl-menu">
     <nav class="main-nav">
-      <ul class="clearfix reset-list">
-        <li class="current-menu-item"><a href="#">Home</a></li>
-        <li class="menu-item-has-children">
-          <a href="#">Ik zoek financiering</a>
-          <ul class="sub-menu" style="">
-            <li><a href="#">Sub Menu</a></li>
-            <li><a href="#">Sub Menu</a></li>
-            <li><a href="#">Sub Menu</a></li>
-            <li><a href="#">Sub Menu</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Investeren met impact</a></li>
-        <li><a href="#">Hoe we investeren</a></li>
-        <li><a href="#">Over Trivident</a></li>
-        <li><a href="#">Nieuws</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+      <?php 
+        $mmenuOptions = array( 
+            'theme_location' => 'cbv_main_menu', 
+            'menu_class' => 'clearfix reset-list',
+            'container' => 'mnav',
+            'container_class' => 'mnav',
+            'depth' => 2,
+          );
+        wp_nav_menu( $mmenuOptions ); 
+      ?>
     </nav>
   </div>
 </div>

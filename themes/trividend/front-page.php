@@ -6,7 +6,7 @@
   if( $home_slides ):
 ?>
 <section class="hm-banner-sec">
-  <div class="container-fluid">
+  <div class="container-xlg">
     <div class="row">
       <div class="col-md-12">
         <div class="hm-banner-cntlr">

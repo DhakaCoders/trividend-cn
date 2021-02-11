@@ -6,18 +6,24 @@ get_header();
 $thisID = get_the_ID();
 ?>
 
+<?php 
+  $introsec = get_field('introsec', $thisID);
+  if( $introsec ):
+?>
 <section class="page-banner-sec-wrp">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="tvd-nieuws-grd-entry-hdr show-sm">
-          <h1 class="tvd-nieuws-entry-hdr-title">Over Ons</h1>
+          <?php 
+              if( !empty($introsec['titel']) ) printf('<h1 class="tvd-nieuws-entry-hdr-title">%s</h1>', $introsec['titel']);
+            ?>
         </div>
       </div>
     </div>
   </div>
 </section>
-
+<?php endif; ?>
 
 
 <?php 
@@ -86,13 +92,14 @@ $thisID = get_the_ID();
             <img src="<?php echo $bloksecafbeelding ?>">
           </div>
 
-          <!-- 
-              n.B.---- ai div ta xs a hobe kina jante hobe?
-
 
           <div class="rt-dsc-dsc-img-mdul-dsc-sm show-sm">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Penatibus nam vulputate amet facilisis in adipiscing. Ut faucibus netus ipsum in. Vitae, sed dui enim, malesuada. Semper quis rhoncus augue tincidunt consequat pulvinar commodo pellentesque blandit. </p>
-          </div> -->
+            <?php 
+              if( !empty($bloksec['beschrijving'])) echo wpautop($bloksec['beschrijving']); 
+            ?>
+          </div>
+
+
         </div>
       </div>
     </div>
