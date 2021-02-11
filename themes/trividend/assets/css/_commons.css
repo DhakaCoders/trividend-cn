@@ -44,7 +44,7 @@ u{
 }
 ::selection {
   color: #fff;
-  background: #512C36;
+  background: #8b0101;
 }
 /*-- app gap use pattern --*/
 /*data-xxs = 575
@@ -388,4 +388,7 @@ form .dropdown-menu li a{
     padding: 50px 0;
     color: #8B0102;
     font-size: 24px;
+}
+ul.slick-dots li:only-child {
+    display: none;
 }
