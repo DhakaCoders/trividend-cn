@@ -24,6 +24,7 @@ if( !function_exists('cbv_theme_setup') ){
         }
         add_image_size( 'postsingle', 926, 550, true );
         add_image_size( 'dftnieuws', 342, 310, true );
+        add_image_size( 'hmslide', 1170, 736, true );
         
         // add size to media uploader
         add_filter( 'image_size_names_choose', 'cbv_custom_image_sizes' );

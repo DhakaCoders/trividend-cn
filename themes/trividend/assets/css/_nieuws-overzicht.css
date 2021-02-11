@@ -207,7 +207,9 @@
     margin-right: -3px;
 }
 
-
+.tvd-date span {
+    text-transform: uppercase;
+}
 
 
 @media(max-width: 1599px){
