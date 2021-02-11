@@ -522,9 +522,9 @@ if( $('.hm-bnr-slider-item-cntlr').length ){
 
 
 
-$("input[type=checkbox]").change(function() {
-    $(this).parent().toggleClass("chked");
-});
+$(':checkbox:not(:has(:checked))').parent().removeClass('chked');
+$(':checkbox:checked').parent().addClass('chked');
+
 
     new WOW().init();
 
