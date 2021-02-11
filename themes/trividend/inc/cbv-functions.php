@@ -123,6 +123,7 @@ function cbv_table( $table){
     if ( ! empty( $table['header'] ) ) {
       echo "<thead class='dfp-thead'>";
       echo '<tr>';
+      echo '<th><span class="mHc">#</span></th>';
       foreach ( $table['header'] as $th ) {
         echo '<th><span class="mHc">';
         echo $th['c'];
@@ -132,14 +133,17 @@ function cbv_table( $table){
       echo '</thead>';
     }
     echo '<tbody>';
+    $i = 1;
     foreach ( $table['body'] as $tr ) {
       echo '<tr>';
+      echo '<td><span class="mHc">'.$i.'.</span></td>';
       foreach ( $tr as $td ) {
         echo '<td><span class="mHc">';
         echo $td['c'];
         echo '</span></td>';
       }
       echo '</tr>';
+      $i++;
     }
     echo '</tbody>';
     echo '</table></div>';

@@ -32,47 +32,13 @@ $thisID = get_the_ID();
       <div class="col-md-12">
         <div class="contact-form-block clearfix">
           <div class="contact-form-lft">
+            <?php if( !empty( $formsec['shortcode'] ) ): ?>
             <div class="contact-form-wrp clearfix">
               <div class="wpforms-container">
-                <form class="wpforms-form needs-validation" novalidate>
-                  
-                  <div class="wpforms-field-container">
-                    
-                    <div class="wpforms-field">
-                      <label class="wpforms-field-label">Voornaam</label>
-                      <input type="text" name="name" placeholder="Bijv. Jan" required>
-                    </div>
-                    <div class="wpforms-field">
-                      <label class="wpforms-field-label">Familienaam</label>
-                      <input type="text" name="name" placeholder="Bijv. Temmerman" required>
-                    </div>
-
-                    <div class="wpforms-field wpforms-has-error">
-                      <label class="wpforms-field-label">Telefoon</label>
-                      <input type="text" name="text" placeholder="Bijv. 0493 20 36 20" required>
-                      <label class="wpforms-error">onjuist <span>x</span></label>
-                    </div>
-
-                    <div class="wpforms-field wpforms-has-error">
-                      <label class="wpforms-field-label">E-mailadres</label>
-                      <input type="email" name="email" placeholder="info2conversalbe" class="form-control" required>
-                      <label class="wpforms-error">onjuist <span>x</span></label>
-                    </div>
-
-                    <div class="wpforms-field wpforms-field-textarea">
-                      <label class="wpforms-field-label">Bericht</label>
-                      <textarea name="message" placeholder="Jouw bericht"></textarea>
-                    </div>
-                  </div><!-- end of .wpforms-field-container-->
-
-                  <div class="wpforms-submit-container">
-                    <p>Wij respecteren uw <a href="#">privacy.</a> Jouw gegevens worden altijd vertrouwelijk behandeld.</p>
-                    <button type="submit" name="submit" class="wpforms-submit">Verzenden</button>
-                  </div>
-
-                </form>
+              <?php echo do_shortcode( $formsec['shortcode'] ); ?>
               </div>
             </div>
+            <?php endif; ?>
           </div>
           <?php 
               $address = get_field('address', 'options');
@@ -134,11 +100,5 @@ $thisID = get_the_ID();
 </section>
 
 <?php endif; ?>
-
-
 <?php get_template_part('templates/team'); ?>
-
-
-
-
 <?php get_footer(); ?>

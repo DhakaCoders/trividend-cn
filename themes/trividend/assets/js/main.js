@@ -442,6 +442,21 @@ google.maps.event.addDomListener(window, 'load', initialize);
       }
     }
 
+    if(windowWidth <= 767){
+      if($('.rnSlider').length ){
+        $('.rnSlider').slick({
+          dots: true,
+          infinite: false,
+          autoplay: false,
+          arrows: false,
+          autoplaySpeed: 3000,
+          speed: 700,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        });
+      }
+    }
+
 
 
 

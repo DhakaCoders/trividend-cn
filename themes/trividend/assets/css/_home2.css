@@ -211,6 +211,7 @@
 	font-weight: 700;
 	background: #42BD73;
 	border: 2px solid #42BD73;
+	padding: 5px 10px;
 }
 .tvd-fin-inr a:hover{
 	background: #E0861A;
@@ -508,15 +509,7 @@
 	.tvd-nieuws-inr i{
 		max-width: 32px;
 	}
-	.tvd-inputfields-row.diveder2 {
-	    margin-left: 0;
-	    margin-right: 0;
-	}
-	.diveder2 .tvd-inputfield{
-		width: 100%;
-		padding-left: 0;
-    	padding-right: 0;
-	}
+	
 	.tvd-nieuws-img{
 		min-height: 220px;
 	}
@@ -563,7 +556,21 @@
 	.tvd-nieuws-grds{
 		padding-bottom: 0;
 	}
+	.tvd-inputfield em p{
+		line-height: 1.5;
+	}
 
+}
+@media(max-width: 370px){
+	.tvd-inputfields-row.diveder2 {
+	    margin-left: 0;
+	    margin-right: 0;
+	}
+	.diveder2 .tvd-inputfield{
+		width: 100%;
+		padding-left: 0;
+    	padding-right: 0;
+	
 }
 
 @media(max-width: 359px){
