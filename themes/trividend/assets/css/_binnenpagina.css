@@ -849,6 +849,20 @@ Gallery design
 	fill: #8B0102;
 }
 
+.fl-dft-lftimg-rgtdes img{
+	display: block;
+}
+.fl-dft-lftimg-rgtdes img.align-right{
+	float: right;
+	margin-bottom: 20px;
+	padding-left: 20px;
+}
+.fl-dft-lftimg-rgtdes img.align-left{
+	float: left;
+	margin-bottom: 20px;
+	padding-right: 20px;
+}
+
 
 
 @media(max-width: 1399px){
@@ -1185,19 +1199,7 @@ Gallery design
 	.fl-dft-lftimg-rgtdes-lft-img-inr{
 		background-image: none!important;
 	}*/
-	.fl-dft-lftimg-rgtdes img{
-		display: block;
-	}
-	.fl-dft-lftimg-rgtdes img.align-right{
-		float: right;
-		margin-bottom: 20px;
-		padding-left: 20px;
-	}
-	.fl-dft-lftimg-rgtdes img.align-left{
-		float: left;
-		margin-bottom: 20px;
-		padding-right: 20px;
-	}
+	
 	/*.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-rgt{
 		float: inherit;
 		width: 100%;

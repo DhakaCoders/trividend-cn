@@ -353,6 +353,21 @@
 		width: 180px;
 		height: 44px;
 	}
+	/*.tvd-pgi-img{
+		position: relative;
+	}
+	.tvd-pgi-img:after{
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		width: 15px;
+		height: 3px;
+		background: red;
+	}*/
 
 }
 
