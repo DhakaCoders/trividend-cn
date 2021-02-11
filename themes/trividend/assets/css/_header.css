@@ -483,6 +483,9 @@ body.allWork{
         padding-bottom: 0;
         text-align: center;
     }
+    nav.main-nav > ul > li.xs-mnfs > a{
+        font-size: 12px;
+    }
     nav.main-nav > ul > li > a:after{
         content: none;
         display: none;
