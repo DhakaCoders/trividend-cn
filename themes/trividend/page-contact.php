@@ -17,8 +17,8 @@ $formsec = get_field('formsec', $thisID);
               printf('<h1 class="fl-h1 tvd-nieuws-entry-hdr-title">%s</h1>', $formsec['titel']);
             else
               printf('<h1 class="fl-h1 tvd-nieuws-entry-hdr-title">%s</h1>', $pageTitle);
-            
-            if( !empty($formsec['beschrijving'])) echo wpautop($formsec['korte_beschrijving']); 
+
+            if( !empty($formsec['beschrijving'])) echo wpautop($formsec['beschrijving']); 
           ?>
         </div>
       </div>

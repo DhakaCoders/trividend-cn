@@ -102,7 +102,7 @@
                 while($nieuwsQuery->have_posts()): $nieuwsQuery->the_post();
                 $gridurl = cbv_get_image_src( get_post_thumbnail_id(get_the_ID()), 'dftnieuws' );
                 if( empty($gridurl) ){
-                  $gridurl = THEME_URI.'/assets/images/tvd-nieuws-grd-img-02.jpg';
+                  $gridurl = THEME_URI.'/assets/images/post-df-img.jpg';
                 }
               ?>             
               <div class="tvd-nieuws-grds">

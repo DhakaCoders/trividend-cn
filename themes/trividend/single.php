@@ -4,8 +4,9 @@ while( have_posts() ): the_post();
   $author_id = get_the_author_meta( 'ID' );
   $gridtag = cbv_get_image_tag( get_post_thumbnail_id(get_the_ID()), 'postsingle');
   if( empty($gridtag) ){
-    $gridtag = '<img src="'.THEME_URI.'/assets/images/dfp-img-07.jpg" alt="'.get_the_title().'">';
+    $gridtag = '<img src="'.THEME_URI.'/assets/images/single-post-df-img.jpg" alt="'.get_the_title().'">';
   }
+  $permalink = get_the_permalink();
 ?>
 <section class="innerpage-con-wrap" id="fl-nieuws-details">
   <div class="container-sm">
@@ -18,7 +19,7 @@ while( have_posts() ): the_post();
             </div>
             <div class="dfp-promomodule-author">
               <span>Author:</span>
-              <strong><?php the_author_meta( 'display_name', $author_id ); ?></strong>
+              <strong><?php echo ucwords(get_the_author_meta( 'display_name', $author_id )); ?></strong>
             </div>
             <div class="dfp-plate-one-img-bx">
               <?php echo $gridtag; ?>
@@ -36,9 +37,9 @@ while( have_posts() ): the_post();
               <span>Deel op:</span>
               <div class="dfp-social-media-module">
                 <ul class="reset-list">
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $permalink; ?>"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="https://twitter.com/home?status=<?php echo $permalink; ?>"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="https://www.instagram.com/?url=<?php echo $permalink; ?>"><i class="fab fa-instagram"></i></a></li>
                 </ul>
               </div>
             </div>
@@ -141,7 +142,7 @@ while( have_posts() ): the_post();
                 while($nieuwsQuery->have_posts()): $nieuwsQuery->the_post();
                 $gridurl = cbv_get_image_src( get_post_thumbnail_id(get_the_ID()), 'dftnieuws' );
                 if( empty($gridurl) ){
-                  $gridurl = THEME_URI.'/assets/images/tvd-nieuws-grd-img-02.jpg';
+                  $gridurl = THEME_URI.'/assets/images/post-df-img.jpg';
                 }
               ?>             
               <div class="tvd-nieuws-grds">
@@ -454,5 +455,101 @@ while( have_posts() ): the_post();
     </div>
   </div>
 </section>
+
+<?php 
+  $terms = get_the_terms( get_the_ID(), 'category' );
+  if( !empty($terms) ){
+    $term_ids = array();
+    foreach( $terms as $term ){
+      $term_ids[] = $term->term_id;
+    }
+    $query = new WP_Query(array( 
+        'post_type'=> 'post',
+        'post_status' => 'publish',
+        'posts_per_page' => 3,
+        'orderby' => 'rand',
+        'tax_query' => array(
+             array(
+                'taxonomy' => 'category',
+                'field' => 'term_id',
+                'terms' => $term_ids
+            )
+        ) 
+      ) 
+    );
+  }else{
+    $query = new WP_Query(array( 
+        'post_type'=> 'post',
+        'post_status' => 'publish',
+        'posts_per_page' => 3,
+        'orderby' => 'rand',  
+      ) 
+    );
+  }
+  if($query->have_posts()){
+    $rel_nieuws = get_field('gerelateerdnieuws', 'options');
+?>
+<section class="tvd-related-nieuws-sec">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="tvd-related-nieuws-sec-inr">
+          <div class="tvd-related-niuews-entry-hdr fl-entry-hdr">
+          <?php 
+            if( !empty($rel_nieuws['titel']) ) 
+              printf('<h2 class="tvd-rneh-title fl-h2">%s</h2>', $rel_nieuws['titel']);
+            else
+              printf('<h2 class="tvd-rneh-title fl-h2">Gerelateerd Nieuws</h2>');
+
+            if( !empty($rel_nieuws['beschrijving'])) echo wpautop($rel_nieuws['beschrijving']); 
+          ?>
+            <span>
+              <i><img src="<?php echo THEME_URI; ?>/assets/images/team-border-btm.svg"></i>
+            </span>
+          </div>
+          <div class="tvd-rn-grds-item">
+            <div class="tvd-nieuws-slider rnSlider clearfix">
+            <?php 
+                while($query->have_posts()): $query->the_post();
+                $re_gridurl = cbv_get_image_src( get_post_thumbnail_id(get_the_ID()), 'dftnieuws' );
+                if( empty($re_gridurl) ){
+                  $re_gridurl = THEME_URI.'/assets/images/post-df-img.jpg';
+                }
+              ?> 
+              <div class="tvd-nieuws-grds">
+                <div class="tvd-nieuws-grd-item">
+                  <div class="tvd-nieuws-img-ctlr">
+                    <a class="overlay-link" href="<?php the_permalink( ); ?>"></a>
+                    <div class="tvd-nieuws-img inline-bg" style="background: url('<?php echo $re_gridurl; ?>');"></div>
+                    <div class="tvd-triangle">
+                      <div class="tvd-tringle-border">
+                        
+                      </div>
+                      <div class="tvd-date">
+                          <strong><?php echo get_the_date('d'); ?></strong>
+                          <span><?php echo get_the_date('M'); ?></span>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="tvd-nieuws-grd-item-des mHc">
+                    <h3 class="tvd-nieuws-grd-item-des-title fl-h3 mHc1">
+                      <a href="<?php the_permalink( ); ?>"><?php the_title( ); ?></a>
+                    </h3>
+                    <div class="tvd-nieuws-grd-item-con mHc2">
+                      <?php the_excerpt(); ?>
+                    </div>
+                    <a href="<?php the_permalink( ); ?>">Lees meer</a>
+                  </div>
+                </div>
+              </div>
+              <?php endwhile; ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<?php } wp_reset_postdata();?>
 <?php endwhile; ?>
 <?php get_footer(); ?>

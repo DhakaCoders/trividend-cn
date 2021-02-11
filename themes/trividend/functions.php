@@ -160,15 +160,15 @@ if( !function_exists('cbv_custom_both_breadcrump')){
     }
 }
 
-function faqcat_pagination($query) {
+function news_search_pagination($query) {
     if (is_search() && $query->is_main_query() && !is_admin() ) {
         $query->set('post_type',array('post'));
-        $query->set( 'posts_per_page', 1 );
+        $query->set( 'posts_per_page', 9 );
     }
 return $query;
 }
  
-add_filter('pre_get_posts','faqcat_pagination');
+add_filter('pre_get_posts','news_search_pagination');
 /**
 Debug->>
 */
