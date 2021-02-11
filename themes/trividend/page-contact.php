@@ -4,12 +4,8 @@
 */
 get_header(); 
 $thisID = get_the_ID();
-?>
-
-
-<?php 
-  $formsec = get_field('formsec', $thisID);
-  if( $formsec ):
+$pageTitle = get_the_title($thisID);
+$formsec = get_field('formsec', $thisID);
 ?>
 <section class="page-banner-sec-wrp contact-page-bnr">
   <div class="container">
@@ -17,8 +13,12 @@ $thisID = get_the_ID();
       <div class="col-md-12">
         <div class="tvd-nieuws-grd-entry-hdr">
           <?php 
-            if( !empty($formsec['titel']) ) printf('<h1 class="fl-h1 tvd-nieuws-entry-hdr-title">%s</h1>', $formsec['titel']);
-            if( !empty($formsec['korte_beschrijving'])) echo wpautop($formsec['korte_beschrijving']); 
+            if( !empty($formsec['titel']) ) 
+              printf('<h1 class="fl-h1 tvd-nieuws-entry-hdr-title">%s</h1>', $formsec['titel']);
+            else
+              printf('<h1 class="fl-h1 tvd-nieuws-entry-hdr-title">%s</h1>', $pageTitle);
+            
+            if( !empty($formsec['beschrijving'])) echo wpautop($formsec['korte_beschrijving']); 
           ?>
         </div>
       </div>
@@ -98,7 +98,5 @@ $thisID = get_the_ID();
     </div>
   </div>
 </section>
-
-<?php endif; ?>
 <?php get_template_part('templates/team'); ?>
 <?php get_footer(); ?>

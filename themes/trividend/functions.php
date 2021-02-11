@@ -27,6 +27,8 @@ if( !function_exists('cbv_theme_setup') ){
         add_image_size( 'hmslide', 1170, 736, true );
         add_image_size( 'dienstgrid', 342, 254, true );
         add_image_size( 'dienstintro', 536, 550, true );
+        add_image_size( 'overonsintro', 514, 550, true );
+        add_image_size( 'overonsblok', 525, 430, true );
         
         // add size to media uploader
         add_filter( 'image_size_names_choose', 'cbv_custom_image_sizes' );
@@ -42,8 +44,8 @@ if( !function_exists('cbv_theme_setup') ){
 
         register_nav_menus( array(
             'cbv_main_menu' => __( 'Hoofdmenu', THEME_NAME ),
-            'cbv_fta_menu' => __( 'Footer Menu 1', THEME_NAME ),
-            'cbv_ftb_menu' => __( 'Footer Menu 2', THEME_NAME )
+            'cbv_fta_menu' => __( 'Footer Menu', THEME_NAME ),
+            'cbv_ftb_menu' => __( 'Copyright Menu', THEME_NAME )
         ) );
 
     }

@@ -190,6 +190,9 @@
               ?>
               <div class="tvd-customer-grd">
                 <div class="tvd-customer-grd-img">
+                  <?php if( !empty($klanten_logo['knop']) ): ?>
+                  <a class="overlay-link" href="<?php echo $klanten_logo['knop']; ?>"></a>
+                  <?php endif; ?>
                   <?php echo $klanten_logoIcon;?>
                 </div>
               </div>

@@ -265,35 +265,46 @@
                 if( !empty($fc_topnoot) ) printf('<p><strong>%s</strong></p>', $fc_topnoot); 
               ?>
               </div>
+               <?php 
+                  if( !empty($selecteer_doelen) ){
+                    $goalcount = count($selecteer_doelen);
+                    $goalQuery = new WP_Query(array(
+                      'post_type' => 'goal',
+                      'posts_per_page'=> $goalcount,
+                      'post__in' => $selecteer_doelen,
+                      'orderby' => 'rand'
+
+                    ));
+                        
+                  }else{
+                    $goalQuery = new WP_Query(array(
+                      'post_type' => 'goal',
+                      'posts_per_page'=> 3,
+                      'orderby' => 'rand',
+                      'order'=> 'desc',
+
+                    ));
+                  }
+                if( $goalQuery->have_posts() ): 
+                ?>
               <div class="dfp-goal clearfix">
-                <div class="dfp-goal-1 red">
+              <?php 
+                while($goalQuery->have_posts()): $goalQuery->the_post();
+                $goalIcon = cbv_get_image_tag( get_post_thumbnail_id(get_the_ID()));
+                $goalcolor = !empty(get_field( 'selecteer_kleur'))? get_field( 'selecteer_kleur'):'';
+              ?>
+                <div class="dfp-goal-1<?php echo ' '.$goalcolor; ?>">
                   <div class="dfp-goal-img">
-                    <i><img src="<?php echo THEME_URI; ?>/assets/images/dfp-goal-img-01.jpg"></i>
+                    <i><?php echo $goalIcon; ?></i>
                   </div>
                   <div class="dfp-goal-des">
-                    <p><strong>GOAL 8: </strong></p>
-                    <p>Decent Work and Economic Growth</p>
+                    <p><strong><?php the_title(); ?></strong></p>
+                    <?php the_excerpt(); ?>
                   </div>
                 </div>
-                <div class="dfp-goal-2 green">
-                  <div class="dfp-goal-img">
-                    <i><img src="<?php echo THEME_URI; ?>/assets/images/dfp-goal-img-02.jpg"></i>
-                  </div>
-                  <div class="dfp-goal-des">
-                    <p><strong>GOAL 13: </strong></p>
-                    <p>Climate Action</p>
-                  </div>
-                </div>
-                <div class="dfp-goal-3 blue">
-                  <div class="dfp-goal-img">
-                    <i><img src="<?php echo THEME_URI; ?>/assets/images/dfp-goal-img-03.jpg"></i>
-                  </div>
-                  <div class="dfp-goal-des">
-                    <p><strong>GOAL 17: </strong></p>
-                    <p>Partnerships to achieve the Goal</p>
-                  </div>
-                </div>
+                <?php endwhile; ?>
               </div>
+              <?php endif; wp_reset_postdata(); ?>
               <div class="dfp-text-module dfp-conversal-text-module">
               <?php 
                 if( !empty($onderste_opmerking)) echo wpautop($onderste_opmerking);
@@ -348,10 +359,44 @@
           <?php }elseif( get_row_layout() == 'table' ){
               $fc_table = get_sub_field('fc_table');
               cbv_table($fc_table);
-          ?>
-          <?php }elseif( get_row_layout() == 'fcklanten' ){
+          }elseif( get_row_layout() == 'gap' ){ 
+            $fc_gap = get_sub_field('fc_gap');
           ?>  
-
+          <div style="height: <?php echo $fc_gap; ?>"></div>
+          <?php }elseif( get_row_layout() == 'fcklanten' ){ ?>
+          <?php 
+            $showhide_klanten = get_field('showhide_klanten', HOMEID);
+            $home_klanten = get_field('home_klanten', HOMEID);
+            if( $showhide_klanten ):
+          ?>
+          <div class="dfp-klanten-module">
+            <div class="tvd-customer-hdr">
+              <?php if( !empty($home_klanten['titel']) ) printf('<h2 class="tvd-customer-title">%s</h2>', $home_klanten['titel']); ?>
+            </div>
+          <?php 
+            $klanten_logos = $home_klanten['klanten_logo'];
+            if( $klanten_logos ):
+          ?> 
+            <div class="tvd-customer-slider-ctlr">
+              <div class="tvd-customer-slider bnpgnSlider">
+                <?php  
+                  foreach( $klanten_logos as $klanten_logo ): 
+                    $klanten_logoIcon = !empty($klanten_logo['icon'])? cbv_get_image_tag( $klanten_logo['icon'], 'full' ): '';
+                ?>
+                <div class="tvd-customer-grd">
+                  <div class="tvd-customer-grd-img mHc">
+                    <?php if( !empty($klanten_logo['knop']) ): ?>
+                      <a class="overlay-link" href="<?php echo $klanten_logo['knop']; ?>"></a>
+                    <?php endif; ?>
+                    <?php echo $klanten_logoIcon;?>
+                  </div>
+                </div>
+                <?php endforeach ?>
+              </div>
+            </div>
+            <?php endif; ?>
+          </div>
+          <?php endif; ?>
           <?php } ?>
           <?php endwhile; ?>
           <?php }else{ ?>
