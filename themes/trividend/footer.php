@@ -84,7 +84,7 @@
             <h4 class="ftr-menu-title fl-h4"><?php _e( 'Contact info', THEME_NAME ); ?></h4>
             <div class="ftr-menu-des">
               <?php if( !empty($titel) ) printf('<div class="ftr-cnt-menu-cv"><span>%s</span></div>', $titel); ?>
-              <?php if( !empty($address) ) printf('<div class="ftr-cnt-menu-adrs"><a href="%s">%s</a></div>', $gmaplink, $address); ?>
+              <?php if( !empty($address) ) printf('<div class="ftr-cnt-menu-adrs"><a target="_blank" href="%s">%s</a></div>', $gmaplink, $address); ?>
               <?php if( !empty($show_telefoon) ) printf('<div class="ftr-cnt-menu-phn"><a href="tel:%s">%s</a></div>', $telefoon, $show_telefoon); ?>
               <?php if( !empty($emailadres) ) printf('<div class="ftr-cnt-menu-mail"><a href="mailto:%s">%s</a></div>', $emailadres, $emailadres); ?>
               <?php if( !empty($btw) ) printf('<div class="ftr-cnt-menu-vat"><span>BTW: %s</span></div>', $btw); ?>
@@ -121,7 +121,7 @@
             ?>
           </div>
           <div class="ftr-btm-designby">
-            <a href="#">Webdesign by conversal</a>
+            <a href="https://www.conversal.be/" target="_blank">Webdesign by conversal</a>
           </div>
         </div>
       </div>

@@ -200,10 +200,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
 })();
 
 
-
-
-  /* Start of Noyon */
-
   if( $('.humberger-icon').length ){
     $('.humberger-icon').click(function(){
       $('body').toggleClass('allWork');
@@ -335,12 +331,6 @@ if( $('.hm-bnr-slider-item-cntlr').length ){
         ]
       });
     }
-
-
-
-
-
-  /* Start of Shariful */
 
     if( $('.nwSlider').length ){
         $('.nwSlider').slick({
@@ -526,6 +516,6 @@ $(':checkbox:not(:has(:checked))').parent().removeClass('chked');
 $(':checkbox:checked').parent().addClass('chked');
 
 
-    new WOW().init();
+  new WOW().init();
 
 })(jQuery);

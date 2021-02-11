@@ -60,7 +60,7 @@ $thisID = get_the_ID();
                       <use xlink:href="#contact-map-svg"></use>
                     </svg>
                   </i>
-                  <a href="<?php echo $gmaplink; ?>"><?php echo $address; ?></a>
+                  <a target="_blank" href="<?php echo $gmaplink; ?>"><?php echo $address; ?></a>
                 </li>
                 <?php endif; if( !empty($show_telefoon) ): ?>
                 <li>

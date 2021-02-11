@@ -88,7 +88,7 @@
                      <?php endif; ?>
                      <?php if( !empty($smedia['twitter_url']) ): ?>
                         <li>
-                          <a href="<?php echo $smedia['twitter_url']; ?>">
+                          <a target="_blank" href="<?php echo $smedia['twitter_url']; ?>">
                             <i>
                             <svg class="contact-twiter-svg" width="17" height="16" viewBox="0 0 17 16" fill="#4B4B4B">
                               <use xlink:href="#contact-twiter-svg"></use>
@@ -99,7 +99,7 @@
                         <?php endif; ?>
                         <?php if( !empty($smedia['instagram_url']) ): ?>
                         <li>
-                          <a href="<?php echo $smedia['instagram_url']; ?>">
+                          <a target="_blank" href="<?php echo $smedia['instagram_url']; ?>">
                             <i>
                             <svg class="contact-ins-svg" width="17" height="16" viewBox="0 0 17 16" fill="#4B4B4B">
                               <use xlink:href="#contact-ins-svg"></use>
@@ -116,7 +116,7 @@
                     <ul class="reset-list clearfix">
                       <?php if( !empty($telefoon) ): ?>
                     <li>
-                      <a href="tel:<?php echo phone_preg($telefoon);?>">
+                      <a target="_blank" href="tel:<?php echo phone_preg($telefoon);?>">
                         <i>
                         <svg class="contact-phone-svg" width="16" height="16" viewBox="0 0 16 16" fill="#E0861A">
                           <use xlink:href="#contact-phone-svg"></use>
