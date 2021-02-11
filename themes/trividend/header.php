@@ -86,7 +86,9 @@
                       $mmenuOptions = array( 
                           'theme_location' => 'cbv_main_menu', 
                           'menu_class' => 'clearfix reset-list',
-                          'container' => false,
+                          'container' => 'mnav',
+                          'container_class' => 'mnav',
+                          'depth' => 2,
                         );
                       wp_nav_menu( $mmenuOptions ); 
                     ?>
@@ -164,7 +166,9 @@
         $mmenuOptions = array( 
             'theme_location' => 'cbv_main_menu', 
             'menu_class' => 'clearfix reset-list',
-            'container' => false,
+            'container' => 'mnav',
+            'container_class' => 'mnav',
+            'depth' => 2,
           );
         wp_nav_menu( $mmenuOptions ); 
       ?>
