@@ -132,7 +132,7 @@
                 while($dienstQuery->have_posts()): $dienstQuery->the_post();
                 $degridurl = cbv_get_image_src( get_post_thumbnail_id(get_the_ID()), 'dienstgrid' );
                 if( empty($degridurl) ){
-                  $degridurl = THEME_URI.'/assets/images/tvd-nieuws-grd-img-02.jpg';
+                  $degridurl = THEME_URI.'/assets/images/diensten-df-img.jpg';
                 }
               ?> 
               <div class="our-services-grids">
@@ -190,6 +190,9 @@
               ?>
               <div class="tvd-customer-grd">
                 <div class="tvd-customer-grd-img">
+                  <?php if( !empty($klanten_logo['knop']) ): ?>
+                  <a class="overlay-link" href="<?php echo $klanten_logo['knop']; ?>"></a>
+                  <?php endif; ?>
                   <?php echo $klanten_logoIcon;?>
                 </div>
               </div>
@@ -270,7 +273,7 @@
                 while($nieuwsQuery->have_posts()): $nieuwsQuery->the_post();
                 $gridurl = cbv_get_image_src( get_post_thumbnail_id(get_the_ID()), 'dftnieuws' );
                 if( empty($gridurl) ){
-                  $gridurl = THEME_URI.'/assets/images/tvd-nieuws-grd-img-02.jpg';
+                  $gridurl = THEME_URI.'/assets/images/post-df-img.jpg';
                 }
               ?> 
               <div class="tvd-nieuws-grds">

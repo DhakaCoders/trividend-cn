@@ -27,6 +27,8 @@ if( !function_exists('cbv_theme_setup') ){
         add_image_size( 'hmslide', 1170, 736, true );
         add_image_size( 'dienstgrid', 342, 254, true );
         add_image_size( 'dienstintro', 536, 550, true );
+        add_image_size( 'overonsintro', 514, 550, true );
+        add_image_size( 'overonsblok', 525, 430, true );
         
         // add size to media uploader
         add_filter( 'image_size_names_choose', 'cbv_custom_image_sizes' );
@@ -42,8 +44,8 @@ if( !function_exists('cbv_theme_setup') ){
 
         register_nav_menus( array(
             'cbv_main_menu' => __( 'Hoofdmenu', THEME_NAME ),
-            'cbv_fta_menu' => __( 'Footer Menu 1', THEME_NAME ),
-            'cbv_ftb_menu' => __( 'Footer Menu 2', THEME_NAME )
+            'cbv_fta_menu' => __( 'Footer Menu', THEME_NAME ),
+            'cbv_ftb_menu' => __( 'Copyright Menu', THEME_NAME )
         ) );
 
     }
@@ -158,15 +160,15 @@ if( !function_exists('cbv_custom_both_breadcrump')){
     }
 }
 
-function faqcat_pagination($query) {
+function news_search_pagination($query) {
     if (is_search() && $query->is_main_query() && !is_admin() ) {
         $query->set('post_type',array('post'));
-        $query->set( 'posts_per_page', 1 );
+        $query->set( 'posts_per_page', 9 );
     }
 return $query;
 }
  
-add_filter('pre_get_posts','faqcat_pagination');
+add_filter('pre_get_posts','news_search_pagination');
 /**
 Debug->>
 */

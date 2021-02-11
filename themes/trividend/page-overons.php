@@ -4,11 +4,8 @@
 */
 get_header(); 
 $thisID = get_the_ID();
-?>
-
-<?php 
-  $introsec = get_field('introsec', $thisID);
-  if( $introsec ):
+$introsec = get_field('introsec', $thisID);
+if( $introsec ):
 ?>
 <section class="page-banner-sec-wrp">
   <div class="container">
@@ -24,10 +21,7 @@ $thisID = get_the_ID();
   </div>
 </section>
 <?php endif; ?>
-
-
 <?php 
-  $introsec = get_field('introsec', $thisID);
   if( $introsec ):
 ?>
 <section class="overons-lft-img-rt-dsc-sec-wrp">
@@ -36,7 +30,7 @@ $thisID = get_the_ID();
       <div class="col-md-12">
         <div class="lft-img-rt-dsc-mdul-wrp">
           <?php 
-            $introsecafbeelding = !empty($introsec['afbeelding'])? cbv_get_image_src( $introsec['afbeelding'], 'full' ): '';
+            $introsecafbeelding = !empty($introsec['afbeelding'])? cbv_get_image_src( $introsec['afbeelding'], 'overonsintro' ): '';
           ?>
           <div class="lft-img-rt-dsc-mdul-img inline-bg" style="background: url(<?php echo $introsecafbeelding ?>);">
             <img src="<?php echo $introsecafbeelding ?>">
@@ -65,13 +59,10 @@ $thisID = get_the_ID();
   </div>
 </section>
 <?php endif; ?>
-
-
-
-
 <?php 
+  $showhide_blok = get_field('showhide_blok', $thisID);
   $bloksec = get_field('bloksec', $thisID);
-  if( $bloksec ):
+  if( $showhide_blok ):
 ?>
 <section class="overons-lft-dsc-rt-img-sec-wrp">
   <div class="container">
@@ -84,21 +75,17 @@ $thisID = get_the_ID();
               if( !empty($bloksec['beschrijving'])) echo wpautop($bloksec['beschrijving']); 
             ?>
           </div>
-
           <?php 
-            $bloksecafbeelding = !empty($bloksec['afbeelding'])? cbv_get_image_src( $bloksec['afbeelding'], 'full' ): '';
+            $bloksecafbeelding = !empty($bloksec['afbeelding'])? cbv_get_image_src( $bloksec['afbeelding'], 'overonsblok' ): '';
           ?>
           <div class="lft-dsc-rt-img-mdul-img inline-bg" style="background: url(<?php echo $bloksecafbeelding ?>);">
             <img src="<?php echo $bloksecafbeelding ?>">
           </div>
-
-
           <div class="rt-dsc-dsc-img-mdul-dsc-sm show-sm">
             <?php 
               if( !empty($bloksec['beschrijving'])) echo wpautop($bloksec['beschrijving']); 
             ?>
           </div>
-
 
         </div>
       </div>
@@ -106,13 +93,10 @@ $thisID = get_the_ID();
   </div>
 </section>
 <?php endif; ?>
-
-
-
-
 <?php 
-  $ft_financiering = get_field('ft_financiering', 'options');
-  if( $ft_financiering ):
+  $showhide_cta = get_field('showhide_cta', $thisID);
+  $cta = get_field('ctasec', $thisID);
+  if( $showhide_cta ):
 ?>
 <section class="overons-tvd-fin-sec-wrp">
   <div class="container">
@@ -121,12 +105,12 @@ $thisID = get_the_ID();
         <div class="overons-tvd-fin-wrp">
           <div class="tvd-fin-inr">
             <i>
-              <img src="<?php echo THEME_URI; ?>/assets/images/tvd-fin-img-01.svg">
+              <?php if( !empty($cta['icon']) ) echo cbv_get_image_tag($cta['icon']); ?>
             </i>
             <?php 
-              if( !empty($ft_financiering['titel']) ) printf('<h2 class="fl-h2 tvd-fin-title">%s</h2>', $ft_financiering['titel']);
-              if( !empty($ft_financiering['beschrijving'])) echo wpautop($ft_financiering['beschrijving']); 
-              $fincknop = $ft_financiering['knop'];
+              if( !empty($cta['titel']) ) printf('<h2 class="fl-h2 tvd-fin-title">%s</h2>', $cta['titel']);
+              if( !empty($cta['beschrijving'])) echo wpautop($cta['beschrijving']); 
+              $fincknop = $cta['knop'];
               if( is_array( $fincknop ) &&  !empty( $fincknop['url'] ) ){
                   printf('<a href="%s" target="%s">%s</a>', $fincknop['url'], $fincknop['target'], $fincknop['title']); 
               }
@@ -138,9 +122,6 @@ $thisID = get_the_ID();
   </div>
 </section>
 <?php endif; ?>
-
-
-
 <div class="overons-team-sec-wrp">
 <?php get_template_part('templates/team'); ?>
 <div>
