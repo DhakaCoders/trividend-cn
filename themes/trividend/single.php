@@ -2,6 +2,10 @@
 get_header(); 
 while( have_posts() ): the_post();
   $author_id = get_the_author_meta( 'ID' );
+  $gridtag = cbv_get_image_tag( get_post_thumbnail_id(get_the_ID()), 'postsingle');
+  if( empty($gridtag) ){
+    $gridtag = '<img src="'.THEME_URI.'/assets/images/dfp-img-07.jpg" alt="'.get_the_title().'">';
+  }
 ?>
 <section class="innerpage-con-wrap" id="fl-nieuws-details">
   <div class="container-sm">
@@ -17,7 +21,7 @@ while( have_posts() ): the_post();
               <strong><?php the_author_meta( 'display_name', $author_id ); ?></strong>
             </div>
             <div class="dfp-plate-one-img-bx">
-              <img src="assets/images/dfp-img-07.jpg">
+              <?php echo $gridtag; ?>
               <div class="tvd-triangle">
                 <div class="tvd-tringle-border">
                   

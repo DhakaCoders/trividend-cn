@@ -380,3 +380,9 @@ form .dropdown-menu li a{
 	background: #E0861A;
 	color: #fff;
 }
+.no-results {
+    text-align: center;
+    padding: 50px 0;
+    color: #8B0102;
+    font-size: 24px;
+}
