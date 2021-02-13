@@ -5,9 +5,9 @@ var CustomMapStyles  = [{"featureType":"water","elementType":"geometry","stylers
 
 var windowWidth = $(window).width();
 $('.navbar-toggle').on('click', function(){
-	$('#mobile-nav').slideToggle(300);
+  $('#mobile-nav').slideToggle(300);
 });
-	
+  
   
 //matchHeightCol
 if($('.mHc').length){
@@ -200,13 +200,18 @@ google.maps.event.addDomListener(window, 'load', initialize);
 })();
 
 
-  if( $('.humberger-icon').length ){
-    $('.humberger-icon').click(function(){
+  if( $('.xs-humberger-cntlr').length ){
+    $('.xs-humberger-cntlr').click(function(){
       $('body').toggleClass('allWork');
     });
   }
-  if( $('li.menu-item-has-children a').length ){
-    $('li.menu-item-has-children a').click(function(e){
+  if( $('.xs-mmt-close-icon').length ){
+    $('.xs-mmt-close-icon').click(function(){
+      $('body').removeClass('allWork');
+    });
+  }
+  if( $('.xs-mbl-menu li.menu-item-has-children a').length ){
+    $('.xs-mbl-menu li.menu-item-has-children > a').click(function(e){
        event.preventDefault();
       $(this).next().slideToggle(300);
       $(this).parent().toggleClass('sub-menu-arrow');
